@@ -1,0 +1,40 @@
+---
+title: "Námsgögn"
+output: 
+  html_document:
+    theme: flatly
+    css: default.css
+    toc: yes
+    toc_float: yes
+bibliography: heimildir.bib
+citation-style: APA7isl.csl
+---
+
+
+Á þessari síðu mun vera unnt að finna hlekki á ýmis námsgögn.
+
+
+# Laxdæla
+
+
+#### Bókin
+
+Hlekkur á Laxdælu Sögu [**rafbók**](https://vefir.mms.is/flettibaekur/namsefni/LAXDAELAsaga/).
+
+#### Hljóðbók
+
+Hlekkur á Laxdælu Sögu [**hljóðbók**](https://mms.is/namsefni/laxdaela-saga-hljodbok). 
+
+
+
+
+
+<br>
+
+
+# Heimildir 
+<div id="refs"></div>
+
+
+<hr>
+`r r2symbols::symbol("copyright")` Jon Ingi Hlynsson - Síðasta breyting átti sér stað: `r Sys.Date()`

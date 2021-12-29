@@ -1,0 +1,22 @@
+---
+title: "Námsgögn"
+output: 
+  html_document:
+    theme: flatly
+    css: default.css
+bibliography: heimildir.bib
+citation-style: APA7isl.csl
+---
+
+
+Á þessari síðu mun vera unnt að finna hlekki á ýmis námsgögn.
+
+
+**Þessi síða er í vinnslu!**
+
+
+### Heimildir 
+<div id="refs"></div>
+
+<hr>
+`r r2symbols::symbol("copyright")` Jon Ingi Hlynsson - Síðasta breyting átti sér stað: `r Sys.Date()`

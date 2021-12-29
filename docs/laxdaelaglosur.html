@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>laxdaelaglosur.knit</title>
+
+<script src="site_libs/header-attrs/header-attrs.js"></script>
+<script src="site_libs/jquery/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap/css/flatly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/jqueryui/jquery-ui.min.js"></script>
+<link href="site_libs/tocify/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify/jquery.tocify.js"></script>
+<script src="site_libs/navigation/tabsets.js"></script>
+<link href="site_libs/highlightjs/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs/highlight.js"></script>
+<link href="site_libs/font-awesome/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome/css/v4-shims.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+<style type="text/css">
+/* for pandoc --citeproc since 2.11 */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="default.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.tab('show');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Íslensk móðurmálskennsla</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">
+    <span class="fa fa-home"></span>
+     
+    Forsíða
+  </a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-archive"></span>
+     
+    Námsgögn
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="namsgogn.html">
+        <span class="fa fa-link"></span>
+         
+        Hlekkir og almennar upplýsingar
+      </a>
+    </li>
+    <li class="divider"></li>
+    <li class="dropdown-header">Laxdæla</li>
+    <li>
+      <a href="https://vefir.mms.is/flettibaekur/namsefni/LAXDAELAsaga/">
+        <span class="fa fa-book-open"></span>
+         
+        Laxdæla rafbók
+      </a>
+    </li>
+    <li>
+      <a href="https://mms.is/namsefni/laxdaela-saga-hljodbok">
+        <span class="fa fa-music"></span>
+         
+        Laxdæla hljóðbók
+      </a>
+    </li>
+    <li>
+      <a href="laxdaelaglosur.html">
+        <span class="fa fa-file-alt"></span>
+         
+        Glósubók
+      </a>
+    </li>
+    <li class="divider"></li>
+  </ul>
+</li>
+<li>
+  <a href="hlekkir-a-glaerur.html">
+    <span class="fa fa-film"></span>
+     
+    Glærur
+  </a>
+</li>
+<li>
+  <a href="about.html">
+    <span class="fa fa-question-circle"></span>
+     
+    Um mig
+  </a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+
+</div>
+
+
+<div id="glósur-úr-laxdælu" class="section level1">
+<h1>Glósur úr Laxdælu</h1>
+<p>Á þessari síðu má finna glósur úr kennarahandbók Laxdælu Sögu <span class="citation">(Óþekktur höfundur o.fl., 2017)</span>.</p>
+<hr>
+<div id="unnur-djúpúðga" class="section level3">
+<h3>Unnur djúpúðga</h3>
+<p>Landnámið á Íslandi. Sagan þekkta um Harald hárfagra og aðför hans að höfðingjum í Noregi. Ættmóðir aðalpersónanna kynnt. Stórættuð og konungleg, bæði gift konungi og móðir konungs. Hið konunglega fas mun svo einkenna helstu persónur sögunnar.</p>
+<p><strong>Unnur djúpúðga</strong>: athugið þetta er sama manneskja og heitir Auður djúpúðga í Landnámu og víðar.</p>
+<hr>
+</div>
+<div id="höskuldur-og-melkorka" class="section level3">
+<h3>Höskuldur og Melkorka</h3>
+<p>Aðalpersónur þegar hér er komið við sögu eru Höskuldur Dala-Kollsson, afkomandi Unnar djúpúðgu og Melkorka Mýrkjartansdóttir. Einnig skiptir máli að taka eftir Jórunni konu Höskuldar og Ólafi litla Höskuldssyni sem verður mikilvæg persóna í sögunni. Höskuldur siglir utan, fer á markað í Brenneyjum og kaupir ambátt. Kaupmaðurinn varar hann við, ambáttin sé mállaus. Höskuldur hefur ambáttina með sér til Ísland. Jórunni líst illa á þessa viðbót við heimilisfólkið enda er ambáttin augljóslega frilla Höskuldar. Ambáttin fæðir son þeirra Höskuldar sem Höskuldur nefnir Ólaf. Höskuldur heyrir ambáttina spjalla við Ólaf og kemst að því að hún er ekki mállaus. Ambáttin segir sögu sína, hún er Melkorka kóngsdóttir frá Írlandi.</p>
+<p>Þessi frásögn er mikilvæg því hún undirstrikar konunglegan uppruna helstu söguhetja Laxdælu. Ólafur Höskuldsson er faðir Kjartans, helstu hetju sögunnar.</p>
+<p>Hér kemur líka fram hvernig söguhetjurnar settust að í Laxárdal, Höskuldur sendir Melkorku frá sér og fær henni bústað í dalnum.</p>
+<hr>
+</div>
+<div id="ólafur-pá" class="section level3">
+<h3>Ólafur pá</h3>
+<p>Ólafur pá (pái) Höskuldsson er orðinn fullorðinn og ekki lengur efnilegur heldur stórglæsilegur, hugrakkur, vígfimur og konunglegur. Ólafur er 18 ára og siglir á fund afa síns, konungsins á Írlandi. Hefur með sér sönnunargögn um uppruna sinn frá móður sinni. Er svo glæsilegur og djarfur að honum býðst að verða konungur á Írlandi en hafnar því, vill frekar fara heim til mömmu sinnar. Aðalatriðið er þessi höfnun, lesendur vita að hann jafnast á við konunga. Kemst líka í vinskap við Noregskonung og fær góðar gjafir frá honum. Sest loks að á Íslandi og kvænist Þorgerði dóttur Egils Skalla-Grímssonar sem er mikill kvenkostur. Þau búa á Hjarðarholti í Laxárdal.</p>
+<p>Höskuldur Dala-Kollsson veikist og synir hans deila um tilvonandi arf. Ólafur pá er frillusonur, óskilgetin og á ekki sama erfðarétt en Höskuldur vill að hann fái arf til jafns við hálfbræður sína. Einkum er Þorleikur Höskuldsson á móti þessu. Ólafur er greinilega í miklu uppáhaldi hjá Höskuldi sem gefur honum merkilegar gjafir sem hann hafði sjálfur fengið hjá Hákoni Noregskonungi Aðalsteinsfóstra. Höskuldur deyr og Ólafur heldur erfi eftir hann, rosalega veislu sem þúsund manns mæta í. Deilum bræðranna lýkur með því að Ólafur býðst til að fóstra Bolla son Þorleiks. Það þótti mikill heiður á miðöldum ef barni manns var boðið fóstur. Sá sem bauðst til að fóstra barnið var með því að segja að hinn væri meiri maður. Bolli Þorleiksson og Kjartan Ólafsson eru jafnaldrar, þriggja ára, þegar þetta gerist og alast þeir upp saman eftir þetta á heimili Ólafs og Þorgerðar.</p>
+<hr>
+</div>
+<div id="álagasverðið-fótbítur" class="section level3">
+<h3>Álagasverðið Fótbítur</h3>
+<p>Aðalpersónur þegar hér er komið við sögu eru Geirmundur gnýr og Þuríður Ólafsdóttir. Snýst um það hvernig sverðið Fótbítur kemst í eigu ættarinnar. Ólafur kynnist Geirmundi í Noregi, þeir sigla saman til Íslands og Geirmundur kvænist Þuríði dóttur Ólafs. Þau eignast dótturina Gróu. Geirmundur ætlar aftur til Noregs þegar Gróa er eins árs en Þuríður bregst reið við. Hún hefnir sín með því að skipta á Gróu og sverði Geirmundar. Geirmundur reiðist og leggur álög á sverðið, að það verði þeim manni að bana í ætt Þuríðar sem mestur skaði er að. Geirmundur siglir til Noregs og þar ferst skip hans og væntanlega þau Gróa litla með því. Þuríður gefur Bolla frænda sínum sverðið, hann er uppeldisbróðir hennar.</p>
+<hr>
+</div>
+<div id="draumar-guðrúnar-ósvífursdóttur" class="section level3">
+<h3>Draumar Guðrúnar Ósvífursdóttur</h3>
+<p>Hér kemur Guðrún Ósvífursdóttir fyrst við sögu en hún er lykilpersóna Laxdælu. Gestur Oddleifsson spáir fyrir Guðrúnu eftir að hafa heyrt drauma hennar. Hann spáir því að hún muni eignast fjóra eiginmenn og spáir einnig fyrir um örlög mannanna. Þegar þetta gerist er Guðrún kornung, 15 ára. Við vitum að spádómar Íslendingasagnanna rætast alltaf og fylgjumst því með hjónaböndum Guðrúnar.</p>
+<ul>
+<li><strong>Fyrsti draumur Guðrúnar</strong>: Hana dreymdi að hún væri við læk með krókfald á höfði. Henni fannst faldurinn fara sér illa og kastaði honum í lækinn.
+<ul>
+<li><strong>Túlkun Gests</strong>: Hann sagði að Guðrún myndi lítið elska fyrsta eiginmann sinn og skilja við hann.</li>
+</ul></li>
+<li><strong>Annar draumur Guðrúnar</strong>: Hana dreymdi að hún væri stödd hjá vatni með dýrmætan silfurhring á hendi. Hringurinn rann af hendinni og í vatnið og þótti henni það mikill skaði.
+<ul>
+<li><strong>Túlkun Gests</strong>: Hann sagði að annar eiginmaður hennar yrði ágætur en spáði því að hann myndi drukkna.</li>
+</ul></li>
+<li><strong>Þriðji draumur Guðrúnar</strong>: Hana dreymdi að hún hefði gullhring á hendi, hún studdi sig við stein þegar hún datt og hringurinn brotnaði og blæddi úr brotunum.
+<ul>
+<li><strong>Túlkun Gests</strong>: Hann sagði að þriðji eiginmaður Guðrúnar myndi hafa nýja trú. Hann spáði því að þessi eiginmaður yrði drepinn.</li>
+</ul></li>
+<li><strong>Fjórði draumur Guðrúnar</strong>: Hana dreymdi að hún hefði gullhjálm á höfði, skreyttan gimsteinum. Hjálmurinn var þungur og steyptist ofan í sjó.
+<ul>
+<li><strong>Túlkun Gests</strong>: Hann sagði að fjórði eiginmaður hennar yrði mesti höfðinginn en spáði því að hann myndi drukkna.</li>
+</ul></li>
+</ul>
+<hr>
+</div>
+<div id="óhugnanlegir-spádómar" class="section level3">
+<h3>Óhugnanlegir spádómar</h3>
+<p>Við vitum nú að Guðrún mun eignast fjóra eiginmenn. Gestur heldur hér áfram að spá og sér fyrir að Bolli mun drepa Kjartan og eiga yfir höfði sér blóðhefnd. Hann grætur þessi örlög frændanna. Ólaf pá dreymir sjálfan draum sem bendir til að uppáhaldssonur hans verði alblóðugur, það er verði drepinn.</p>
+<hr>
+</div>
+<div id="fyrstu-draumar-guðrúnar-rætast" class="section level3">
+<h3>Fyrstu draumar Guðrúnar rætast</h3>
+<p>Sagt er frá fyrstu tveimur hjónaböndum Guðrúnar sem fara alveg eins og Gestur hafði spáð. Hér sannast því að spádómar hans rætast.</p>
+<p>Guðrún giftist fyrst 15 ára en elskar Þorvald mann sinn lítið. Hún kynnist Þórði Ingunnarsyni og verður ástfangin af honum. Skilur við Þorvald með aðstoð Þórðar og er <em>skilnaðarsökin</em> merkileg. Hún sakar Þorvald um að klæðast kvenfötum, þ.e. að vera ekki karlmannlegur. Síðar spyr Guðrún Þórð hvort rétt sé að kona hans gangi í karlmannsfötum og sé kölluð bróka-Auður. Þórður segir þá skilið við Auði konu sína.</p>
+<p>Þórður verður annar eiginmaður Guðrúnar þegar hún er um 17 ára gömul. Fyrir honum fer eins og Gestur hafði spáð, hann drukknar og syrgir Guðrún hann mjög.</p>
+<hr>
+</div>
+<div id="fóstbræður-og-frændur" class="section level3">
+<h3>Fóstbræður og frændur</h3>
+<p>Hér er sagt frá því hvernig Þorleikur bróðir Ólafs hverfur úr sögunni eftir að hafa staðið með galdrahyski sem drap frænda þeirra bræðra. (Þetta eru sömu galdrahjónin og göldruðu óveður yfir skip Þórðar). Ólafur situr í Hjarðarholti í mikilli sæmd og synir hans fimm hjá honum. Kjartani Ólafssyni er lýst og Bolla fóstbróður hans, og ferðum þeirra í Sælingsdalslaug að hitta Guðrúnu. Greinilegt að þetta fólk er efnilegasta og glæsilegasta fólk héraðsins og allir reikna með að Kjartan og Guðrún verði hjón.</p>
+<hr>
+</div>
+<div id="kjartan-mætir-ólafi-noregskonungi" class="section level3">
+<h3>Kjartan mætir Ólafi Noregskonungi</h3>
+<p>Kjartan kaupir hlut í skipi og ákveður að sigla til Noregs. Bolli auðvitað með því þeir frændur gera allt saman. Mikilvægt að Kjartan spyr hvorki föður sinn né Guðrúnu um ráð en altalað er í sveitinni að þau Guðrún séu par. Guðrún tekur fréttunum skiljanlega illa og vill fara með. Kjartan vill ekki taka Guðrúnu með en segir henni að bíða sín í þrjú ár.</p>
+<p>Þau skiljast því ósátt og Guðrún lofar engu. Kjartan og Bolli sigla út. Ólafur Tryggvason er þá Noregskonungur en hann er fyrsti kristniboðskonungur Noregs og sá sem kristnar Íslendinga. Mikilvægt er að skoða hvernig Kjartan keppir við Ólaf konung í sundi án þess að vita að um konunginn er að ræða. Keppnin sýnir að Kjartan er sterkur og syndur eins og konungur, enn eitt dæmið um hversu konunglegir Laxdælir eru. Konungur þakkar Kjartani keppnina með því að gefa honum skikkju sem sýnir að Kjartan getur klætt sig eins og konungur, hann ber af öðrum venjulegum mönnum.</p>
+<hr>
+</div>
+<div id="kjartan-og-bolli-taka-kristni" class="section level3">
+<h3>Kjartan og Bolli taka kristni</h3>
+<p>Kjartan og Bolli eru í Noregi, fyrst andsnúnir konungi og kristinni trú en taka síðan skírn og þar með kristni.</p>
+<p>Noregskonungur tekur Kjartan og fleiri höfðingjasyni í gíslingu til að flýta fyrir kristnun Íslands. Trúboð á Íslandi og loks kristnitakan á Þingvöllum sem Bolli er viðstaddur.</p>
+<hr>
+</div>
+<div id="þriðja-hjónaband-guðrúnar" class="section level3">
+<h3>Þriðja hjónaband Guðrúnar</h3>
+<p>Áfram er kristnitakan í bakgrunni. Ólafur konungur heldur fjórum íslenskum höfðingjasonum í gíslingu en sendir tvo kristniboða til Íslands til að þvinga Íslendinga til kristni. Kjartan er einn þeirra og Bolli siglir einn til Íslands með kristniboðunum. Kjartani þykir það ekki alslæmt enda á hann vingott við systur konungsins.</p>
+<p>Hér er mikilvægt að skoða hvernig Bolli og Kjartan kveðjast.</p>
+<p>Kjartan biður Bolla að skila kveðju til ættingja sinna en minnist ekki orði á Guðrúnu. Nú hefjast flækjurnar: Bolli fer til Lauga og hittir Guðrúnu. Þegar hún spyr um Kjartan segir Bolli að hann eigi vingott við systur kóngsins og að margir telji að þau muni ganga í hjónaband. Bolli heimsækir Guðrúnu og reynir að fá hana til að giftast sér og hún játast honum loks, úrkula vonar um að Kjartan snúi heim.</p>
+<p>Þetta er þriðja hjónaband Guðrúnar. Næsta sumar sleppir konungur gíslum sínum og Kjartan siglir heim. Að skilnaði gefur konungssystir honum dýrindisgjöf, motur, sem á eftir að koma þó nokkuð við sögu.</p>
+<hr>
+</div>
+<div id="kjartan-kemur-heim" class="section level3">
+<h3>Kjartan kemur heim</h3>
+<p>Kjartan kemur heim ásamt meðeiganda sínum að skipinu, Kálfi Ásgeirssyni. Kjartan fréttir af brúðkaupi Bolla og Guðrúnar og Guðrún fréttir af komu Kjartans. Kjartan sýnir engin viðbrögð en Guðrún er reið Bolla. Kjartan kvænist Hrefnu systur Kálfs. Moturinn skiptir hér miklu máli en um hann verður síðar deilt.</p>
+<hr>
+</div>
+<div id="bolli-reynir-að-sættast-við-kjartan" class="section level3">
+<h3>Bolli reynir að sættast við Kjartan</h3>
+<p>Óvildin milli Kjartans og Guðrúnar fer vaxandi. Feður þeirra reyna að halda þeim góðum. Bolli reynir að sættast við Kjartan en Kjartan hafnar sáttagjöf hans, glæstum hrossum.</p>
+<p>Augljóst er að allt mun fara í bál og brand.</p>
+<hr>
+</div>
+<div id="moturinn-og-sverðið-hverfa" class="section level3">
+<h3>Moturinn og sverðið hverfa</h3>
+<p>Óvildin vex. Veisla að Hjarðarholti (hjá Ólafi pá og Kjartani). Hrefna er látin sitja í öndvegi sem þýðir að hún er álitin virðulegust. Guðrún móðgast við þetta. Hér kemur moturinn aftur við sögu, Guðrún fær að skoða hann hjá Hrefnu. Sverðið konungsnautur sem Kjartan fékk í Noregi hverfur og finnst <em>laskað og ónothæft</em> en Kjartan átti ekki að verða vopnbitinn meðan hann hefði sverðið.</p>
+<p>Þórólfur bróðir Guðrúnar virðist hafa tekið sverðið.</p>
+<p>Næsta veisla er haldin að Laugum og þar hverfur moturinn. Þórólfur bróðir Guðrúnar á hugsanlega sök á hvarfinu. Sverðið og moturinn eru tveir bestu gripir Kjartans og Hrefnu og þau reiðast skiljanlega. Kjartan ásakar Bolla en böndin berast að Guðrúnu.</p>
+<hr>
+</div>
+<div id="kjartan-dreitir-laugamenn-inni" class="section level3">
+<h3>Kjartan dreitir Laugamenn inni</h3>
+<p>Óvildin og deilurnar eru nú að ná hámarki. Sagt er frá miklu illvirki Kjartans er hann dreitir Laugamenn inni, það er kemur í veg fyrir að þeir komist út úr bænum og á kamarinn. Orðaskipti Hrefnu og Kjartans benda til að Guðrún sé honum enn ofarlega í huga. Bræður Guðrúnar eru nú mjög reiðir og Guðrún æf. Fullkominn fjandskapur ríkir milli Laugamanna og Hjarðhyltinga í lok kaflans.</p>
+<hr>
+</div>
+<div id="fjandskapur-kjartans-og-bolla" class="section level3">
+<h3>Fjandskapur Kjartans og Bolla</h3>
+<p>Nú líður að uppgjörinu. Kjartan kemur í veg fyrir að Bolli eignist land í Tungu og kaupir jörðina sjálfur. Þórarinn í Tungu gerist liðsmaður Kjartans. Guðrún setur Bolla úrslitakosti, að vera harðari við Kjartan eða yfirgefa héraði með skömm.</p>
+<p>Bolli vill enn halda friðinn en bræður Guðrúnar eru óðir. Guðrún eggjar bræður sína til að ráðast á Kjartan. Bolli neitar að fara með þeim en Guðrún eggjar hann til að fara með. <em>Kjartan er <strong>grunlaus</strong></em>.</p>
+<hr>
+</div>
+<div id="bardagi-bolla-og-kjartans" class="section level3">
+<h3>Bardagi Bolla og Kjartans</h3>
+<p>Þá er komið er því sem er orðið óumflýjanlegt, uppgjöri Kjartans og Bolla. Bolli er enn tregur til að berjast við fóstbróður sinn og frænda. Bræður Guðrúnar koma í veg fyrir að hann geti varað Kjartan við. Kjartan er með lélegt sverð því hann hefur ekki sverðið Konungsnaut. Kjartan eggjar Bolla til að berjast við sig. Bolli er með sverðið Fótbít. Óspakur eggjar Bolla líka. Bolli lætur loks undan. Hann heggur Kjartan en iðrast þegar verksins.</p>
+<p>Kjartan deyr í fangi Bolla.</p>
+<hr>
+</div>
+<div id="þorgerður-krefst-hefna-eftir-kjartan" class="section level3">
+<h3>Þorgerður krefst hefna eftir Kjartan</h3>
+<p>Hrefna syrgir Kjartan og hverfur úr sögunni. Ólafur pá reynir enn að stilla til friðar. Þegar Ólafur deyr stígur Þorgerður ekkja hans fram og krefst hefnda fyrir Kjartan. Hún eggjar syni sína, bræður Kjartans, til hefnda. Fer svo með þeim í hefndarförina. Til bardaga kemur og Bolli er veginn.</p>
+<hr>
+</div>
+<div id="guðrún-krefst-hefnda-eftir-bolla" class="section level3">
+<h3>Guðrún krefst hefnda eftir Bolla</h3>
+<p>Guðrún er í aðalhlutverki það sem eftir er bókar. Hún skiptir um bæ við Snorra goða og flytur úr Tungu að Húsafelli. Þar fæðist sonur hennar og Bolla sem nefndur er Bolli Bollason. Þegar Bolli er 12 ára og Þorleikur bróðir hans 16 eggjar Guðrún þá til að hefna föður síns. Hún sýnir þeim blóðug föt Bolla sem hún hefur ef til vill varðveitt í 12 ár þar til bræðurnir yrðu báðir nógu gamlir til að hefna. Ættardeilunum lýkur loks fyrir milligöngu Snorra goða. Bolli ungi fer út í heim og fær mikinn sóma og viðurnefnið Bolli hinn prúði.</p>
+<hr>
+</div>
+<div id="þeim-var-ég-verst" class="section level3">
+<h3>Þeim var ég verst</h3>
+<p>Fjórða hjónaband Guðrúnar fer eins og Gestur Oddleifsson hafði spáð. Hún giftist miklum höfðingja er heitir Þorkell Eyjólfsson, vini Snorra goða. Þau eignast soninn Gelli. Þorkell drukknar. Gellir tekur við búi 14 ára. Guðrún gerist mjög trúuð og lætur reisa kirkju að Helgafelli. Gerist síðar nunna og einsetukona. Bolli hinn prúði heimsækir móður sína oft og eitt sinn spyr hann hana hvaða manni hún hafi mest unnað. Guðrún svarar sem frægt er orðið: „<em>Þeim var ég verst er ég unni mest</em>.“</p>
+<hr>
+<hr>
+</div>
+</div>
+<div id="heimildaskrá" class="section level1">
+<h1>Heimildaskrá</h1>
+<div id="refs" class="references csl-bib-body hanging-indent" line-spacing="2">
+<div id="ref-Laxdaela2017" class="csl-entry">
+Óþekktur höfundur, Gunnar Karlsson og Ragnar Ingi Aðalsteinsson. (2017). <em>Laxdæla saga</em>. <span>Menntamálastofnun</span>. <a href="https://vefir.mms.is/flettibaekur/namsefni/LAXDAELAsaga/">https://vefir.mms.is/flettibaekur/namsefni/LAXDAELAsaga/</a>
+</div>
+</div>
+<hr>
+<p>&#169; Jon Ingi Hlynsson - Síðasta breyting átti sér stað: 2021-12-29</p>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
