@@ -1,75 +1,374 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
-<meta charset="utf-8">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta charset="utf-8" />
 <meta name="generator" content="pandoc" />
-<meta name="viewport" content="width=device-width">
-<meta property="og:title" content="Laxdæla Saga" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
-
-
-
-<meta name="description" content="Laxdæla Saga">
-
-<script id="pandoc-meta" type="application/json">
-{"newpage_html_class":"page-break-after","bibliography":"heimildir.bib","citation-style":"APA7isl.csl","output":{"pagedown::html_paged":{"self_contained":false,"toc":"yes","css":"default.css"}},"title":"Laxdæla Saga"}
-</script>
 
 <title>Laxdæla Saga</title>
 
-
 <script src="site_libs/header-attrs/header-attrs.js"></script>
-<script src="site_libs/paged/js/config.js"></script>
-<script src="site_libs/paged/js/paged.js"></script>
-<script src="site_libs/paged/js/hooks.js"></script>
+<script src="site_libs/jquery/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap/css/flatly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation/tabsets.js"></script>
+<link href="site_libs/highlightjs/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs/highlight.js"></script>
+<link href="site_libs/font-awesome/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome/css/v4-shims.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
 
 
 
+
+<style type="text/css">
+/* for pandoc --citeproc since 2.11 */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
 
 <link rel="stylesheet" href="default.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.tab('show');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
 
 </head>
 
 <body>
 
-<div class="running-h1-title"></div>
 
-<div class="running-h2-title"></div>
-
+<div class="container-fluid main-container">
 
 
-<div class="front-page">
-<div id="header" class="title-page">
-<h1 class="title">Laxdæla Saga</h1>
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Íslensk móðurmálskennsla</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">
+    <span class="fa fa-home"></span>
+     
+    Forsíða
+  </a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-archive"></span>
+     
+    Námsgögn
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="namsgogn.html">
+        <span class="fa fa-link"></span>
+         
+        Hlekkir og almennar upplýsingar
+      </a>
+    </li>
+    <li class="divider"></li>
+    <li class="dropdown-header">Laxdæla</li>
+    <li>
+      <a href="https://vefir.mms.is/flettibaekur/namsefni/LAXDAELAsaga/">
+        <span class="fa fa-book-open"></span>
+         
+        Laxdæla rafbók
+      </a>
+    </li>
+    <li>
+      <a href="https://mms.is/namsefni/laxdaela-saga-hljodbok">
+        <span class="fa fa-music"></span>
+         
+        Laxdæla hljóðbók
+      </a>
+    </li>
+    <li>
+      <a href="styttri.html">
+        <span class="fa fa-file-text"></span>
+         
+        Einfölduð útgáfa
+      </a>
+    </li>
+    <li>
+      <a href="laxdaelaglosur.html">
+        <span class="fa fa-file-alt"></span>
+         
+        Glósubók
+      </a>
+    </li>
+    <li class="divider"></li>
+  </ul>
+</li>
+<li>
+  <a href="hlekkir-a-glaerur.html">
+    <span class="fa fa-film"></span>
+     
+    Glærur
+  </a>
+</li>
+<li>
+  <a href="about.html">
+    <span class="fa fa-question-circle"></span>
+     
+    Um mig
+  </a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Laxdæla Saga</h1>
+
 </div>
-</div>
 
-<div class="front-matter-container">
-<div id="TOC" class="level1 toc front-matter">
+<div id="TOC">
 <ul>
-<li><a href="#styttri-útgáfa"><span class="toc-section-number">0.0.1</span> Styttri útgáfa</a></li>
-<li><a href="#unnur-djúpúgða"><span class="toc-section-number">1</span> 1. Unnur djúpúgða</a></li>
-<li><a href="#höskulur-dala-kollsson-kaupir-ambátt"><span class="toc-section-number">2</span> 2. Höskulur Dala-Kollsson kaupir ambátt</a></li>
-<li><a href="#melkorka"><span class="toc-section-number">3</span> 3. Melkorka</a></li>
-<li><a href="#ólafur-pái"><span class="toc-section-number">4</span> 4. Ólafur pái</a></li>
-<li><a href="#írlandsför"><span class="toc-section-number">5</span> 5. Írlandsför</a></li>
-<li><a href="#heimildir"><span class="toc-section-number">6</span> Heimildir</a></li>
+<li><a href="#styttri-útgáfa">Styttri útgáfa</a></li>
+<li><a href="#unnur-djúpúgða">1. Unnur djúpúgða</a></li>
+<li><a href="#höskulur-dala-kollsson-kaupir-ambátt">2. Höskulur Dala-Kollsson kaupir ambátt</a></li>
+<li><a href="#melkorka">3. Melkorka</a></li>
+<li><a href="#ólafur-pái">4. Ólafur pái</a></li>
+<li><a href="#írlandsför">5. Írlandsför</a></li>
+<li><a href="#heimildir">Heimildir</a></li>
 </ul>
 </div>
-</div>
 
-<div class="main">
-<div id="styttri-útgáfa" class="section level3" number="0.0.1">
-<h3><span class="header-section-number">0.0.1</span> Styttri útgáfa</h3>
+<div id="styttri-útgáfa" class="section level3">
+<h3>Styttri útgáfa</h3>
 </div>
-<div id="unnur-djúpúgða" class="section level1" number="1">
-<h1><span class="header-section-number">1</span> 1. Unnur djúpúgða</h1>
+<div id="unnur-djúpúgða" class="section level1">
+<h1>1. Unnur djúpúgða</h1>
 <p>Ketill flatnefur var höfðingi í Noregi en þegar Haraldur konungur hárfagri tók yfir völd ákvað Ketill að flýja land með fjölskyldu sinni. Hann vildi nefnilega ekki verða undirmaður Haralds.</p>
 <p>Synir Ketils, Björn og Helgi, vildu flytja til Íslands. Þeir sögðu Katli (pabba sínum) að þar væri nóg af landi sem ekki þyrfti að kaupa. Enn fremur, að nóg væri um fisk á Íslandi. Hins vegar leist Katli illa á þessa tillögu þeirra og kvaðst<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> aldrei vilja koma þangað. Hann væri orðinn gamall.</p>
 <p>Synir Ketils sigldu til Íslands. Björn settist að á Snæfellsnesi og kallaði bæ sinn Bjarnarhöfn en Helgi á Kjalarnesi og bjó á Esjubergi.</p>
@@ -82,8 +381,8 @@
 <p>Unnur hafði það fyrir venju að fara ekki á fætur fyrr en um miðjan dag. Daginn eftir veisluna svaf hún þó svo lengi að Ólafur ákvað að kíkja á hana en þá var hún dáin.</p>
 <p>Ólafur feilan tók við búi í Hvammi og bjó þar til elli.</p>
 </div>
-<div id="höskulur-dala-kollsson-kaupir-ambátt" class="section level1" number="2">
-<h1><span class="header-section-number">2</span> 2. Höskulur Dala-Kollsson kaupir ambátt</h1>
+<div id="höskulur-dala-kollsson-kaupir-ambátt" class="section level1">
+<h1>2. Höskulur Dala-Kollsson kaupir ambátt</h1>
 <p>Dala-Kollur og Þorgerður Þorsteinsdóttir áttu son sem hét Höskuldur. Hann átti konu sem hét Jórunn og tók Höskuldur við búi í Laxárdal eftir föður sinn. Bær þeirra hét Höskuldsstaðir. Jórunn og Höskuldur eignuðust fjögur börn saman.</p>
 <p>Einu sinni sigldi Höskuldur til Noregs til þess að kaupa timbur í nýjan bæ. Þegar Höskuldur var í Noregi var mikið um að vera og fólk frá fleiri löndum í Evrópu saman komið á fundi. Þangað kíkti Höskuldur og rak auga í stærðarinnar tjald. Inni í tjaldinu hitti hall mann sem kvaðst heita Gilli og vera kallaður Gilli hinn <strong>gerski</strong><a href="#fn8" class="footnote-ref" id="fnref8"><sup>8</sup></a>.</p>
 <p>Höskuldur kannaðist við Gilla og vissi að hann væri ríkur kaupmaður<a href="#fn9" class="footnote-ref" id="fnref9"><sup>9</sup></a>. Höskuldur segir við Gilla að hann ætli sér að kaupa <strong>ambátt</strong><a href="#fn10" class="footnote-ref" id="fnref10"><sup>10</sup></a>. Gilli gekk með Höskuldi að fortjaldi sem hékk þvert yfir tjaldið og svipti því frá. Fyrir innan sátu tólf konur í röð.</p>
@@ -100,8 +399,8 @@
 </div>
 <p>Höskuldur kaupir því mállausu konuna og fer með henni heim í tjald sitt. Sagt er að þau hafi sofið saman um nóttina. Morguninn eftir lét Höskuldur konuna fá ný og góð kvenföt og var um talað að þau færu henni vel. Síðan fór Höskuldur með konunni að skipi sínu, hlóð það af timbri og sigldi til Íslands.</p>
 </div>
-<div id="melkorka" class="section level1" number="3">
-<h1><span class="header-section-number">3</span> 3. Melkorka</h1>
+<div id="melkorka" class="section level1">
+<h1>3. Melkorka</h1>
 <p>Þegar Höskuldur kom heim með ambáttina tók Jórunn, kona hans, vel á móti honum en spurði hvaða kona væri með honum. Höskuldur svaraði henni að hann vissi ekki nafn hennar.</p>
 <p>Þá sagðist Jórunn hafa frétt að þau hefðu sofið saman og taldi ólíklegt að Höskuldur hefði ekki spurt hana nafni. Þá sagði Höskuldur Jórunni allan sannleikan og sagðist vilja að konan byggi hjá þeim á Höskuldsstöðum.</p>
 <p>Jórunn sagðist ekki ætla deila við <strong>frillu</strong><a href="#fn12" class="footnote-ref" id="fnref12"><sup>12</sup></a> Höskulds, sérstaklega þar sem hún er bæði <strong>dauf</strong><a href="#fn13" class="footnote-ref" id="fnref13"><sup>13</sup></a> og mállaus.</p>
@@ -116,8 +415,8 @@
 <p>Konan svarar og segist heita Melkorka. Höskuldur biður hana þá að segja hverra manna hún sé og svarar Melkorka að Mýrkjartan, konungur á Írlandi, sé faðir hennar. Hún segist hafa verið hertekin fimmtán vetra gömul.</p>
 <p>Höskuldur sagði Jórunni, konu sinni, fréttirnar og ekki varð hún betri við Melkorku eftir þetta. Eitt kvöldið var Jórunn að hátta og togaði Melkorka af henni sokkana og lagði þá á gólfið. Jórunn tók þá sokkana og sló Melkorku í höfuðið með þeim. Við það reiddist Melkorka og kýldi Jórunni í andlitið þannig blæddi úr nefi hennar. Höskuldur skildi þær í sundur en lét Melkorku fara burt með Ólaf í bústað uppi í Laxárdal. Þar byggði hún bæ og kallaði Melkorkustaði.</p>
 </div>
-<div id="ólafur-pái" class="section level1" number="4">
-<h1><span class="header-section-number">4</span> 4. Ólafur pái</h1>
+<div id="ólafur-pái" class="section level1">
+<h1>4. Ólafur pái</h1>
 <p>Þegar Ólafur var sjö vetra gamall fór hann í fóstur til auðugs bónda sem var kallaður Þórður <strong>goddi</strong><a href="#fn15" class="footnote-ref" id="fnref15"><sup>15</sup></a> og bjó á Goddastöðum.</p>
 <p>Þegar Ólafur óx upp varð hann mikill skartmaður í klæðaburði og var kallaður Ólafur <strong>pái</strong><a href="#fn16" class="footnote-ref" id="fnref16"><sup>16</sup></a>. Hann var þó líka stundum hjá móður sinni á Melkorkustöðum og kenndi hún honum írsku.</p>
 <p>Þegar Ólafur var sautján vetra stakk Melkorka upp á að hann færi að vitja frænda sinna á Írlandi. Ólafur sagðist hafa talað um þetta við föður sinn en Höskuldi hafði verið illa við að láta hann hafa fé fyrir ferðina.</p>
@@ -130,8 +429,8 @@
 </div>
 <p>Ólafur fékk til aukreitis við hringinn, hníf og belti sem hann átti að sýna fóstru Melkorku. Þá ætti engin vafi að vera á því hverra manna Ólafur væri. Eftir þetta hélt Ólafur á stað.</p>
 </div>
-<div id="írlandsför" class="section level1" number="5">
-<h1><span class="header-section-number">5</span> 5. Írlandsför</h1>
+<div id="írlandsför" class="section level1">
+<h1>5. Írlandsför</h1>
 <p>Þegar þetta gerist var <strong>Haraldur gráfeldur</strong> konungur í Noregi. Ólafur og Örn fóru fyrst til hans og voru einn vetur áður en þeir héldu til Írlands.</p>
 <p>Örn hafði áhyggjur af því að skip þeirra yrði hertekið af Írum er þeir kæmu í land en Ólafur sagði honum að hafa ekki áhyggjur af því. Þegar þeir komu að höfninni spurðu tveir menn þá á írsku hverjir þeir séu og svaraði Ólafur þeim á írsku. Írarnir sögðu þeim að ganga af skipinu og skilja allt fé sitt þar eftir, enginn mundi gera þeim mein þangað til konungur dæmdi í máli þeirra.</p>
 <p>Ólafur féllst ekki á að gefa upp bátinn og æptu Írar heróp og óðu út í sjóinn að skipinu. Vatnið var ekki dýpra en svo að það náði þeim upp undir hendurnar. Ólafur bað skipverja sína að taka upp vopn og fylkja liði á skipinu. Stóðu þeir svo þétt að skipið var allt skarað skjöldum og spjótsoddur út með hverjum skyldi.</p>
@@ -146,8 +445,8 @@
 <p>Þegar Ólafur kom heim til Íslands tóku allir vel á móti honum. Melkorka spurði hann um ferðina, um föður sinn og hvort fóstra hennar væri á lífi. Ólafur sagði svo vera og spurði Melkorka þá hvers vegna hann hafi ekki tekið hana með sér til Íslands. Ólafur svaraði og sagði að það hefði ekki verið löngun Íranna að hann flytti fósturna með sér.</p>
 <p>Það á fannst að Melkorku var það mjög á móti skapi.</p>
 </div>
-<div id="heimildir" class="section level1" number="6">
-<h1><span class="header-section-number">6</span> Heimildir</h1>
+<div id="heimildir" class="section level1">
+<h1>Heimildir</h1>
 <div id="refs" class="references csl-bib-body hanging-indent" line-spacing="2">
 <div id="ref-Laxdaela2017" class="csl-entry">
 Óþekktur höfundur, Gunnar Karlsson og Ragnar Ingi Aðalsteinsson. (2017). <em>Laxdæla saga</em>. <span>Menntamálastofnun</span>. <a href="https://vefir.mms.is/flettibaekur/namsefni/LAXDAELAsaga/">https://vefir.mms.is/flettibaekur/namsefni/LAXDAELAsaga/</a>
@@ -182,15 +481,51 @@
 <li id="fn23"><p>ferðbúið merkir að það sé tilbúið til ferðar<a href="#fnref23" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
+
+
+
+
 </div>
 
+<script>
 
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
 
 <script>
-// when the page is about to reload via servr, remember the scroll position
-document.addEventListener('servr:reload', function(e) {
-  sessionStorage.setItem('pagedown-scroll', window.scrollY);
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
 });
 </script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
 </body>
 </html>
