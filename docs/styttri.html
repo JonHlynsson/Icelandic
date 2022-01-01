@@ -29,6 +29,9 @@
        h6 {font-size: 12px;}
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
+<script src="site_libs/jqueryui/jquery-ui.min.js"></script>
+<link href="site_libs/tocify/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify/jquery.tocify.js"></script>
 <script src="site_libs/navigation/tabsets.js"></script>
 <link href="site_libs/highlightjs/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs/highlight.js"></script>
@@ -243,6 +246,69 @@ $(document).ready(function () {
 
 
 
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
 
 </head>
 
@@ -250,6 +316,16 @@ $(document).ready(function () {
 
 
 <div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -352,20 +428,10 @@ $(document).ready(function () {
 
 </div>
 
-<div id="TOC">
-<ul>
-<li><a href="#styttri-útgáfa">Styttri útgáfa</a></li>
-<li><a href="#unnur-djúpúgða">1. Unnur djúpúgða</a></li>
-<li><a href="#höskulur-dala-kollsson-kaupir-ambátt">2. Höskulur Dala-Kollsson kaupir ambátt</a></li>
-<li><a href="#melkorka">3. Melkorka</a></li>
-<li><a href="#ólafur-pái">4. Ólafur pái</a></li>
-<li><a href="#írlandsför">5. Írlandsför</a></li>
-<li><a href="#heimildir">Heimildir</a></li>
-</ul>
-</div>
 
-<div id="styttri-útgáfa" class="section level3">
-<h3>Styttri útgáfa</h3>
+<div id="einfölduð-útgáfa" class="section level3">
+<h3>Einfölduð útgáfa</h3>
+<div style="page-break-after: always;"></div>
 </div>
 <div id="unnur-djúpúgða" class="section level1">
 <h1>1. Unnur djúpúgða</h1>
@@ -376,10 +442,11 @@ $(document).ready(function () {
 <p>Allt sama gerist þetta á <strong>víkingaöld</strong><a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a>. Þegar Ketill var drepinn ákvað Unnur að sigla til Íslands. Um það var talað að aldrei áður hefi kona náð að flýja frá sambærilegum aðstæðum með jafnmikið fé<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a> og margt fólk með sér og Unnur gerði þarna. Því er auðséð að Unnur hafi verið mikið afbragð annarra kvenna<a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a>.</p>
 <p>Fyrsta veturinn sinn á Íslandi dvaldi Unnur hjá Byrni bróður sínum, en Helgi hafði ekki viljað bjóða nema helmingnum af fólkinu sem Unnur var með sér að vera hjá sér.</p>
 <p>Vorið eftir fór Unnur vestur í Dali og nam þar land. Unnur byggði sér bæ í Hvammi en gaf ferðafélögum sínum land víða um Dali. Einn af ferðafélögum Unnar hét Kollur. Unnur átti son sem hét Þorsteinn og Þorsteinn átti dóttur sem hét Þorgerður. Þorgerður giftist Kolli og gaf Unnur þeim allan Laxárdal. Kollur var síðan kallaður Dala-Kollur.</p>
-<p>Yngsi sonur Þosteins hét Ólafur <strong>feilan</strong><a href="#fn6" class="footnote-ref" id="fnref6"><sup>6</sup></a>. Hann bjó hjá Unni í Hvammi. Þegar Unnur var orðin gömul og lasburða af elli sagði hún við Ólaf að nú væri kominn tími fyrir hann að eignast konu<a href="#fn7" class="footnote-ref" id="fnref7"><sup>7</sup></a>. Síðan var fundin kona handa Ólafi og haldin brúðkaupsveisla.</p>
+<p>Yngsti sonur Þosteins hét Ólafur <strong>feilan</strong><a href="#fn6" class="footnote-ref" id="fnref6"><sup>6</sup></a>. Hann bjó hjá Unni í Hvammi. Þegar Unnur var orðin gömul og lasburða af elli sagði hún við Ólaf að nú væri kominn tími fyrir hann að eignast konu<a href="#fn7" class="footnote-ref" id="fnref7"><sup>7</sup></a>. Síðan var fundin kona handa Ólafi og haldin brúðkaupsveisla.</p>
 <p>Allir skemmtu sér vel í veislunni og í henni tilkynnti Unnur að Ólafur skyldi nú fá að eiga bæ sinn á Hvammi með öllu sem því fygldi. Gestirnir höfðu orð á því að Unnur væri enn virðuleg.</p>
 <p>Unnur hafði það fyrir venju að fara ekki á fætur fyrr en um miðjan dag. Daginn eftir veisluna svaf hún þó svo lengi að Ólafur ákvað að kíkja á hana en þá var hún dáin.</p>
 <p>Ólafur feilan tók við búi í Hvammi og bjó þar til elli.</p>
+<div style="page-break-after: always;"></div>
 </div>
 <div id="höskulur-dala-kollsson-kaupir-ambátt" class="section level1">
 <h1>2. Höskulur Dala-Kollsson kaupir ambátt</h1>
@@ -398,6 +465,7 @@ $(document).ready(function () {
 <p class="caption"><em>Silfrið vigtað</em></p>
 </div>
 <p>Höskuldur kaupir því mállausu konuna og fer með henni heim í tjald sitt. Sagt er að þau hafi sofið saman um nóttina. Morguninn eftir lét Höskuldur konuna fá ný og góð kvenföt og var um talað að þau færu henni vel. Síðan fór Höskuldur með konunni að skipi sínu, hlóð það af timbri og sigldi til Íslands.</p>
+<div style="page-break-after: always;"></div>
 </div>
 <div id="melkorka" class="section level1">
 <h1>3. Melkorka</h1>
@@ -414,6 +482,7 @@ $(document).ready(function () {
 <p>Höskuldur gengur til þeirra og spyr konuna að nafni, segir að hún geti ekki lengur haldið því leyndu hver hún sé.</p>
 <p>Konan svarar og segist heita Melkorka. Höskuldur biður hana þá að segja hverra manna hún sé og svarar Melkorka að Mýrkjartan, konungur á Írlandi, sé faðir hennar. Hún segist hafa verið hertekin fimmtán vetra gömul.</p>
 <p>Höskuldur sagði Jórunni, konu sinni, fréttirnar og ekki varð hún betri við Melkorku eftir þetta. Eitt kvöldið var Jórunn að hátta og togaði Melkorka af henni sokkana og lagði þá á gólfið. Jórunn tók þá sokkana og sló Melkorku í höfuðið með þeim. Við það reiddist Melkorka og kýldi Jórunni í andlitið þannig blæddi úr nefi hennar. Höskuldur skildi þær í sundur en lét Melkorku fara burt með Ólaf í bústað uppi í Laxárdal. Þar byggði hún bæ og kallaði Melkorkustaði.</p>
+<div style="page-break-after: always;"></div>
 </div>
 <div id="ólafur-pái" class="section level1">
 <h1>4. Ólafur pái</h1>
@@ -428,6 +497,7 @@ $(document).ready(function () {
 <p class="caption"><em>Hringurinn sem Mekorka hafði fengið í tannfé og gaf Ólafi</em></p>
 </div>
 <p>Ólafur fékk til aukreitis við hringinn, hníf og belti sem hann átti að sýna fóstru Melkorku. Þá ætti engin vafi að vera á því hverra manna Ólafur væri. Eftir þetta hélt Ólafur á stað.</p>
+<div style="page-break-after: always;"></div>
 </div>
 <div id="írlandsför" class="section level1">
 <h1>5. Írlandsför</h1>
@@ -444,6 +514,54 @@ $(document).ready(function () {
 <p>Þegar skip Ólafs var ferðbúið<a href="#fn23" class="footnote-ref" id="fnref23"><sup>23</sup></a> fylgdi konungur honum til skips og gaf honum gullrekið spjót og sverð og mikið fé. Ólafur bað um að fá að flytja fóstru Melkorku með sér til Íslands en konungi þótti það óþarfi og varð hún eftir.</p>
 <p>Þegar Ólafur kom heim til Íslands tóku allir vel á móti honum. Melkorka spurði hann um ferðina, um föður sinn og hvort fóstra hennar væri á lífi. Ólafur sagði svo vera og spurði Melkorka þá hvers vegna hann hafi ekki tekið hana með sér til Íslands. Ólafur svaraði og sagði að það hefði ekki verið löngun Íranna að hann flytti fósturna með sér.</p>
 <p>Það á fannst að Melkorku var það mjög á móti skapi.</p>
+<div style="page-break-after: always;"></div>
+</div>
+<div id="bónorð-ólafs" class="section level1">
+<h1>6. Bónorð Ólafs</h1>
+<p>Vorið eftir lagði Höskuldur til við Ólaf að hann fyndi sér konu og tæki við búa fóstra síns á Goddastöðum. Ólafur sagðist lítið hafa hugsað um slík mál og vildi ekki kvænast hvaða konu sem er.</p>
+<p>Höskuldur sagði að maður sem héti Egill Skalla-Grímsson ætti dóttur sem héti Þorgerður og að þau byggju á Borg í Borgarfirði. Höskuldur lagði til að Ólafur kvæntist henni og sagði hana besta kvenkostinn í öllum Borgarfirði og þó að víðar væri leitað.</p>
+<p>Ólafur sagðist mundi fara að ráðum föður síns og að honum væri þetta <strong>ráð</strong><a href="#fn24" class="footnote-ref" id="fnref24"><sup>24</sup></a> að skapi, ef það tækist. Hins vegar sagði að Ólafur að honum mundi illa líka ef þetta mál væri borið upp og það síðan ekki takast.</p>
+<p>Höskuldur sagðist reikna með því að bónorðinu yrði tekið og Ólafur biður hann að ráða.</p>
+<p>Líður nú til Alþingis og leggja Höskuldur og Ólafur leið sína þangað. Egill Skalla-Grímsson var á þingi. Allir þeir sem sáu Ólaf höfðu orð á því að hann væri fríður og <strong>fyrirmannlegur</strong><a href="#fn25" class="footnote-ref" id="fnref25"><sup>25</sup></a>.</p>
+<p>Einn daginn ganga Höskuldur og Ólafur til fundar við Egil. Hann fagnar þeim feðgum og ber Höskuldur bónorðið undir hann fyrir hönd Ólafs og biður Þorgerðar. Hún var einnig stödd á þinginu.</p>
+<p>Egill tók þessu máli vel og sagðist hafa heyrt góða hluti um þá feðga. Hins vegar sagði Egill að þetta þyrfti að ræða við Þorgerði þar sem enginn myndi eignast hana fyrir eiginkonu án hennar vilja. Höskuldur bað Egil um að ræða þetta við dóttur sína og sagðist hann skyldu gera það.</p>
+<p>Egill ræddi við Þorgerði og sagði henni að Ólafur Höskuldsson, einhver frægasti maður sem nú er uppi hefur í gegnum föður sinn lýst yfir áhuga að kvænast henni. Þorgerður svarar: „Ég hef heyrt að þú unnir mér mest af börnum þínum en nú viltu gifta mig ambáttarsyni“. Egill segir henni frá móðurætt Ólafs, að hann sé dóttursonur Mýrkjartans Írakonungs, sé betur ættaður í móðurætt en föðurætt og væri þó föðurættin fullboðleg.</p>
+<p>Ekki féllst Þorgerður á þetta.</p>
+<p>Daginn eftir kemur Egill til Höskulds og spyr Höskuldur hvernig samtalið um bónorðið hafi farið. Egill segir honum það.</p>
+<p>Eftir að Egill er farinn kemur Ólafur til Höskulds og spyr hvernig bónorðsmál hafa farið og segir Höskuldur þau ganga illa. Ólafur minnir föður sinn á að honum mundi illa líka það að fá svívirðingu af þessu bónorði og að hann hafi fengið að ráða því að það yrði borið upp. Nú myndi Ólafur hins vegar ráða því að það skyldi ekki falla niður og lagði til að ganga strax á fund Egils.</p>
+<p>Ólafur var í <strong>skarlatsklæðum</strong><a href="#fn26" class="footnote-ref" id="fnref26"><sup>26</sup></a> sem Haraldur Noregskonungur hafði gefið honum. Hann hafði gullroðinn hjálm á höfði og sverðið sem Mýrkjartan konungur hafði gefið honum í hendi sér. Þegar feðgarnir koma til Egils tekur hann vel á móti þeim. Höskuldur sest hjá Agli en Ólafur litaðist um.</p>
+<p>Ólafur sá að kona sat á palli í búðinniI<a href="#fn27" class="footnote-ref" id="fnref27"><sup>27</sup></a> og þóttist vita að að það væri Þorgerður. Ólafur sest hjá henni og segir svo: „Mun þér þykja djarfur gerast ambáttarsonurinn, er hann þorir að sitja hér og tala við þig.“ Þorgerður svarar og telur hanna hafa gert meiri afreksverk en að tala við konur.</p>
+<div class="figure">
+<img src="images/Laxdæla/frabok/k6-1.png" width="200" alt="" />
+<p class="caption"><em>Ólafur talar við Þorgerði</em></p>
+</div>
+<p>Ólafur og Þorgerður tala saman allan þann dag og ekki heyrðu menn um hvað þau töluðu. Áður en þau skildust að kölluðu þau á Egil og Höskuld. Var þá aftur farið að ræða um bónorðið en nú vill Þorgerður láta föður sinn ráða. Þá var málið auðsótt<a href="#fn28" class="footnote-ref" id="fnref28"><sup>28</sup></a> og var ákveðið að halda brúðkaup þeirra Ólafs og Þorgerðar næsta sumar. Brúðkaupsveislan var stórfengleg og voru gestir leystir út með gjöfum. Þá gaf Ólafur Agli sverðið góða sem Mýrkjartan hafði gefið honum og varð Egill léttur á brún við gjöfina<a href="#fn29" class="footnote-ref" id="fnref29"><sup>29</sup></a>.</p>
+<div style="page-break-after: always;"></div>
+</div>
+<div id="kjartan-og-bolli" class="section level1">
+<h1>7. Kjartan og Bolli</h1>
+<p>Vorið eftir að Ólafur og Þorgerður giftust tóku þau við búi á Goddastöðum. En skömmu seinna keypti Ólafur jörð sem hafði lagst í eyði vegna draugagangs. Þar var fallegt land og gott til búskapar, miklar laxveiðar og skógur. Ólafur byggði þar nýjan bæ.</p>
+<p>Ólafur kallaði bæ sinn Hjarðarholt og þar bjuggu Þorgerður góðu búi og var Ólafur manna vinsælastur.</p>
+<p>Höskuldur átti tvo syni með Jórunni konu sinni, Þorleik og Bárð. Þegar Höskuldur var orðinn gamall veiktist hann og þóttist vita að hann myndi fljótt deyja úr veikindum. Hann kallaði Þorleik og Bárð til sín og sagðist vilja skipta arfi sínum. Á þessum tíma voru lög um að synir sem fæddir voru í hjónaband fengu allan arf eftir föður sinn. Þorleikur og Bárður áttu því einir að erfa Höskuld en Höskuldur vildi að þeir leyfðu Ólafi fá arf eins og þeir, þó hann væri fæddur utan hjónabands. Bárður tók því vel en Þorleikur ekki og sagði Ólaf nógu auðugan fyrir.</p>
+<p>Þá sagðist Höskuldur að minnsta kosti mega gera það sem leyft væri í lögum, það er að hann gæfi Ólafi tólf aura. Þorleikur hélt að hann væri að tala um tólf aura silfurs og féllst á það, enda var það löglegt. Hins vegar lét Höskuldur taka gullhring og sverð sem hvort tveggja var jafngilt <strong>tólf aurum</strong><a href="#fn30" class="footnote-ref" id="fnref30"><sup>30</sup></a> af gulli og gaf Ólafi syni sínum.</p>
+<p>Þorleiki fannst faðir sinn hafa svikið sig. En Ólafur neitaði að láta hann fá hringinn eða sverðið, því að Þorleikur hefði leyft það í votta viðurvist<a href="#fn31" class="footnote-ref" id="fnref31"><sup>31</sup></a> að hann fengi tólf aura. Eftir þetta <strong>andaðist</strong><a href="#fn32" class="footnote-ref" id="fnref32"><sup>32</sup></a> Höskuldur.</p>
+<p>Eftir dauða Höskulds kom Ólafur að máli við Þorleik og vildi sættast við hann. Ólafur bauðst til þess að fóstra son Þorleiks en sá er kallaður minni maður sem fóstrar börn annarra.</p>
+<p>Þorleikur tók þessari sáttartilraun Ólafs vel og úr varð að Bolli sonur Þorleiks fór í fóstur að Hjarðarholti þriggja vetra gamall. Þorgerður, kona Ólafs, tók vel við Bolla og unnu þau Ólafur honum ekki minna en sínum börnum<a href="#fn33" class="footnote-ref" id="fnref33"><sup>33</sup></a>. Ólafur og Þorgerður eignuðust dóttur sem var nefnd Þuríður. Síðan eignuðust þau son sem var gefið nafnið Kjartan í höfuðið á Mýrkjartani, langaafa sínum.</p>
+<p>Þegar Kjartan óx upp þótti hann allra manna fríðastur. Hann var laglegur og ljós yfirlitum. Hann hafði mikið og fagurt hár sem var eins og silki, var stór maður og sterkur, rétt eins og Egill móðurfaðir (afi) hans hafði verið. Hann var líka góður <em>vígamaður</em><a href="#fn34" class="footnote-ref" id="fnref34"><sup>34</sup></a>, <em>hagur</em><a href="#fn35" class="footnote-ref" id="fnref35"><sup>35</sup></a> og allra manna best syndur og vel fær í öllum íþróttum.</p>
+<p>Bolli Þorleiksson var líka efnilegur maður og gekk Kjartani næst í öllum íþróttum, fríður og mikill skartsmaður<a href="#fn36" class="footnote-ref" id="fnref36"><sup>36</sup></a>.</p>
+<p>Kjartan og Bolli voru jafngamlir og urðu mikilir vinir.</p>
+<div style="page-break-after: always;"></div>
+</div>
+<div id="sverðið-fótbítur" class="section level1">
+<h1>8. Sverðið Fótbítur</h1>
+<p>Þegar Ólafur og Þorgerður höðu búið lengi í Hjarðarholti vildi Ólafur fara til útlanda. Þorgerður var ekki alsátt með það en Ólafur sagðist vilja ráða. Hann keypti skip og sigldi til Noregs. Þar bjó hann hjá manni sem hét Geirmundur. Geirmundur var mikill víkingur og ekki vinsæll. Um veturinn sagði Ólafur Geirmundi að hann vildi verða sér úti um timbur fyrir nýjan skála í Hjarðarholti. Geirmundur sagði að Hákon jarl, sem þá réði yfir Noregi, ætti besta skóg í landinu og mundi taka vel við Ólafi því að hann væri af stórum ættum.</p>
+<p>Ólafur fór til jarls og fékk að höggva tré eins og hann vildi. En þegar hann kom til baka til Geirmundar hafði Geirmundur ákveðið að koma með honum til Íslands og hafði þegar fært allar sínar eigur á skip Ólafs.</p>
+<p>Ólafur var ekki alsáttur með það en leyfði Geirmundi þó koma með til Íslands.</p>
+<div class="figure">
+<img src="images/Laxdæla/frabok/k8-1.png" width="200" alt="" />
+<p class="caption"><em>Sverðið Fótbítur</em></p>
+</div>
+<div style="page-break-after: always;"></div>
 </div>
 <div id="heimildir" class="section level1">
 <h1>Heimildir</h1>
@@ -479,11 +597,26 @@ $(document).ready(function () {
 <li id="fn21"><p>herská hersveit er hersveit sem er fús til að stunda ófrið<a href="#fnref21" class="footnote-back">↩︎</a></p></li>
 <li id="fn22"><p>þ.e., bað hann um að ákveða það<a href="#fnref22" class="footnote-back">↩︎</a></p></li>
 <li id="fn23"><p>ferðbúið merkir að það sé tilbúið til ferðar<a href="#fnref23" class="footnote-back">↩︎</a></p></li>
+<li id="fn24"><p><strong>ráð</strong> merkir <em>hér</em> gifting<a href="#fnref24" class="footnote-back">↩︎</a></p></li>
+<li id="fn25"><p><strong>fyrirmannlegur</strong> merkir glæsilegur, höfðingjalegur<a href="#fnref25" class="footnote-back">↩︎</a></p></li>
+<li id="fn26"><p><strong>skarlatsklæði</strong> eru föt úr lituðu efni, oftast rauð.<a href="#fnref26" class="footnote-back">↩︎</a></p></li>
+<li id="fn27"><p>búðir voru bráðabirgðahúsnæði sem goðarnir komu sér upp á þingstöðum og dvöldu í meðan þingið stóð yfir.<a href="#fnref27" class="footnote-back">↩︎</a></p></li>
+<li id="fn28"><p>eitthvað sem er <strong>auðsótt</strong> fæst auðveldlega, er alveg sjálfsagt<a href="#fnref28" class="footnote-back">↩︎</a></p></li>
+<li id="fn29"><p>sá sem er léttur í brún er glaður í bragði<a href="#fnref29" class="footnote-back">↩︎</a></p></li>
+<li id="fn30"><p>tólf aurar eru um það bil 324 grömm, en einn eyrir var um 27 grömm.<a href="#fnref30" class="footnote-back">↩︎</a></p></li>
+<li id="fn31"><p>í viðurvist votta (stundum sagt vitna í stað votta) merkir að einhver heyrði til eða sá hvað fór fram. Sem sagt, það er einhver sem var vottur af samskiptum Höskulds og Þorleiks um þetta mál.<a href="#fnref31" class="footnote-back">↩︎</a></p></li>
+<li id="fn32"><p>að <strong>andast</strong> merkir að deyja/látast<a href="#fnref32" class="footnote-back">↩︎</a></p></li>
+<li id="fn33"><p>þeim þótti ekki minna vænt um hann<a href="#fnref33" class="footnote-back">↩︎</a></p></li>
+<li id="fn34"><p><em>vígamaður</em> er maður sem er hluti af vopnaðri sveit sem ræðst á fólk og drepur það<a href="#fnref34" class="footnote-back">↩︎</a></p></li>
+<li id="fn35"><p>maður sem er <em>hagur</em> er góður smiður, verklaginn<a href="#fnref35" class="footnote-back">↩︎</a></p></li>
+<li id="fn36"><p>skart eru fín föt, spariföt<a href="#fnref36" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
 
 
 
+</div>
+</div>
 
 </div>
 
@@ -516,6 +649,35 @@ $(document).ready(function () {
 
 <!-- code folding -->
 
+<script>
+$(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

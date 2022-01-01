@@ -2,22 +2,24 @@
 title: "Laxdæla Saga"
 output:
   html_document:
-  # pagedown::html_paged: til að prenta út, af-commenta þessa línu
+  # til að prenta út, af-commenta þessa línu
+  # pagedown::html_paged: 
     theme: flatly
     css: default.css
     toc: yes
-    # toc_float: yes
+    toc_float: yes
     self_contained: false
 bibliography: heimildir.bib
 citation-style: APA7isl.csl
-# knit: pagedown::chrome_print - til að búa til pdf - afkommenta þessa línu
+# knit: pagedown::chrome_print 
+# - til að búa til pdf - afkommenta þessa línu
 ---
 
 
 
-### Styttri útgáfa
+### Einfölduð útgáfa
 
-
+\newpage
 # 1. Unnur djúpúgða
 
 Ketill flatnefur var höfðingi í Noregi en þegar Haraldur konungur hárfagri tók yfir völd ákvað Ketill að flýja land með fjölskyldu sinni. Hann vildi nefnilega ekki verða undirmaður Haralds. 
@@ -40,7 +42,7 @@ Fyrsta veturinn sinn á Íslandi dvaldi Unnur hjá Byrni bróður sínum, en Hel
 Vorið eftir fór Unnur vestur í Dali og nam þar land. Unnur byggði sér bæ í Hvammi en gaf ferðafélögum sínum land víða um Dali. Einn af ferðafélögum Unnar hét Kollur. Unnur átti son sem hét Þorsteinn og Þorsteinn átti dóttur sem hét Þorgerður. Þorgerður giftist Kolli og gaf Unnur þeim allan Laxárdal. Kollur var síðan kallaður Dala-Kollur.
 
 
-Yngsi sonur Þosteins hét Ólafur **feilan**^[**feilan** merkir ylfingur, úlfshvolpur]. Hann bjó hjá Unni í Hvammi. Þegar Unnur var orðin gömul og lasburða af elli sagði hún við Ólaf að nú væri kominn tími fyrir hann að eignast konu^[giftast konu væri mögulega betra orðalag.<br>Þetta er valið í samræmi við bókina @Laxdaela2017]. Síðan var fundin kona handa Ólafi og haldin brúðkaupsveisla. 
+Yngsti sonur Þosteins hét Ólafur **feilan**^[**feilan** merkir ylfingur, úlfshvolpur]. Hann bjó hjá Unni í Hvammi. Þegar Unnur var orðin gömul og lasburða af elli sagði hún við Ólaf að nú væri kominn tími fyrir hann að eignast konu^[giftast konu væri mögulega betra orðalag.<br>Þetta er valið í samræmi við bókina @Laxdaela2017]. Síðan var fundin kona handa Ólafi og haldin brúðkaupsveisla. 
 
 
 Allir skemmtu sér vel í veislunni og í henni tilkynnti Unnur að Ólafur skyldi nú fá að eiga bæ sinn á Hvammi með öllu sem því fygldi. Gestirnir höfðu orð á því að Unnur væri enn virðuleg.
@@ -51,7 +53,7 @@ Unnur hafði það fyrir venju að fara ekki á fætur fyrr en um miðjan dag. D
 
 Ólafur feilan tók við búi í Hvammi og bjó þar til elli.
 
-
+\newpage
 # 2. Höskulur Dala-Kollsson kaupir ambátt
 
 Dala-Kollur og Þorgerður Þorsteinsdóttir áttu son sem hét Höskuldur. Hann átti konu sem hét Jórunn og tók Höskuldur við búi í Laxárdal eftir föður sinn. Bær þeirra hét Höskuldsstaðir. Jórunn og Höskuldur eignuðust fjögur börn saman.
@@ -81,7 +83,7 @@ Gilli kemur þar næst með vogina og kemur í ljós að Höskuldur er með þrj
 
 Höskuldur kaupir því mállausu konuna og fer með henni heim í tjald sitt. Sagt er að þau hafi sofið saman um nóttina. Morguninn eftir lét Höskuldur konuna fá ný og góð kvenföt og var um talað að þau færu henni vel. Síðan fór Höskuldur með konunni að skipi sínu, hlóð það af timbri og sigldi til Íslands.
 
-
+\newpage
 # 3. Melkorka
 
 
@@ -114,7 +116,7 @@ Konan svarar og segist heita Melkorka. Höskuldur biður hana þá að segja hve
 
 Höskuldur sagði Jórunni, konu sinni, fréttirnar og ekki varð hún betri við Melkorku eftir þetta. Eitt kvöldið var Jórunn að hátta og togaði Melkorka af henni sokkana og lagði þá á gólfið. Jórunn tók þá sokkana og sló Melkorku í höfuðið með þeim. Við það reiddist Melkorka og kýldi Jórunni í andlitið þannig blæddi úr nefi hennar. Höskuldur skildi þær í sundur en lét Melkorku fara burt með Ólaf í bústað uppi í Laxárdal. Þar byggði hún bæ og kallaði Melkorkustaði.
 
-
+\newpage
 # 4. Ólafur pái
 
 Þegar Ólafur var sjö vetra gamall fór hann í fóstur til auðugs bónda sem var kallaður Þórður **goddi**^[alls óljóst hvað **goddi** merkir en hefur þó verið skýrt sem *litli goðinn*] og bjó á Goddastöðum.
@@ -139,7 +141,7 @@ Um sumarið er Höskuldur að gera sig tilbúinn til að fara til Alþingis og b
 
 Ólafur fékk til aukreitis við hringinn, hníf og belti sem hann átti að sýna fóstru Melkorku. Þá ætti engin vafi að vera á því hverra manna Ólafur væri. Eftir þetta hélt Ólafur á stað.
 
-
+\newpage
 # 5. Írlandsför
 
 
@@ -180,7 +182,102 @@ Síðari hluta vetrar kallaði konungur saman þing og hélt þar ræðu. Hann s
 
 Það á fannst að Melkorku var það mjög á móti skapi.
 
+\newpage
+# 6. Bónorð Ólafs
 
+
+Vorið eftir lagði Höskuldur til við Ólaf að hann fyndi sér konu og tæki við búa fóstra síns á Goddastöðum. Ólafur sagðist lítið hafa hugsað um slík mál og vildi ekki kvænast hvaða konu sem er.
+
+
+Höskuldur sagði að maður sem héti Egill Skalla-Grímsson ætti dóttur sem héti Þorgerður og að þau byggju á Borg í Borgarfirði. Höskuldur lagði til að Ólafur kvæntist henni og sagði hana besta kvenkostinn í öllum Borgarfirði og þó að víðar væri leitað.
+
+
+Ólafur sagðist mundi fara að ráðum föður síns og að honum væri þetta **ráð**^[**ráð** merkir *hér* gifting] að skapi, ef það tækist. Hins vegar sagði að Ólafur að honum mundi illa líka ef þetta mál væri borið upp og það síðan ekki takast. 
+
+
+Höskuldur sagðist reikna með því að bónorðinu yrði tekið og Ólafur biður hann að ráða.
+
+
+Líður nú til Alþingis og leggja Höskuldur og Ólafur leið sína þangað. Egill Skalla-Grímsson var á þingi. Allir þeir sem sáu Ólaf höfðu orð á því að hann væri fríður og **fyrirmannlegur**^[**fyrirmannlegur** merkir glæsilegur, höfðingjalegur]. 
+
+
+Einn daginn ganga Höskuldur og Ólafur til fundar við Egil. Hann fagnar þeim feðgum og ber Höskuldur bónorðið undir hann fyrir hönd Ólafs og biður Þorgerðar. Hún var einnig stödd á þinginu.
+
+
+Egill tók þessu máli vel og sagðist hafa heyrt góða hluti um þá feðga. Hins vegar sagði Egill að þetta þyrfti að ræða við Þorgerði þar sem enginn myndi eignast hana fyrir eiginkonu án hennar vilja. Höskuldur bað Egil um að ræða þetta við dóttur sína og sagðist hann skyldu gera það.
+
+
+Egill ræddi við Þorgerði og sagði henni að Ólafur Höskuldsson, einhver frægasti maður sem nú er uppi hefur í gegnum föður sinn lýst yfir áhuga að kvænast henni. Þorgerður svarar: „Ég hef heyrt að þú unnir mér mest af börnum þínum en nú viltu gifta mig ambáttarsyni“. Egill segir henni frá móðurætt Ólafs, að hann sé dóttursonur Mýrkjartans Írakonungs, sé betur ættaður í móðurætt en föðurætt og væri þó föðurættin fullboðleg.
+
+Ekki féllst Þorgerður á þetta.
+
+
+Daginn eftir kemur Egill til Höskulds og spyr Höskuldur hvernig samtalið um bónorðið hafi farið. Egill segir honum það.
+
+
+Eftir að Egill er farinn kemur Ólafur til Höskulds og spyr hvernig bónorðsmál hafa farið og segir Höskuldur þau ganga illa. Ólafur minnir föður sinn á að honum mundi illa líka það að fá svívirðingu af þessu bónorði og að hann hafi fengið að ráða því að það yrði borið upp. Nú myndi Ólafur hins vegar ráða því að það skyldi ekki falla niður og lagði til að ganga strax á fund Egils.
+
+
+Ólafur var í **skarlatsklæðum**^[**skarlatsklæði** eru föt úr lituðu efni, oftast rauð.] sem Haraldur Noregskonungur hafði gefið honum. Hann hafði gullroðinn hjálm á höfði og sverðið sem Mýrkjartan konungur hafði gefið honum í hendi sér. Þegar feðgarnir koma til Egils tekur hann vel á móti þeim. Höskuldur sest hjá Agli en Ólafur litaðist um.
+
+
+Ólafur sá að kona sat á palli í búðinniI^[búðir voru bráðabirgðahúsnæði sem goðarnir komu sér upp á þingstöðum og dvöldu í meðan þingið stóð yfir.] og þóttist vita að að það væri Þorgerður. Ólafur sest hjá henni og segir svo: „Mun þér þykja djarfur gerast ambáttarsonurinn, er hann þorir að sitja hér og tala við þig.“ Þorgerður svarar og telur hanna hafa gert meiri afreksverk en að tala við konur.
+
+
+![*Ólafur talar við Þorgerði*](images/Laxdæla/frabok/k6-1.png){width=200px}
+
+
+Ólafur og Þorgerður tala saman allan þann dag og ekki heyrðu menn um hvað þau töluðu. Áður en þau skildust að kölluðu þau á Egil og Höskuld. Var þá aftur farið að ræða um bónorðið en nú vill Þorgerður láta föður sinn ráða. Þá var málið auðsótt^[eitthvað sem er **auðsótt** fæst auðveldlega, er alveg sjálfsagt] og var ákveðið að halda brúðkaup þeirra Ólafs og Þorgerðar næsta sumar. Brúðkaupsveislan var stórfengleg og voru gestir leystir út með gjöfum. Þá gaf Ólafur Agli sverðið góða sem Mýrkjartan hafði gefið honum og varð Egill léttur á brún við gjöfina^[sá sem er léttur í brún er glaður í bragði].
+
+\newpage
+# 7. Kjartan og Bolli
+
+
+Vorið eftir að Ólafur og Þorgerður giftust tóku þau við búi á Goddastöðum. En skömmu seinna keypti Ólafur jörð sem hafði lagst í eyði vegna draugagangs. Þar var fallegt land og gott til búskapar, miklar laxveiðar og skógur. Ólafur byggði þar nýjan bæ. 
+
+
+Ólafur kallaði bæ sinn Hjarðarholt og þar bjuggu Þorgerður góðu búi og var Ólafur manna vinsælastur.
+
+
+Höskuldur átti tvo syni með Jórunni konu sinni, Þorleik og Bárð. Þegar Höskuldur var orðinn gamall veiktist hann og þóttist vita að hann myndi fljótt deyja úr veikindum. Hann kallaði Þorleik og Bárð til sín og sagðist vilja skipta arfi sínum. Á þessum tíma voru lög um að synir sem fæddir voru í hjónaband fengu allan arf eftir föður sinn. Þorleikur og Bárður áttu því einir að erfa Höskuld en Höskuldur vildi að þeir leyfðu Ólafi fá arf eins og þeir, þó hann væri fæddur utan hjónabands. Bárður tók því vel en Þorleikur ekki og sagði Ólaf nógu auðugan fyrir.
+
+
+Þá sagðist Höskuldur að minnsta kosti mega gera það sem leyft væri í lögum, það er að hann gæfi Ólafi tólf aura. Þorleikur hélt að hann væri að tala um tólf aura silfurs og féllst á það, enda var það löglegt. Hins vegar lét Höskuldur taka gullhring og sverð sem hvort tveggja var jafngilt **tólf aurum**^[tólf aurar eru um það bil 324 grömm, en einn eyrir var um 27 grömm.] af gulli og gaf Ólafi syni sínum.
+
+
+Þorleiki fannst faðir sinn hafa svikið sig. En Ólafur neitaði að láta hann fá hringinn eða sverðið, því að Þorleikur hefði leyft það í votta viðurvist^[í viðurvist votta (stundum sagt vitna í stað votta) merkir að einhver heyrði til eða sá hvað fór fram. Sem sagt, það er einhver sem var vottur af samskiptum Höskulds og Þorleiks um þetta mál.] að hann fengi tólf aura. Eftir þetta **andaðist**^[að **andast** merkir að deyja/látast] Höskuldur.
+
+
+Eftir dauða Höskulds kom Ólafur að máli við Þorleik og vildi sættast við hann. Ólafur bauðst til þess að fóstra son Þorleiks en sá er kallaður minni maður sem fóstrar börn annarra. 
+
+
+Þorleikur tók þessari sáttartilraun Ólafs vel og úr varð að Bolli sonur Þorleiks fór í fóstur að Hjarðarholti þriggja vetra gamall. Þorgerður, kona Ólafs, tók vel við Bolla og unnu þau Ólafur honum ekki minna en sínum börnum^[þeim þótti ekki minna vænt um hann]. Ólafur og Þorgerður eignuðust dóttur sem var nefnd Þuríður. Síðan eignuðust þau son sem var gefið nafnið Kjartan í höfuðið á Mýrkjartani, langaafa sínum. 
+
+
+Þegar Kjartan óx upp þótti hann allra manna fríðastur. Hann var laglegur og ljós yfirlitum. Hann hafði mikið og fagurt hár sem var eins og silki, var stór maður og sterkur, rétt eins og Egill móðurfaðir (afi) hans hafði verið. Hann var líka góður *vígamaður*^[*vígamaður* er maður sem er hluti af vopnaðri sveit sem ræðst á fólk og drepur það], *hagur*^[maður sem er *hagur* er góður smiður, verklaginn] og allra manna best syndur og vel fær í öllum íþróttum. 
+
+
+Bolli Þorleiksson var líka efnilegur maður og gekk Kjartani næst í öllum íþróttum, fríður og mikill skartsmaður^[skart eru fín föt, spariföt]. 
+
+
+Kjartan og Bolli voru jafngamlir og urðu mikilir vinir.
+
+\newpage
+# 8. Sverðið Fótbítur
+
+Þegar Ólafur og Þorgerður höðu búið lengi í Hjarðarholti vildi Ólafur fara til útlanda. Þorgerður var ekki alsátt með það en Ólafur sagðist vilja ráða. Hann keypti skip og sigldi til Noregs. Þar bjó hann hjá manni sem hét Geirmundur. Geirmundur var mikill víkingur og ekki vinsæll. Um veturinn sagði Ólafur Geirmundi að hann vildi verða sér úti um timbur fyrir nýjan skála í Hjarðarholti. Geirmundur sagði að Hákon jarl, sem þá réði yfir Noregi, ætti besta skóg í landinu og mundi taka vel við Ólafi því að hann væri af stórum ættum.
+
+
+Ólafur fór til jarls og fékk að höggva tré eins og hann vildi. En þegar hann kom til baka til Geirmundar hafði Geirmundur ákveðið að koma með honum til Íslands og hafði þegar fært allar sínar eigur á skip Ólafs.
+
+
+Ólafur var ekki alsáttur með það en leyfði Geirmundi þó koma með til Íslands.
+
+![*Sverðið Fótbítur*](images/Laxdæla/frabok/k8-1.png){width=200px}
+
+
+
+\newpage
 # Heimildir
 
 <div id="refs"></div>
