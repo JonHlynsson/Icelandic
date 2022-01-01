@@ -2,13 +2,13 @@
 title: "Laxdæla Saga"
 output:
   html_document:
-  # til að prenta út, af-commenta þessa línu
-  # pagedown::html_paged: 
+    # til að prenta út, af-commenta þessa línu
+    # pagedown::html_paged: 
     theme: flatly
     css: default.css
     toc: yes
     toc_float: yes
-    self_contained: false
+    self_contained: true
 bibliography: heimildir.bib
 citation-style: APA7isl.csl
 # knit: pagedown::chrome_print 
@@ -18,6 +18,15 @@ citation-style: APA7isl.csl
 
 
 ### Einfölduð útgáfa
+
+Þetta skjal er tilraun mín til þess að einfalda málfar í bókinni @Laxdaela2017. Skjal þetta er skapað með það að leiðarljósi að gera söguna enn aðgengilegri en hún þegar er. 
+
+
+**Yfirlýsing**: Texti þessi er ætlaður nemendum í íslenskri móðurmálskennslu og **ekki** ætlaður til dreifingar. Enn fremur er þessum texta **ekki** ætlað að skyggja á útgáfu bókarinnar sem aðgengileg er á vefsvæði Menntamálastofnunar. Allur höfundarréttur liggur hjá útgefanda bókarinnar en ekki hjá mér.
+
+
+Kveðja, Jón Ingi Hlynsson
+
 
 \newpage
 # 1. Unnur djúpúgða
@@ -271,9 +280,136 @@ Kjartan og Bolli voru jafngamlir og urðu mikilir vinir.
 Ólafur fór til jarls og fékk að höggva tré eins og hann vildi. En þegar hann kom til baka til Geirmundar hafði Geirmundur ákveðið að koma með honum til Íslands og hafði þegar fært allar sínar eigur á skip Ólafs.
 
 
-Ólafur var ekki alsáttur með það en leyfði Geirmundi þó koma með til Íslands.
+Ólafur var ekki alsáttur með það en leyfði Geirmundi þó koma með til Íslands og bauð Geirmundi að búa hjá sér. Geirmundur átti gott sverð með **hjöltum**^[**hjalt** er handhlíf á sverði] úr rostungstönn. Þetta sverð kallaði hann Fótbít og var hann ávallt með sverðið með sér.
+
+
+Geirmundur hafði ekki verið lengi í Hjarðarholti þegar hann bað Þuríðar, dóttur Ólafs og Þorgerðar. Svo fór að þau gengu að eiga hvort annað en kom þó ekki vel saman. Þuríður og Geirmundur bjuggu saman í þrjú ár en þá vildi hann fara til baka til Noregs. Hann sagði Þuríði að vera eftir með eins árs dóttur þeirra sem hét Gróa. Geirmundur vildi ekki skilja neitt fé eftir í **meðgjöf**^[**meðgjöf** merkir meðlag, það sem er greitt með barni til að kosta uppeldi þess.]. Þetta líkaði Þuríði og Þorgerði illa en Ólafur var sáttfús og vildi fallast á að barnið yrði eftir.
+
+
+Geirmundur hafði áætlað að sigla til Noregs en áður en hann kemst frá Íslandi tók Þuríður til sinna ráða og fékk með sér **húskarla**^[**húskarlar** voru frjálsir vinnumenn] Ólafs til að róa með sig og Gróu, dóttur sína, að skipi Geirmundar. Þetta gerðist snemma morguns svo allir voru sofandi. Þuríður bað húskarlana að róa að skipi Geirmundar og bora göt í það. Þar næst fór Þuríður um borð í skipið með Gróu með sér og gekk þar sem Geirmundur svaf, setti barnið í svefnpokann hjá honum og tók sverðið Fótbót sem lá hjá honum.
+
+
+Stúlkubarnið fór að gráta og við það vaknar Geirmundur. Hann spratt upp og þreifaði eftir sverðinu en fann það ekki. Geirmundur sér Þuríði og föruneyti hennar fara á brott og kallar Geirmundur til Þuríðar og biður hana um að skila sverðinu og taka við stúlkunni. Hún neitar því. 
+
+
+Geirmundur segir þá við Þuríði að sverðið muni verða þeim manni að bana sem mestur er skaði að. Geirmundur leggur því nokkurs konar álög á sverðið en Þuríður kippir sér lítið upp við það. Geirmundur og öll hans áhöfn farast^[láta lífið/deyja] þegar að Noregslandi er komið. Þuríður fer heim í Hjarðarholt og gefur Bolla Fótbít og bar Bolli sverðið lengi.
+
 
 ![*Sverðið Fótbítur*](images/Laxdæla/frabok/k8-1.png){width=200px}
+
+
+Seinna giftist Þuríður manni sem hét Guðmundur Sölmundarson og bjó í ásbjarnarnesi norður í Víðidal í Húnaþingi.
+
+
+\newpage
+# 9. Draumar Guðrúnar Ósvífursdóttur
+
+
+Í Sælingsdal í Dölum bjuggu hjón sem hétu Ósvífur og Þórdís. Þau áttu mörg börn en elst þeirra var stúlka sem hét Guðrún. Hún var falleg og **skjartgjörn**^[**skartgjörn** merkir að hún hafi gaman af að bera fallega skartgripi] og kunni vel að koma fyrir sig orði. 
+
+
+Einsu sinni, þegar Guðrún var þrettán eða fjórtán ára gömul, hitti hún mann við Snælingsdalslaud sem hét Gestur Oddleifsson. Hann var talinn vitur maður og bað Guðrún hann um að ráða í fjóra einkennilega drauma sem hana hafði dreymt um veturinn. Gestur bað hana að segja draumana.
+
+Fyrsta draumnum lýsti Guðrún sem svo að hún væri úti við læk með **krókfald**^[**krókfaldur** er höfuðfat sem konur báru fyrr á tímum, húfa með krók upp úr.] á höfðinu. Guðrúnu þótti hann fara sér illa og vildi breyta honum en margir töluðu um að hún skyldi ekki gera það. Guðrún hlýddi því ekki og kastaði honum út í lækinn. Var sá draumur ekki lengri.
+
+
+Öðrum draumnum lýsti Guðrún sem svo að hún væri stödd við vatn og upplifði silfurhring vera á hönd sinni sem hún þóttist eiga. Henni þótti hringurinn mikil gersemi og ætlaði sér að eiga hann lengi, en þegar hún átti sís von á því rann hringurinn af hendinni og í vatnið. Guðrún sá hringinn aldrei aftur og var sá draumur ekki lengri.
+
+
+Þá lýsti Guðrún þriðja draumnum sem svo að hún hefði gullhring á hendi sér sem hún þóttist eiga og bætti fyrir tapið á silfurhringnum. Hins vegar, þegar Guðrún studdi sig með hendinni við stein brotnaði gullhringurinn í tvennt og fór að **dreyra**^[**dreyra** merkir að blæða] úr honum. Guðrún hugsaði með sér að mögulega væri hringurinn óskemmdur ef hún hefði passað sig betur. Var sá draumur ekki lengri.
+
+
+Að lokum lýsti Guðrún fjórða draumnum en þar hafði hún hjálm úr gulli á höfði sér. Henni þótti hjálmurinn þó nokkuð þungur og hallaðist höfuðið undan þunganum. Guðrún hafði ekki hugsað sér að kenna hjálminum um þungan og vildi sannarlega ekki losa sig við hann. En þegar Guðrún var á ferð um Hvammsfjörð rann hjálmurinn af höfði hennar og út í fjörðinn. Var sá draumur ekki lengri.
+
+
+Gestur hófst handa við að ráða í draumana og sagði þá alla þýða það sama. Hún myndi eignast fjóra menn. Þann fyrsta myndi hún skilja við, því hún kastaði faldinum í vatnið. Silfurhringurinn táknaði mann sem mundi drukkna og gullhringurinn mann sem yrði *veginn með vopnum*^[þýðir að vera drepinn með vopni, t.d. sverði.]. Gestur sagði að fjórði maður hennar yrði mestur höfðingi þeirra allra og passa hana vel en þar sem hjálmurinn steyptist^[rann út í fjörðin] út í Hvammsfjörð, mundi fjórði maður hennar drukkna þar.
+
+
+Guðrún þakkaði Gesti fyrir að ráða draumana og sagði „**Mikið er til að hyggja**^[**Mikið er til að hyggja** merkir að það séu mikil tíðindi í vændum], ef þetta á allt að ganga eftir.“
+
+\newpage
+# 10. Fyrsta hjónaband Guðrúnar
+
+Þegar Guðrún var fimmtán ára gömul, gifti Ósvífur hana manni sem hét Þorvaldur. Þorvaldur var auðugur maður en engin hetja og voru forsendur hjónabandsins að hann skyldi kaupa fyrir Guðrúnu allt það sem hún óskaði eftir. Hins vegar var Guðrún ekki spurð um hvað hana langaði og gladdi fyrirhugað hjónaband hana ekki. Þó lét hún undan og giftist Þorvaldi.
+
+
+Guðrún og Þorvaldur bjuggu saman í Garpsdal og var Guðrún kröfuhörð og heimtaði að hann keypti handa sér alla bestu skartgripi sem hún vissi um á Vestfjörðum. Eitt skipti bað hún Þorvald að kaupa einhvern grip handa sér en þá sagði hann að hún kynni sér ekkert hóf og sló hana í andlitið.
+
+Þá sagði Guðrún hann hafa gefið sér það sem konum þyki miklu skipta, en það er gott **litaraft**^[**litaraft** merkir litsháttur í andliti - Þorvaldur sló hana og fyrir vikið varð hún rauð í andliti].
+
+
+Sama kvöld kom maður sem hét Þórður Ingunnarson að Garpsdal. Guðrún þekkti Þórð vel, en hann kom frá Hóli í Saurbæ. Hún spurði hann hvernig best væri að **launa**^[að **launa** merkir hér að borga til baka - eða hefna sín á.] Þorvaldi þá svívirðingu að hafa slegið hana.
+
+
+Þórður brosti og stakk upp á því að Guðrún saumaði skyrtu með flegnu hálsmáli eins og kvenskyrtur hefðu handa Þorvaldi. Síðan gæti hún skilið við hann af þeirri ástæðu að hann gengi í kvenmannsfötum. Þetta gerði Guðrún, skildi við Þorvald og fór heim að Laugum. Guðrún og Þorvaldur bjuggu aðeins saman í tvö ár.
+
+
+\newpage
+# 11. Annað hjónaband Guðrúnar
+
+Þórður Ingunnarson átti konu sem hét Auður og var kölluð Bróka-Auður af því að hún gekk stundum í karlmannsbuxum. Sumarið eftir að Guðrún skildi við Þorvald riðu þau Þórður og Guðrún saman til Alþingis. Einn daginn spurði Guðrún Þórð hvort það væri satt að kona hans væri jafnan í brókum.
+<br>
+Hann sagðist ekki hafa fundið til þess^[merkir hér að hann hafi ekki verið þess meðvitaður eða fundið fyrir því - upplifað það sem svo.]
+
+
+Guðrún spyr þá um hæl hvers vegna Auður sé þá kölluð Bróka-Auður en Þórður sagðist ekki vita til þess að hún hefði verið kölluð því nafni lengi. Guðrún sagði þá að því sem mestu máli skipti í þessu samhengi sé að hún hafi hlotið nafnbótina, sama hvort það sé nú eða fyrir löngu síðan eins og Þórður heldur fram.
+
+
+Eftir þetta samtal þeirra var þingið haldið. Einn daginn á þinginu spurði Þórður Guðrúnu hvaða *refsing lægi við því*^[merkir hér hvaða afleiðingar það geti haft í för með sér] að kona gengi um í karlmannsfötum. Guðrún svaraði því að um sömu refsingu væri að ræða fyrir konur sem gengju í karlmannsfötum og karla sem gengju í kvenmannsfötum. Það væri **skilnaðarsök**^[**skilnaðarsök** merkir ástæða til að slíta hjónabandi.].
+
+
+Þórður spurði Guðrúnu hvort henni fyndist *ráðlegra*^[*ráðlegra* merkir hér „hvor kosturinn sé betri/skárri“.] að skilja við Bróka-Auði strax á þinginu eða bíða með það þangað til þau kæmu heim. Guðrún hvatti hann til þess að bíða ekki og svaraði með málshætt: „**Aftans bíður óframs sök**^[**Aftans bíður óframs sök** merkir að málefni hins lata bíða til kvölds - eða með öðrum orðum „á morgun segir sá lati“ - hún er því hér að gefa til kynna að *ef* hann er **ekki** latur muni hann ekki bíða með það - ekki er ákjósanlegt að vera kallaður letingi].“ 
+
+
+Þá spratt Þórður upp og gekk til Lögbergs og sagði skilið við Auði. Auður frétti ekki af skilnaðinum fyrr en eftir þingið.
+
+
+![*Teikning af Lögbergi*](images/Laxdæla/frabok/logberg-teikning.jpg){width=200px}
+
+Sama sumar bað Þórður Ingunnarson Guðrúnu um að giftast sér. Því tók hún vel og settust þau að á Laugum hjá foreldrum Guðrúnar en Auður bjó áfram á Hóli í Saurbæ.
+
+
+Sumarið eftir var auður í **seli**^[**sel** var það kallað þegar búpeningu (oftast kindur) var hafður í húsum fjarri bæjum, kindur mjólkaðar og unninn matur úr mjólkinni] í Hvammsdal en Laugamenn höfðu sel í Lambadal sem var *þar skammt frá*^[þýðir *þar nálægt*]. Auður bað **smalamann**^[**smalamaður** er sá sem sér um að gæta (þ.e. passa upp á) kindanna sem eru í selinu] sinn um njósna um hverjir væru heima á Laugum og hverjir væru í selinu.
+
+
+Auður bað smalamanninn um að hafa tvo hesta tilbúna þegar fólk færi að sofa. Smalamaðurinn gerði það og eftir sólsetur riðu þau tvö (Auður og smalamaðurinn) af stað í átt að Laugum og var Auður þá vissulega í brókum. Auður gekk inn í skálann á Laugum þar sem Þórður svaf og vakti hann. Hún hafði **sax**^[**sax** var stutt sverð, oftast eineggjað, sem þýðir að það var með biti öðrum megin líkt og hnífar nú til dags.] í hendi sér og hjó með því til Þórðar og særði hann á annarri hendinni og bringunni. Svo gekk hún út, stökk á bak hesti sínum og reið heim í selið. 
+
+
+![*Auður heggur til Þórðar*](images/Laxdæla/frabok/k11-1.png){width=200px}
+
+
+Þórður ætlaði að spretta upp en gat það ekki, því hann **mæddi bóðrás**^[**mæddi blóðrás** þýðir að blóðrennslið vegna sársins sem varð til þegar Auður hjó til hans *varð honum til vandræða*, hann var jafnvel í lífshættu.]. Ósvífur vaknaði við öll lætin og spurði hvað gengi á. Þórður sagðist hafa *orðið fyrir áverka*^[að *verða fyrir áverka* merkir hér að hafa fengið sár] og spurði Ósvífur hvort hann vissi hver hefði gert honum mein. 
+
+
+Þórður sagðist halda að Auður hefði gert það og vildi Ósvífur elta Auði uppi. En Þórður vildi það ekki og sagði að Auður hefði ekki gert annað en það sem hún ætti rétt til.
+<br>
+Þórður lá negi í sárum. Bringusárin greru vel en höndin varð aldrei jafn góð og áður.
+
+
+Vorið eftir að Þórður var særður fór hann vestur með menn með sér á báti til Alþingis. Móðir hans hafði lent í deilum við galdrafólk og *stefndi Þórður þeim til dóms*^[að *stefna einhverjum til dóms* merkir að kæra einhvern] fyrir þjófnað og galdra. Á heimleiðinni lentu Þórður og menn hans í miklu óveðri og var talið víst að það væri galdrafólkið sem orsakaði það. Þórður gerði tilraun til þess að ná landi en þá hvolfdi bátnum og drukknuðu allir sem voru á honum. Guðrúnu þótti andlát Þórðar mjög leitt.
+
+
+\newpage
+# 12. Guðrún og Kjartan
+
+Fóstbræðurnir í Hjarðarholi, Kjartan Ólafsson og Bolli Þorleiksson, fóru oft í bað í Sælingsdalslaug. Oft hittist svo á að Guðrún var við laugina þegar þeir komu þangað og þótti Kjartani skemmtilegt að tala við hana. Kjartani þótti Guðrún bæði vitur og **málsnjöll**^[**málsnjöll** merkir að vera vel að máli farin, snjöll að svara fyrir sig]. Var eftir því tekið að Guðrúnu og Kjartani *ættu vel saman*^[þ.e., líkaði vel hvort við annað].
+
+
+![*Kjartan Ólafsson og Bolli Þorleiksson í Snælingsdalslaug. Kjartan og Guðrún Ósvífursdóttir eru að spjalla saman*](images/Laxdæla/frabok/k12-1.png){width=300}
+
+
+Ólafur í Hjarðarholti og Ósvífur á Laugum voru vinir. Þó mislíkaði Ólafi að Kjartan færi oft að hitta Guðrúnu. Ólafur sagði raunar að *engin kona væri samboðin Kjartani*^[Hér á Ólafur við að honum þyki engin kona vera nógu góð fyrir hann]. Hann taldi þó viss um að engin gæfa fylgdi of miklum samskiptum við Laugafólk.
+
+
+Eitt sinn fóru Kjartan og Bolli í Borgarfjörð og hittu þar mann sem hét Kálfur Ásgeirsson. Hann var siglingamaður og átti skip í Gufuárósi. Kjartan bað Kálf um að selja sér hálft skipið og fara með sér til Noregs. Kálfur samþykkti það og riðu Kjartan og Bolli heim og sögðu Ólafi frá. Ólafi þótti Kjartan hafa ákveðið ferð sína í fullmiklum flýti en vildi þó ekki banna honum að fara. 
+
+
+Stuttu síðar fór Kjartan til Lauga og sagði Guðrúnu frá fyrirhugaðri ferð sinni til Noregs. Guðrúnu þótti, rétt eins og Ólafi, Kjartan hafa ákveðið þetta í flýti og fann Kjartan það á Guðrúnu að henni líkaði þessi ráðagerð ekki.
+
+
+Kjartan spurði Guðrúnu hvað hann gæti gert fyrir hana í staðinn. Guðrún bað hann þá um að fá að koma með honum en Kjartan vildi það ekki. Hann sagði að bræður hennar væru of ungir en faðir hennar of gamall til að geta verið án hennar. Kjartan vildi því að Guðrún væri eftir heima og baða hana um að bíða eftir sér í þrjú ár. Guðrún sagðist ekki lofa neinu og skildu þau ósátt. 
+<br>
+Síðan riðu Kjartan og Bolli til skips suður í Borgarfirði og hittu Kálf Ásgeirsson og sigldu til Noregs.
 
 
 
@@ -282,4 +418,5 @@ Kjartan og Bolli voru jafngamlir og urðu mikilir vinir.
 
 <div id="refs"></div>
 
-
+\newpage
+# Neðanmálsgreinar

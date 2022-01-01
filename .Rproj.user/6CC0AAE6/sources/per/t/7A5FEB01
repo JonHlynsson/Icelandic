@@ -3,7 +3,7 @@
     "path": "~/GitHub/Icelandic/styttri.Rmd",
     "project_path": "styttri.Rmd",
     "type": "r_markdown",
-    "hash": "1123270440",
+    "hash": "886943092",
     "contents": "",
     "dirty": false,
     "created": 1641042278548.0,
@@ -13,15 +13,15 @@
         "tempName": "Untitled1",
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "279,8",
-        "scrollLine": "271"
+        "cursorPosition": "27,25",
+        "scrollLine": "6"
     },
     "folds": "",
-    "lastKnownWriteTime": 1641058524,
+    "lastKnownWriteTime": 1641073938,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1641058524373,
+    "last_content_update": 1641073938987,
     "read_only": false,
     "read_only_alternatives": []
 }
