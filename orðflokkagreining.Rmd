@@ -5,16 +5,19 @@ output:
     theme: flatly
     css: default.css
     toc: yes
+    toc_float: yes
+    toc_depth: 3
     # toc_float: yes
 bibliography: heimildir.bib
 citation-style: APA7isl.csl
 ---
 
-## Inngagnur að orðflukkagreiningu
+
+# Inngagnur að orðflukkagreiningu
 
 Þessi texti er aðlögun á vefbók eftir @dagnybolladottirOrdflokkagreiningWikibaekurSafn2017.
 
-### Orðflokkagreining
+#### **Orðflokkagreining**
 
 Orðflokkur er flokkur orða sem hefur sömu einkenni. Þá er átt við að orðin í hverjum flokki hafi sameiginleg einkenni í samhengi þeirrar merkingu sem þau hafa (þ.e. merkingarleg einkenni), hvernig þau beygjast (þ.e. beygingarleg einkenni), og með hvaða öðrum orðum þau geta staðið (þ.e. setningarleg einkenni).
 
@@ -470,7 +473,7 @@ Nafnháttarmerki er orðið *að*. Orðið að stendur einungis með sögn í na
   - hann sagði mér að loka búðinni
 
 
-## Upphrópum
+## Upphrópun
 
 Upphrópun (skammstafað sem uh.) er óbeygjanlegt smáorð sem hrópað eða kallað er upp og lýsir tilfinningum, t.d. undrun, gleði, viðbrögðum, ótta, afstöðu og sorg. Upphrópun getur jafngilt heilli setningu; t.d. Ha? Upphrópun getur stundum orðið að nafnorði, t.d. Sagðirðu ha?. Bæta þær þá við sig greini eins og önnur nafnorð; Þú ert nískur á jáin.
 

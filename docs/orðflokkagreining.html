@@ -29,6 +29,9 @@
        h6 {font-size: 12px;}
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
+<script src="site_libs/jqueryui/jquery-ui.min.js"></script>
+<link href="site_libs/tocify/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify/jquery.tocify.js"></script>
 <script src="site_libs/navigation/tabsets.js"></script>
 <link href="site_libs/highlightjs/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs/highlight.js"></script>
@@ -243,6 +246,69 @@ $(document).ready(function () {
 
 
 
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
 
 </head>
 
@@ -250,6 +316,16 @@ $(document).ready(function () {
 
 
 <div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -374,34 +450,12 @@ $(document).ready(function () {
 
 </div>
 
-<div id="TOC">
-<ul>
-<li><a href="#inngagnur-að-orðflukkagreiningu">Inngagnur að orðflukkagreiningu</a>
-<ul>
-<li><a href="#orðflokkagreining">Orðflokkagreining</a></li>
-</ul></li>
-<li><a href="#nafnorð">Nafnorð</a></li>
-<li><a href="#greinir">Greinir</a></li>
-<li><a href="#nafnorð-frh.">Nafnorð frh.</a></li>
-<li><a href="#sagnorð">Sagnorð</a></li>
-<li><a href="#lýsingarorð">Lýsingarorð</a></li>
-<li><a href="#fornöfn">Fornöfn</a></li>
-<li><a href="#atviksorð">Atviksorð</a></li>
-<li><a href="#töluorð">Töluorð</a></li>
-<li><a href="#forsetningar">Forsetningar</a></li>
-<li><a href="#samtengingar">Samtengingar</a></li>
-<li><a href="#nafnháttarmerki">Nafnháttarmerki</a></li>
-<li><a href="#upphrópum">Upphrópum</a></li>
-<li><a href="#krossapróf">Krossapróf:</a></li>
-<li><a href="#heimild">Heimild</a></li>
-</ul>
-</div>
 
-<div id="inngagnur-að-orðflukkagreiningu" class="section level2">
-<h2>Inngagnur að orðflukkagreiningu</h2>
+<div id="inngagnur-að-orðflukkagreiningu" class="section level1">
+<h1>Inngagnur að orðflukkagreiningu</h1>
 <p>Þessi texti er aðlögun á vefbók eftir <span class="citation">Dagný Bolladóttir (2017)</span>.</p>
-<div id="orðflokkagreining" class="section level3">
-<h3>Orðflokkagreining</h3>
+<div id="orðflokkagreining" class="section level4">
+<h4><strong>Orðflokkagreining</strong></h4>
 <p>Orðflokkur er flokkur orða sem hefur sömu einkenni. Þá er átt við að orðin í hverjum flokki hafi sameiginleg einkenni í samhengi þeirrar merkingu sem þau hafa (þ.e. merkingarleg einkenni), hvernig þau beygjast (þ.e. beygingarleg einkenni), og með hvaða öðrum orðum þau geta staðið (þ.e. setningarleg einkenni).</p>
 <p>Orðaforða íslenskunar má gróflega skipta í þrjá flokka: Fallorð, sagnorð og smáorð. Fallorð eru þau orð sem fallbeygjast, sagnorð eru þau orð sem tíðbeygjast og smáorð eru orð sem hvorki tíðbeygjast né fallbeygjast.</p>
 <p>Orðflokkar íslenskunnar eru 10 talsins og skiptast eftir ofangreindum formseinkennum: Undir þau orð sem fallbeygjast falla:</p>
@@ -424,7 +478,6 @@ $(document).ready(function () {
 <li>Nafnháttarmerki</li>
 <li>Upphrópun</li>
 </ul>
-</div>
 </div>
 <div id="nafnorð" class="section level2">
 <h2>Nafnorð</h2>
@@ -816,9 +869,10 @@ $(document).ready(function () {
 <li>hann sagði mér að loka búðinni</li>
 </ul>
 </div>
-<div id="upphrópum" class="section level2">
-<h2>Upphrópum</h2>
+<div id="upphrópun" class="section level2">
+<h2>Upphrópun</h2>
 <p>Upphrópun (skammstafað sem uh.) er óbeygjanlegt smáorð sem hrópað eða kallað er upp og lýsir tilfinningum, t.d. undrun, gleði, viðbrögðum, ótta, afstöðu og sorg. Upphrópun getur jafngilt heilli setningu; t.d. Ha? Upphrópun getur stundum orðið að nafnorði, t.d. Sagðirðu ha?. Bæta þær þá við sig greini eins og önnur nafnorð; Þú ert nískur á jáin.</p>
+</div>
 </div>
 <div id="krossapróf" class="section level1">
 <h1>Krossapróf:</h1>
@@ -880,6 +934,8 @@ Dagný Bolladóttir. (2017). <em>Orðflokkagreining - Wikibækur, safn af frjál
 
 
 
+</div>
+</div>
 
 </div>
 
@@ -912,6 +968,35 @@ $(document).ready(function () {
 
 <!-- code folding -->
 
+<script>
+$(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
