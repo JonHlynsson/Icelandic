@@ -10,10 +10,20 @@ output:
 ![](images/Hlynsson/Banner.jpg)
 
 
-## Laxdæla glærupakki
+## Laxdæla glærupakkar
+
+
+#### Glærupakki 1 - forþekking
 
 ```{r, echo=F}
-knitr::include_url('laxdæla-glærur.html')
+xaringanExtra::embed_xaringan("laxdæla-glærur-1.html")
+```
+
+
+#### Glærupakki 2 - kafli 1-11
+
+```{r, echo=F}
+xaringanExtra::embed_xaringan("laxdæla-glærur-2.html")
 ```
 
 

@@ -1,0 +1,23 @@
+"0","options(htmltools.dir.version = FALSE)"
+"2","Warning messages:
+"
+"2","1: "
+"2","In readLines(index, encoding = encoding) :"
+"2","
+ "
+"2"," incomplete final line found on 'C:/Users/jonin/Dropbox/PC/Documents/GitHub/Icelandic/index.Rmd'
+"
+"2","2: "
+"2","In readLines(index, encoding = encoding) :"
+"2","
+ "
+"2"," incomplete final line found on 'C:/Users/jonin/Dropbox/PC/Documents/GitHub/Icelandic/index.Rmd'
+"
+"0","library(kableExtra)"
+"0","knitr::opts_chunk$set("
+"0","  cache = FALSE,"
+"0","  echo = TRUE,"
+"0","  message = FALSE, "
+"0","  warning = FALSE,"
+"0","  hiline = TRUE"
+"0",")"
