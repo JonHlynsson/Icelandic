@@ -28,6 +28,7 @@ navbar:
         href: laxdaelaglosur.html
         icon: fa-file-alt
       - text: "----------"
+      - text: "Ýmis fróðleikur"
       - text: "Inngagnur að orðflokkagreiningu"
         href: orðflokkagreining.html
         icon: fa-text-height
