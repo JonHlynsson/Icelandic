@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Orðflokkagreining</title>
+
+<script src="site_libs/header-attrs/header-attrs.js"></script>
+<script src="site_libs/jquery/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap/css/flatly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation/tabsets.js"></script>
+<link href="site_libs/highlightjs/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs/highlight.js"></script>
+<link href="site_libs/font-awesome/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome/css/v4-shims.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+<style type="text/css">
+/* for pandoc --citeproc since 2.11 */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="default.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.tab('show');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Íslensk móðurmálskennsla</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">
+    <span class="fa fa-home"></span>
+     
+    Forsíða
+  </a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-archive"></span>
+     
+    Námsgögn
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="namsgogn.html">
+        <span class="fa fa-link"></span>
+         
+        Hlekkir og almennar upplýsingar
+      </a>
+    </li>
+    <li class="divider"></li>
+    <li class="dropdown-header">Laxdæla</li>
+    <li>
+      <a href="https://vefir.mms.is/flettibaekur/namsefni/LAXDAELAsaga/">
+        <span class="fa fa-book-open"></span>
+         
+        Laxdæla rafbók
+      </a>
+    </li>
+    <li>
+      <a href="https://mms.is/namsefni/laxdaela-saga-hljodbok">
+        <span class="fa fa-music"></span>
+         
+        Laxdæla hljóðbók
+      </a>
+    </li>
+    <li>
+      <a href="styttri.html">
+        <span class="fa fa-file-text"></span>
+         
+        Einfölduð útgáfa
+      </a>
+    </li>
+    <li>
+      <a href="laxdaelaglosur.html">
+        <span class="fa fa-file-alt"></span>
+         
+        Glósubók
+      </a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="orðflokkagreining.html">
+        <span class="fa fa-text-height"></span>
+         
+        Inngagnur að orðflokkagreiningu
+      </a>
+    </li>
+    <li>
+      <a href="TextiUmDarwin.html">
+        <span class="fa fa-kiwi-bird"></span>
+         
+        Hver var Charles Darwin?
+      </a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="hlekkir-a-glaerur.html">
+    <span class="fa fa-film"></span>
+     
+    Glærur 2022
+  </a>
+</li>
+<li>
+  <a href="gamlarglærur.html">
+    <span class="fa fa-file-video-o"></span>
+     
+    Glærur 2021
+  </a>
+</li>
+<li>
+  <a href="about.html">
+    <span class="fa fa-question-circle"></span>
+     
+    Um mig
+  </a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Orðflokkagreining</h1>
+
+</div>
+
+<div id="TOC">
+<ul>
+<li><a href="#inngagnur-að-orðflukkagreiningu">Inngagnur að orðflukkagreiningu</a>
+<ul>
+<li><a href="#orðflokkagreining">Orðflokkagreining</a></li>
+</ul></li>
+<li><a href="#nafnorð">Nafnorð</a></li>
+<li><a href="#greinir">Greinir</a></li>
+<li><a href="#nafnorð-frh.">Nafnorð frh.</a></li>
+<li><a href="#sagnorð">Sagnorð</a></li>
+<li><a href="#lýsingarorð">Lýsingarorð</a></li>
+<li><a href="#fornöfn">Fornöfn</a></li>
+<li><a href="#atviksorð">Atviksorð</a></li>
+<li><a href="#töluorð">Töluorð</a></li>
+<li><a href="#forsetningar">Forsetningar</a></li>
+<li><a href="#samtengingar">Samtengingar</a></li>
+<li><a href="#nafnháttarmerki">Nafnháttarmerki</a></li>
+<li><a href="#upphrópum">Upphrópum</a></li>
+<li><a href="#krossapróf">Krossapróf:</a></li>
+<li><a href="#heimild">Heimild</a></li>
+</ul>
+</div>
+
+<div id="inngagnur-að-orðflukkagreiningu" class="section level2">
+<h2>Inngagnur að orðflukkagreiningu</h2>
+<p>Þessi texti er aðlögun á vefbók eftir <span class="citation">Dagný Bolladóttir (2017)</span>.</p>
+<div id="orðflokkagreining" class="section level3">
+<h3>Orðflokkagreining</h3>
+<p>Orðflokkur er flokkur orða sem hefur sömu einkenni. Þá er átt við að orðin í hverjum flokki hafi sameiginleg einkenni í samhengi þeirrar merkingu sem þau hafa (þ.e. merkingarleg einkenni), hvernig þau beygjast (þ.e. beygingarleg einkenni), og með hvaða öðrum orðum þau geta staðið (þ.e. setningarleg einkenni).</p>
+<p>Orðaforða íslenskunar má gróflega skipta í þrjá flokka: Fallorð, sagnorð og smáorð. Fallorð eru þau orð sem fallbeygjast, sagnorð eru þau orð sem tíðbeygjast og smáorð eru orð sem hvorki tíðbeygjast né fallbeygjast.</p>
+<p>Orðflokkar íslenskunnar eru 10 talsins og skiptast eftir ofangreindum formseinkennum: Undir þau orð sem fallbeygjast falla:</p>
+<ul>
+<li>Nafnorð</li>
+<li>Lýsingarorð</li>
+<li>Fornöfn</li>
+<li>Greinir</li>
+<li>Töluorð</li>
+</ul>
+<p>Undir þau orð sem tíðbeygjast falla:</p>
+<ul>
+<li>Sagnorð</li>
+</ul>
+<p>Þau orð sem fallbeygjast ekki falla í flokkana:</p>
+<ul>
+<li>Atviksorð</li>
+<li>Forsetningar</li>
+<li>Samtengingar</li>
+<li>Nafnháttarmerki</li>
+<li>Upphrópun</li>
+</ul>
+</div>
+</div>
+<div id="nafnorð" class="section level2">
+<h2>Nafnorð</h2>
+<p>Nafnorð eru fallorð, þ.e. orð sem taka fallbeygingu, og beygjast því í öllum föllum. Í íslensku eru fjögur föll; nefnifall (hér er…), þolfall (um…), þágufall (frá…), og eignarfall (til…). Oft er talað um nefnifall sem aðalfall og hin föllin aukaföll.</p>
+<p>Dæmi um fallbeygingu:</p>
+<ul>
+<li>Nf. (hér er) hestur</li>
+<li>Þf. (um) hest</li>
+<li>Þgf. (frá) hesti</li>
+<li>Ef. (til) hests</li>
+</ul>
+<p>Flest fallorð finnast bæði í eintölu og fleirtölu. Þá er talað um tölubeygingu. Til dæmis:</p>
+<ul>
+<li>Einn hestur</li>
+<li>Margir hestar</li>
+</ul>
+<p>Hins vegar eru einnig orð sem finnast aðeins í annarri hvorri tölunni, þ.e. annað hvort einungis í eintölu eða einungis í fleirtölu. Til dæmis finnst orðið sykur aðeins í eintölu; smá sykur, mikill sykur; smá áhugi, mikill áhugi. Að sama skapi finnst orðið buxur aðeins í fleirtölu; einar buxur, margar buxur.</p>
+<p>Langflest nafnorð geta bætt við sig greini. Þegar nafnorð stendur með greini vísar það jafnan til einhvers sérstaks afbrigðis af því nafnorði sem um ræðir hverju sinni. Til dæmis:</p>
+<ul>
+<li>Setingin „nú er dagur“ vísar ekki til neins sérstaks eða ákveðins dags heldur gefur aðeins til kynna að um sé að ræða dag en ekki nótt.</li>
+<li>Setningin „nú er dagurinn“ vísar til einhvers sérstaks dag sem hefur eitthvað ákveðið gildi.</li>
+<li>Orðið maður getur vísað til hvaða manns sem er en orðið maðurinn vísar til einhvers ákveðins manns.</li>
+</ul>
+<p>Greinir er því oft viðskeyttur aftan við nafnorð.</p>
+<p><strong>Þumalfingursregla</strong>: Greinir karlkynsorða er jafnan -inn, greinir kvenkynsorða er jafnan -n, og greinir hvorugkynsorða er jafnan -ið.</p>
+<ul>
+<li>Ath. Þumalfingursreglur eru EKKI algildar heldur aðeins reglur sem hafðar eru sem grundvallarviðmið.</li>
+<li>Dæmi: Ef karlkynsorð eða hvorugkynsorð endar á bókstafnum i er EKKI bætt öðru i-i við og í þeim tilvikum tekur viðskeytti greinirinn aðeins formin -nn meðal karlkynsorða og -ð meðal hvorugkynsorða.</li>
+</ul>
+<p>Dæmi um viðskeyttan greini:</p>
+<p>Karlkyns nafnorð með greini er hægt að bera kennsl á með því að bæta við orðinu minn fyrir aftan:</p>
+<ul>
+<li>Dagurinn (minn)</li>
+<li>Maðurinn (minn)</li>
+<li>Penninn (minn)</li>
+<li>Í orðinu penni, þá endar orðið á bókstafnum i og er þegar viðskeyttum greini er bætt við orðið „penninn“ bætist aðeins -nn við, þar sem i-ið er nú þegar fyrir hendi í orðinu.</li>
+</ul>
+<p>Kvenkyns nafnorð með greini er hægt að bera kennsl á með því að bæta orðinu mín fyrir aftan:</p>
+<ul>
+<li>Konan (mín)</li>
+<li>Tölvan (mín)</li>
+<li>Nóttin (mín)</li>
+<li>Orðið nótt tekur greininn -in í stað þess að bæta einungis við sig -n.
+<ul>
+<li>Orðið endar á samhljóða en ekki sérhljóða sem skýrir þetta misræmi.</li>
+</ul></li>
+<li>Heyrnartólin (mín)</li>
+<li>Orðið heyrnartól enda á samhljóða en ekki sérhljóða og bætist því i við -n greininn.</li>
+</ul>
+<p>Hvorugkyns nafnorð með greini er hægt að bera kennsl á með því að bæta orðinu mitt fyrir aftan:</p>
+<ul>
+<li>Barnið (mitt)</li>
+<li>Úrið (mitt)</li>
+<li>Verkefnið (mitt)</li>
+<li>Orðið verkefni endar á samhljóðanum i og er er því aðeins greininum -ð bætt við, þar sem i-ið er þegar fyrir hendi.</li>
+<li>Pennaveskið (mitt)</li>
+<li>Orðið verkefni endar á samhljóðanum i og er er því aðeins greininum -ð bætt við, þar sem i-ið er þegar fyrir hendi.</li>
+</ul>
+</div>
+<div id="greinir" class="section level2">
+<h2>Greinir</h2>
+<p>Ath. Greinir er oftast notaður sem viðskeyting aftan við nafnorð en þó finnast sérstök orð, fyrir hvert kyn, sem að teljast til orðflokksins greinir. Þau eru: hinn, hin og hið. Þá skiptir samhengi setningarinnar höfuðmáli en þegar greinirinn stendur laus er hann jafnan á undan lýsingarorði.</p>
+<p>Dæmi:</p>
+<ul>
+<li>Hinn bjarti dagur</li>
+<li>Hin góða kona</li>
+<li>Hið græna land</li>
+</ul>
+</div>
+<div id="nafnorð-frh." class="section level2">
+<h2>Nafnorð frh.</h2>
+<p>Hvert og eitt nafnorð hefur ákveðið kyn, þ.e. málfræðilegt kyn. Í íslensku eru þrjú kyn: karlkyn (Kk.), kvenkyn (Kvk.) og hvorugkyn (Hk.).</p>
+<p>Til að bera kennsl á karlkynsorð er hægt að setja orðið hann fyrir framan orðið (með viðskeyttum greini):</p>
+<ul>
+<li>Hann maðurinn minn</li>
+<li>Hann dagurinn minn</li>
+<li>Hann síminn minn</li>
+</ul>
+<p>Til að bera kennsl á kvenkynsorð er hægt að setja orðið hún fyrir framan orðið (með viðskeyttum greini):</p>
+<ul>
+<li>Hún konan mín</li>
+<li>Hún tölvan mín</li>
+<li>Hún nóttin mín</li>
+</ul>
+<p>Til þess að bera kennsl á hvorugkynsorð er hægt að setja orðið það fyrir framan (með viðskeyttum greini):</p>
+<ul>
+<li>Það barnið mitt</li>
+<li>Það ljósið mitt</li>
+<li>Það umhverfið mitt</li>
+</ul>
+<p>Nafnorð eru svokölluð inntaksorð. Með því er átt við að nafnorð gegna einhvers konar merkingarhlutverki í setningu og ljá henni inntak.</p>
+<ul>
+<li>Orðið dagur vísar oft þess að um sé að ræða tímabil þar sem sól er á lofti og/eða fólk er í vinnu eða skóla. Merkingarhlutverk orðsins dagur er því að gefa til kynna einhverja spönn tímabils þar sem fólk er jafnan á fótum.</li>
+<li>Orðið barn vísar til einstaklings sem ekki hefur náð fullorðinsaldri, jafnan skilgreint sem einstaklingur yngri en átján ára. Merkingarhlutverk orðsins barn gefur því aldur einstaklings til kynna.</li>
+</ul>
+<p>Einkenni nafnorða er fyrir vikið hægt að taka sem svo að þau hafi þrenn einkenni; setningarleg einkenni, merkingarleg einkenni og beygingarleg einkenni.</p>
+<ul>
+<li>Setningarleg einkenni vísa til dæmigerðrar stöðu þeirra innan setningar. Oftast taka nafnorð þó í setningarfræðilegu samhengi stöðu frumlags eða andlags.</li>
+<li>Frumlag er gerandinn í setningu og er ávallt í nefnifalli</li>
+</ul>
+<p>Hægt er að finna frumlag í setningu með því að spyrja sig „hver gerði“ það sem sögnin í setningunni segir.</p>
+<ul>
+<li>Dæmi:</li>
+<li>Húsfreyjan eldaði matinn. (hver eldaði matinn?)</li>
+<li>Allir eru duglegir. (hverjir eru duglegir?)</li>
+<li>Andlag er þolandinn í setningu og er ávallt í aukafalli; þolfalli, þágufalli, eignarfalli.</li>
+</ul>
+<p>Hægt er að finna andlag í setningu með því að spyrja sig hvaða fallorð í setninguni stendur fyrir „hvað gerðist“ en getur þó verið ögn snúnara en að bera kennsl á frumlagið.</p>
+<ul>
+<li>Dæmi:</li>
+<li>Hundurinn eldaði matinn. (Hvað eldaði hundurinn?)</li>
+<li>Ég las bókina. (hvað var lesið?)</li>
+</ul>
+<p>Dæmigerð setning hefur uppröðunina <strong>Frumlag-sögn-andlag</strong></p>
+<ul>
+<li><p>Hundurinn (frumlag) eldaði (sögn) matinn (andlag).</p></li>
+<li><p>Merkingarleg einkenni vísa til þess að nafnorð eru heiti einhvers, þ.e. hafa merkingu sem gefur nafn fyrirbæris til kynna.</p></li>
+</ul>
+<p>Dæmi: - Hundur er heiti á dýri sem hefur fjóra fætur og geltir. - Bók er heiti á ritsmíð sem er a.m.k. nokkrar arkir að stærð, bundin og límd í kjöl eða gefin út á rafrænu formi. - Tölva er heiti á búnaði sem getur framkvæmt flókna útreikninga, þar á meðal fjölmargar reikningsaðgerðir og rökaðgerðir, án mannlegra afskipta.</p>
+<ul>
+<li><p>Beygingarleg einkenni vísa til þess að nafnorð beygjast í kyni, tölu, föllum og bæta við sig viðskeyttum greini:</p></li>
+<li><p>Kyn: maðurinn, konan, barnið</p></li>
+<li><p>Tala: einn dagur, margir dagar</p></li>
+<li><p>Föll: maður, mann, manni, manns</p></li>
+</ul>
+</div>
+<div id="sagnorð" class="section level2">
+<h2>Sagnorð</h2>
+<p>Sagnorð eru oftast þau orð í setningu sem tákna einhverja athöfn. Það er að segja, eitthvað sem er gert. Til dæmis að fara, að geta, að hlaupa, að kenna, að skrifa o.s.frv. Sagorð hafa fyrir vikið það merkingarlega einkenni að lýsa einhvers konar verknaði eða ástandi, þ.e. eitthvað sem gerðist eða er að gerast.</p>
+<p>Sagnorð má þekkja með því á því að geta sett orðið „að“ fyrir framan það í nafnhætti. Nafnháttur er fallháttur sagnar.</p>
+<p>Sagnorð eru orð sem tíðbeygjast og er tíðbeyging eitt skýrasta einkenni þeirra. Þegar orð tíðbeygist er ýmist hægt að nota það í nútíð eða þátíð.</p>
+<p>Dæmi (sögnin að fara):</p>
+<ul>
+<li>Ég fer (nútíð) á eftir</li>
+<li>Ég fór (þátíð) áðan</li>
+</ul>
+<p>Sagnorð persónubeygjast og er þá átt við um að hægt sé að nota þau í 1. persónu, 2. persónu, eða 3. persónu. Í íslensku eru því þrjár persónur.</p>
+<ul>
+<li><ol style="list-style-type: decimal">
+<li>persóna: ég/við</li>
+</ol></li>
+<li>Er um mann sjálfan</li>
+<li><ol start="2" style="list-style-type: decimal">
+<li>persóna: þú/þið</li>
+</ol></li>
+<li>Er um einhvern annan sem talað er við beint</li>
+<li><ol start="3" style="list-style-type: decimal">
+<li>persóna: hann, hún, það/þeir, þær, þau</li>
+</ol></li>
+<li>Er um einhvern annan sem talað er við óbein</li>
+</ul>
+<p>Sögnin „að fara“ í persónum:</p>
+<ul>
+<li><ol style="list-style-type: decimal">
+<li>persóna: ég fer</li>
+</ol></li>
+<li><ol start="2" style="list-style-type: decimal">
+<li>persóna: þú ferð</li>
+</ol></li>
+<li><ol start="3" style="list-style-type: decimal">
+<li>persóna: hann fer</li>
+</ol></li>
+</ul>
+<p>Enn fremur tölubeygjast sagnorð, þ.e. sagnorð eru ólík eftir því hvort um sé að ræða eintölu eða fleirtölu.</p>
+<p>Eintala:</p>
+<ul>
+<li>Ég skrifa</li>
+<li>Þú skrifar</li>
+<li>Hann skrifar</li>
+</ul>
+<p>Fleirtala:</p>
+<ul>
+<li>Við skrifum</li>
+<li>Þið skrifið</li>
+<li>Þeir skrifa</li>
+</ul>
+<p>Sagnorð hafa sex hætti í íslensku, 3 persónuhætti og 3 fallhætti.</p>
+<p>Persónuþættir sagna eru:</p>
+<ul>
+<li>Framsöguháttur</li>
+<li>Ég fer/ég fór</li>
+<li>Viðtengingarháttur</li>
+<li>Ég fari/ég færi</li>
+<li>Boðháttur (er eins og skipun)</li>
+<li>Farðu/farið</li>
+</ul>
+<p>Fallhættir sagna eru: - Nafnháttur - Að fara - Lýsingarháttur þátíðar - Hef farið/var farið - Lýsingarháttur nútíðar - Farandi</p>
+<p>Að auki hafa sagnorð ýmist veika eða sterka beygingu.</p>
+<p>Sagnir sem hafa endinguna -ði, -di, -t í þátíð eintölu 1. persónu eru veikar.</p>
+<ul>
+<li>Ég keyrði</li>
+<li>Ég sótti</li>
+<li>Ég kramdi</li>
+</ul>
+<p>Flest sagnorð í íslensku hafa veika beygingu.</p>
+<p>Sagnir sem eru endingarlausar í þátíð 1. persónu eintölu eru sterkar og hafa aðeins eitt atkvæði.</p>
+<ul>
+<li>Ég svaf</li>
+<li>Ég leit</li>
+<li>Ég sat</li>
+</ul>
+<p>Sagnorð skipa jafnan annað sætið í setningu, sé miðað við FSA regluna um eðlilega orðaröð (frumlag-sögn-andlag)</p>
+<ul>
+<li>Maðurinn keyrði bílinn</li>
+<li>Hundurinn eldaði matinn</li>
+</ul>
+</div>
+<div id="lýsingarorð" class="section level2">
+<h2>Lýsingarorð</h2>
+<p>Lýsingarorð eru fallorð en beygjast einnig í kyni og tölu (eintölu og fleirtölu) auk þess að stigbreytast. Lýsingarorð lýsa einhverju ástandi eða segja til um eiginleika einhvers. Stigbreyting vísar til einhvers konar aukningar með tilliti til merkingar. Það er að segja, eitthvað er meira eða minna eða með öðrum orðum er stigmagnandi aukning í þeirri merkingu sem orðið stendur fyrir. Stigbreyting er því það fyrirbæri sem lýsir því þegar lýsingarorð bæta við sig viðskeytum til að gefa til kynna mismunandi stig þess orðs sem það tilgreinir og í íslensku finnast þrjú stig: frumstig, miðstig, og efsta stig.</p>
+<p>Dæmi um stigbreytingu:</p>
+<ul>
+<li>Frumstig: Stór</li>
+<li>Miðstig: Stærri</li>
+<li>Efsta stig: Stærstur</li>
+</ul>
+<p>Stigbreyting getur að auki verið af tvennum toga; regluleg og óregluleg. Með reglulegri stigbreytingu er átt við að lýsingarorð sé myndað af sama stofni í öllum þremur stigum.</p>
+<ul>
+<li>Frumstig: Flott</li>
+<li>Miðstig: Flottara</li>
+<li>Efsta stig: Flottast</li>
+</ul>
+<p>Með óreglulegri stigbeygingu er átt við að miðstig og efsta stig sé myndað af öðrum stofni en frumstigið.</p>
+<p>Dæmi:</p>
+<ul>
+<li>Frumstig: Góður</li>
+<li>Miðstig: Betri</li>
+<li>Efsta stig: Bestur</li>
+</ul>
+<p>Eða:</p>
+<ul>
+<li>Frumstig: Mikið</li>
+<li>Miðstig: Meira</li>
+<li>Efsta stig: Mest</li>
+</ul>
+<p>Lýsingarorð hafa ýmist veika eða sterka beygingu. Ef að lýsingarorð endar á sérhljóða í öllum föllum eintölu og fleirtölu í er talað um að það sé veikbeygt en ef að það endar á samhljóða er það sterkbeygt.</p>
+<p>Lýsingarorð standa vitaskuld ekki ein í setningu og jafnan þegar lýsingarorð stendur með nafnorði með ákveðnum greini hefur það veika beygingu.</p>
+<p>Dæmi:</p>
+<ul>
+<li>Stóra taskan</li>
+</ul>
+<p>Hins vegar þegar lýsingarorð stendur með nafnorði án ákveðins greinis hefur það yfirleitt sterka beygingu.</p>
+<p>Dæmi:</p>
+<ul>
+<li>Stór taska</li>
+</ul>
+</div>
+<div id="fornöfn" class="section level2">
+<h2>Fornöfn</h2>
+<p>Fornöfn eru fallorð sem beygjast í kyni, eintölu/fleirtölu og eftir falli (Nf., Þf., Þgf. Ef.). Fornöfn geta komið í stað nafna, nafnorða eða nafnliða. Ekki eru öll fornöfn sama eðlis heldur skipast þau í undirflokka eftir einkennum sínum:</p>
+<p>Persónufornöfn (pfn.)</p>
+<ul>
+<li>Ég</li>
+<li>Þú</li>
+<li>hann/hún/það</li>
+</ul>
+<p>Ábendingarfornöfn (áfn.)</p>
+<ul>
+<li>sá/sú/það</li>
+<li>þessi/þessi/þetta</li>
+<li>hinn/hin/hitt</li>
+</ul>
+<p>Eignarfornöfn (efn.)</p>
+<ul>
+<li>minn/mín/mitt</li>
+<li>þinn/þín/þitt</li>
+<li>vor/vort/vort</li>
+</ul>
+<p>Afturbeygð fornöfn (afn.)</p>
+<ul>
+<li>sig/sinn</li>
+<li>sín/sitt</li>
+</ul>
+<p>Spurnarfornöfn (spfn.)</p>
+<ul>
+<li>hver/hver/hvert</li>
+<li>hvor/hvor/hvort</li>
+<li>hvaða</li>
+</ul>
+<p>Óákveðin fornöfn (ófn.)</p>
+<ul>
+<li>annar</li>
+<li>fáeinir</li>
+<li>enginn</li>
+<li>neinn</li>
+<li>ýmsir</li>
+<li>báðir</li>
+<li>sérhver</li>
+<li>hvorugur</li>
+<li>sumur</li>
+<li>hver</li>
+<li>einn</li>
+<li>hvor</li>
+<li>nokkur</li>
+<li>einhver</li>
+</ul>
+</div>
+<div id="atviksorð" class="section level2">
+<h2>Atviksorð</h2>
+<p>Atviksorð eru orð sem beygjast ekki. Þeirra hlutverk er að segja nánar til um (eða útskýra á einhvern hátt betur) sagnorð og lýsingarorð. Atviksorð er oft svipuð lýsingarorðum EN hafa ólíka stöðu í setningum.</p>
+<p>Atviksorð segja til um hvernig eitthvað er gert (þ.e., háttaratviksorð), hvar eitthvað gerist (þ.e., staðaratviksorð), hvenær eitthvað gerðist (þ.e., tíðaratviksorð), spyrja um eitthvað (þ.e., spurnaratviksorð) eða geta verið notuð til áherslu (þ.e., áhersluatviksorð). Spurnaratviksorð byrja alltaf á bókstöfunum hv-, og finnast bæði í beinum og óbeinum spurnarsetningum.</p>
+<p>Dæmi um flokka atviksorða:</p>
+<p>Háttaratviksorð:</p>
+<ul>
+<li>vel, illa, vandlega, hægt, svona.</li>
+</ul>
+<p>Staðaratviksorð:</p>
+<ul>
+<li>heima, hérna (kyrrstaða).</li>
+<li>hingað, þangað (stefna).</li>
+</ul>
+<p>Tíðaratviksorð:</p>
+<ul>
+<li>nú, núna, síðar, oft.</li>
+</ul>
+<p>Áhersluatviksorð:</p>
+<ul>
+<li>mjög, ógeðslega, rosalega.</li>
+</ul>
+<p>Spurnaratviksorð:</p>
+<ul>
+<li>hvaðan, hvar, hvert, hvenær, hvaða, hvernig, hví, hversu.</li>
+</ul>
+</div>
+<div id="töluorð" class="section level2">
+<h2>Töluorð</h2>
+<p>Töluorð eru fallorð sem tákna tölu og skiptast í frumtölur og raðtölur. Frumtölur eru óákveðnar tölur sem vísa ekki til neinnar sérstakrar tölu heldur aðeins tölunnar sjálfrar á meðan raðtölur gefa röðun talnanna til kynna.</p>
+<ul>
+<li>Frumtölur:</li>
+<li>Einn</li>
+<li>Tveir</li>
+<li>Þrír</li>
+<li>Raðtölur</li>
+<li>Fyrsti</li>
+<li>Annar</li>
+<li>Þriðji</li>
+</ul>
+</div>
+<div id="forsetningar" class="section level2">
+<h2>Forsetningar</h2>
+<p>Forsetningar eru óbeygjanlegar og taka fyrir vikið engum formbreytingum. Forsetningar einkennast hins vegar af því að stýra falli þeirra fallorða sem þær standa með og eru því nefndar stýriorð.</p>
+<p>Dæmi:</p>
+<ul>
+<li>Hann kemur í dag</li>
+<li>Hún er hjá systur sinni</li>
+<li>Hann gengur upp stigann</li>
+</ul>
+<p>Orðið „í“ er forsetning og getur stýrt tveimur föllum, þol- og þágufalli en þá er merkingarmunur setningarinnar sem ræður för.</p>
+<ul>
+<li>Stúlkan fer í bæinn (þolfall)</li>
+<li>Stúlkan er í bænum (þágufall)</li>
+</ul>
+<p>Forsetningar hafa engin sérstök merkingarleg einkenni og beygjast EKKI, en stýra fallbeygingu.</p>
+</div>
+<div id="samtengingar" class="section level2">
+<h2>Samtengingar</h2>
+<p>Orð sem tengja saman setningarliði, t.d. „og“</p>
+<p>Dæmi:</p>
+<ul>
+<li>Jón er smiður og Gunna er rafvirki</li>
+<li>Gunna er dökkhærð en Sigga er ljóshærð</li>
+</ul>
+<p>Setningarnar geta því staðið einar á báti og þjóna samteningar þeim tilgangi að tengja setningaliði saman.</p>
+<p>Hægt er að skipta samtengingum í aðaltengingar og aukatengingar.</p>
+<p>Aðaltengingar tengja saman aðalsetningar sem geta staðið einar á báti.</p>
+<ul>
+<li>Dæmi: Kalli er maður og Þorgerður er kona.</li>
+</ul>
+<p>Aukatengingar tengja aukasetningar, þ.e. viðbótarupplýsingar, við aðalsetningu. Aukasetningar geta ekki staðið án aðalsetningar.</p>
+<ul>
+<li>Dæmi: Hrefna er tæknimaður en kann ekki á tölvur</li>
+<li>Hér gæti „en kann ekki á tölvur“ ekki staðið sér á báti.</li>
+</ul>
+<p>Dæmi um aukatengingar:</p>
+<ul>
+<li>Skýringartenging: að</li>
+<li>Tilvísunartenging: sem</li>
+<li>Skilyrðistenging: nema, ef</li>
+<li>Spurnartenging: hvort</li>
+<li>Tíðartenging: meðan, þegar</li>
+</ul>
+</div>
+<div id="nafnháttarmerki" class="section level2">
+<h2>Nafnháttarmerki</h2>
+<p>Nafnháttarmerki er orðið <em>að</em>. Orðið að stendur einungis með sögn í nafnhætti.</p>
+<ul>
+<li>Dæmi:</li>
+<li>hún ákvað að læra</li>
+<li>hann sagði mér að loka búðinni</li>
+</ul>
+</div>
+<div id="upphrópum" class="section level2">
+<h2>Upphrópum</h2>
+<p>Upphrópun (skammstafað sem uh.) er óbeygjanlegt smáorð sem hrópað eða kallað er upp og lýsir tilfinningum, t.d. undrun, gleði, viðbrögðum, ótta, afstöðu og sorg. Upphrópun getur jafngilt heilli setningu; t.d. Ha? Upphrópun getur stundum orðið að nafnorði, t.d. Sagðirðu ha?. Bæta þær þá við sig greini eins og önnur nafnorð; Þú ert nískur á jáin.</p>
+</div>
+<div id="krossapróf" class="section level1">
+<h1>Krossapróf:</h1>
+<ol style="list-style-type: decimal">
+<li>Hvaða orðflokki tilheyrir orðið „gesti“ í eftirfarandi setningu?: Mér þykir gaman að fá gesti.</li>
+</ol>
+<ol style="list-style-type: lower-alpha">
+<li>Sagnorð</li>
+<li>Samtenging</li>
+<li>Nafnorð</li>
+<li>Nafnháttarmerki</li>
+</ol>
+<ol start="2" style="list-style-type: decimal">
+<li>Hvert er eitt aðaleinkenni forsetninga?</li>
+</ol>
+<ol style="list-style-type: lower-alpha">
+<li>Þær beygjast í föllum, kynjum og tölu</li>
+<li>Þær stýra falli</li>
+<li>Þær tíðbeygjast</li>
+<li>Þær lýsa alltaf verknaði</li>
+</ol>
+<ol start="3" style="list-style-type: decimal">
+<li>Hvaða orðflokki tilheyrir orðið „að“ í eftirfarandi setningu?: Gunna fer að sofa.</li>
+</ol>
+<ol style="list-style-type: lower-alpha">
+<li>Nafnháttarmerki</li>
+<li>Samtenging</li>
+<li>Límorð</li>
+<li>Stýriorð</li>
+</ol>
+<ol start="4" style="list-style-type: decimal">
+<li>Hvaða orðflokki tilheyrir orðið „mjög“ í eftirfarandi setningu?: Hrefna er mjög dugleg að lesa.</li>
+</ol>
+<ol style="list-style-type: lower-alpha">
+<li>Flokki nafnorða</li>
+<li>Flokki sagnorða</li>
+<li>Flokki fornafna</li>
+<li>Flokki atviksorða</li>
+</ol>
+<ol start="5" style="list-style-type: decimal">
+<li>Hvaða orð geta bætt við sig greini?</li>
+</ol>
+<ol style="list-style-type: lower-alpha">
+<li>Sagnorð</li>
+<li>Lýsingarorð</li>
+<li>Forsetningar</li>
+<li>Nafnorð</li>
+</ol>
+<p>Rétt svör eru <strong>c</strong>, <strong>b</strong>, <strong>a</strong>, <strong>d</strong> og <strong>d</strong>.</p>
+</div>
+<div id="heimild" class="section level1 unnumbered">
+<h1 class="unnumbered">Heimild</h1>
+<div id="refs" class="references csl-bib-body hanging-indent" line-spacing="2">
+<div id="ref-dagnybolladottirOrdflokkagreiningWikibaekurSafn2017" class="csl-entry">
+Dagný Bolladóttir. (2017). <em>Orðflokkagreining - Wikibækur, safn af frjálsum kennslubókum</em>. <a href="https://is.wikibooks.org/wiki/Or%C3%B0flokkagreining">https://is.wikibooks.org/wiki/Or%C3%B0flokkagreining</a>
+</div>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

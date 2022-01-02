@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Texti um Darwin</title>
+
+<script src="site_libs/header-attrs/header-attrs.js"></script>
+<script src="site_libs/jquery/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap/css/flatly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation/tabsets.js"></script>
+<link href="site_libs/highlightjs/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs/highlight.js"></script>
+<link href="site_libs/font-awesome/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome/css/v4-shims.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+<style type="text/css">
+/* for pandoc --citeproc since 2.11 */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="default.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.tab('show');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Íslensk móðurmálskennsla</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">
+    <span class="fa fa-home"></span>
+     
+    Forsíða
+  </a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-archive"></span>
+     
+    Námsgögn
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="namsgogn.html">
+        <span class="fa fa-link"></span>
+         
+        Hlekkir og almennar upplýsingar
+      </a>
+    </li>
+    <li class="divider"></li>
+    <li class="dropdown-header">Laxdæla</li>
+    <li>
+      <a href="https://vefir.mms.is/flettibaekur/namsefni/LAXDAELAsaga/">
+        <span class="fa fa-book-open"></span>
+         
+        Laxdæla rafbók
+      </a>
+    </li>
+    <li>
+      <a href="https://mms.is/namsefni/laxdaela-saga-hljodbok">
+        <span class="fa fa-music"></span>
+         
+        Laxdæla hljóðbók
+      </a>
+    </li>
+    <li>
+      <a href="styttri.html">
+        <span class="fa fa-file-text"></span>
+         
+        Einfölduð útgáfa
+      </a>
+    </li>
+    <li>
+      <a href="laxdaelaglosur.html">
+        <span class="fa fa-file-alt"></span>
+         
+        Glósubók
+      </a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="orðflokkagreining.html">
+        <span class="fa fa-text-height"></span>
+         
+        Inngagnur að orðflokkagreiningu
+      </a>
+    </li>
+    <li>
+      <a href="TextiUmDarwin.html">
+        <span class="fa fa-kiwi-bird"></span>
+         
+        Hver var Charles Darwin?
+      </a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="hlekkir-a-glaerur.html">
+    <span class="fa fa-film"></span>
+     
+    Glærur 2022
+  </a>
+</li>
+<li>
+  <a href="gamlarglærur.html">
+    <span class="fa fa-file-video-o"></span>
+     
+    Glærur 2021
+  </a>
+</li>
+<li>
+  <a href="about.html">
+    <span class="fa fa-question-circle"></span>
+     
+    Um mig
+  </a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Texti um Darwin</h1>
+
+</div>
+
+<div id="TOC">
+<ul>
+<li><a href="#annar-texti-um-darwin">Annar texti um Darwin</a></li>
+<li><a href="#heimildir">Heimildir</a></li>
+</ul>
+</div>
+
+<p><strong>Þróunarkenning Darwins</strong> (sem áður fyrr einnig nefnd framþróunarkenningin) er kenning í líffræði um uppruna og þróun eða framþróun dýrategunda. Hún var fyrst sett fram í bókinni <em>Uppruni tegundanna</em> eftir Charles Darwin sem kom út árið 1859.</p>
+<p>Samkvæmt þróunarkenningu Darwins koma allar lífverur af sama stofni en vegna náttúruvals hafa þær þróast í mismunandi tegundir og lífverur. Charles Darwin benti á að maðurinn væri náskyldur dýrum og þess vegna væri hægt að skýra hátterni hans á sama veg og hægt er að útskýra hátterni dýra<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>. Það er oft kallað lögmálið um <em>líffræðilega samfellu</em>. Lögmálið um líffræðilega samfellu nær einnig til sálfræðilegra eiginleika sem sést á tilraunum Darwins til að bera saman tilfinningar manna og dýra.</p>
+<p>Í þróunarkenningu Darwins kom einnig fram kenning hans um <strong>náttúruval</strong>. Þar lagði hann áherslu á að einstaklingar sömu tegundar væru frá náttúrunnar hendi misjafnlega í stakk búnir til þess að takast á við umhverfið. Þess vegna verða alltaf sumir undir í lífsbaráttunni og hinir hæfustu lifa af. Einstaklingar með eiginleika sem auka líkur á því að þeir komist af eru sem sagt líklegri til að eignast fleiri afkvæmi. Og þannig verða þessir hagstæðu eiginleikar smá saman meira áberandi hjá tegundinni í heild.</p>
+<p>Charles Robert Darwin fæddist 12. febrúar 1809 í Shrewsbury, Englandi. Hann er ætíð kenndur við náttúrufræði, en þekktastur er hann fyrir kenningu um þróun lífs á jörðu, sem á Íslandi er ávallt kölluð þróunarkenningin, en einnig er hún kölluð <em>darwinismi</em>.</p>
+<p>Hann gaf út bókina <em>Uppruni tegundanna</em> árið 1859 þar sem hann reyndi að sanna að allt líf á jörðinni ætti sameiginlegan uppruna. Árið 1871 gaf hann út bókina <em>Hvernig maðurinn kom til</em> en hún fjallaði um hugmyndir hans um uppruna mannsins. Darwin sannaði að allar lífverur á jörðinni eru komnar af sömu forfeðrum og hafa þróast á löngum tíma jarðsögunnar til að falla sífellt betur inn í ríkjandi umhverfi. Með öðrum orðum <strong>aðlagast umhverfinu</strong>. Á árunum 1831 til 36 fór Darwin í siglingu um Kyrrahafið, til að kanna strönd Suður Ameríku og nokkrar Kyrrahafseyjar. Hann hélt nákvæma skrá um lífverur sem urðu á vegi hans og birti niðurstöður sínar árið 1859 í vísindariti<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>. Þar setur Darwin fram þróunarkenninguna og hugmyndir sínar um náttúruval.</p>
+<p>Þróunarkenning Darwins olli miklu uppnámi, einkum meðal kirkjunnar manna, því að hún stangaðist á við hugmyndir þeirra um sköpunarsögu Biblíunnar. Kenningar Darwins hafa þó staðið að mestu óhaggaðar og hafa styrkst með síðari tíma rannsóknum.</p>
+<p>Byltingin sem þróunarkenning Darwins olli er <em>ein</em> sú frægasta sem um getur í vísindasögunni. Kenning hans hefur vakið upp svo mikinn fjölda skrifa og málaferla að það er engu líkt. Eitt frægasta dæmið um það eru Aparéttarhöldin sem haldin voru í Tennessee í Bandaríkjunum árið 1925 gegn kennaranum John T. Scopes. Hæstiréttur Bandaríkjanna hefur þó síðan úrskurðað, meðal annars 1968 og 1975, að lög sem banna kennurum að fræða nemendur um þróunarkenninguna séu andstæð stjórnarskránni.</p>
+<p>Nú á dögum er þróunarkenning Darwins almennt viðurkennd sem sagnfræðileg og líffræðileg staðreynd. Hugmyndir hans hafa verið þróaðar áfram með frekari rannsóknum í erfðafræði og lífefnafræði og eru ómissandi þáttur í lífvísindum okkar daga.</p>
+<p>Þessi texi var aðlagaður frá <span class="citation"><em>Þróunarkenningin</em> (2019)</span>.</p>
+<div id="annar-texti-um-darwin" class="section level1">
+<h1>Annar texti um Darwin</h1>
+<p><strong>Hvernig sýndi Darwin fram á þróunarkenninguna?</strong> <span class="citation">(Þorsteinn Vilhjálmsson, 2002)</span></p>
+<p>Charles Darwin (1809-1882) var ungur og óreyndur guðfræðingur með áhuga á náttúrufræði þegar hann réð sig sem náttúrufræðingur í leiðangur kringum hnöttinn með skipi hennar hátignar, The Beagle eða Veiðihundinum. Áhöfn skipsins var ætlað að gera ýmiss konar athuganir og mælingar í ferðinni sem stóð yfir frá 1831-1836. Darwin var ötull að gera alls konar athuganir á náttúrufari, bæði á lífríki og jarðfræði, hélt nákvæma dagbók, tók sýni eftir þörfum og sendi þau jafnvel heim úr ferðinni. Skarpskyggni hans í þessu vakti athygli vísindamanna heima fyrir strax á meðan á ferðinni stóð. Hann var einnig ötull að skrifa um athuganir sínar að henni lokinni og hélt síðan áfram rannsóknum í líffræði, meðal annars með bréfaskriftum og gagnaöflun frá öðrum vísindamönnum. Árið 1858, þegar hann setti þróunarkenningu sína fram, var hann orðinn reyndur og viðurkenndur vísindamaður.</p>
+<p>Margir voru að átta sig á því um þessar mundir að lífríki jarðar hefði þróast. Vandinn var hins vegar sá mestur að átta sig nánar á hreyfiöflum og orsökum þróunarinnar þannig að menn fengju heildstæða og sannfærandi mynd af henni. Þetta tókst Darwin með þróunarkenningunni, einkum með því nýmæli sem fólst í hugmyndum hans um náttúruval.</p>
+<p>Charles Darwin, samstarfsmenn hans og samtíðarmenn, renndu stoðum undir þróunarkenninguna með ýmiss konar gögnum og rannsóknum enda var henni í fyrstu vel tekið meðal líffræðinga. Efnisyfirlitið í bókinni frægu Um uppruna tegundanna gefur gott yfirlit um þessi atriði. Meðal gagna, athugana og aðferða sem stuðst var við má nefna eftirfarandi:</p>
+<ul>
+<li>Gögn um reynslu manna af kynbótum húsdýra og nytjajurta og breytingu tegunda og afbrigða með þeim.</li>
+<li>Athuganir á hvers kyns breytileika og aðlögun í lífríkinu.</li>
+<li>Skilningur á lífsbaráttunni í lífríki jarðar og náttúruvali sem afleiðingu baráttunnar.</li>
+<li>Gögn um steingervinga sem menn voru að finna um þessar mundir í jarðlögum víðs vegar um heiminn, þar á meðal eftir tegundir sem voru nú útdauðar eins og til dæmis risaeðlurnar.</li>
+<li>Gögn um útbreiðslu dýra- og jurtategunda í hinum ýmsu heimsálfum.</li>
+<li>Hvers konar samanburður á lífverum og tegundum, samspili þeirra og áhrifum umhverfis.</li>
+<li>Gögn um jarðsöguna, þar á meðal um hin ýmsu skeið hennar og lífskilyrði á þeim og um ýmsa atburði hennar sem hafa haft áhrif á lífríkið, svo sem eldgos, flóð og ísaldir.</li>
+<li>Skilningur á því að þar hefðu ævinlega verið sömu öflin að verki (sístöðuhyggja).</li>
+<li>Rækileg gögn um flokkun og skyldleika tegunda í lífríkinu, allar götur frá frægu flokkunarstarfi Svíans Linnés á 18. öld.</li>
+</ul>
+<p>Afrek Darwins fólst ekki síst í því að tengja saman öll þessi atriði í eina heild þannig að allt féll saman eins og í púsluspili. Þar munaði mest um það sem áður var ýjað að, að hann gerði sér grein fyrir því að lífstofnar fjölga sér ævinlega miðað við lífsrýmið þannig að það leiðir til lífsbaráttu þar sem náttúruval segir til sín. Darwin var höfundur þess hugtaks en aðrir orðuðu þetta síðar þannig, sem frægt er orðið, að “hinir hæfustu lifa af.” Darwin segir sjálfur svo frá þessari uppgötvun sinni:</p>
+<p><em>Í október 1838, það er fimmtán mánuðum eftir að ég hóf kerfisbundna rannsókn mína, vildi svo til að ég las mér til skemmtunar bók Malthusar um Fólksfjöldann. Ég var vel undir það búinn að gera mér grein fyrir lífsbaráttunni sem fer fram hvar sem er, því að ég hafði gert sleitulausar athuganir á venjum dýra og jurta. Mér flaug því strax í hug að við þessar aðstæður mundu hagstæðar breytingar á lífverum haldast en óhagstæðar breytingar mundu líða undir lok. (Charles Darwin, The Autobiography of Charles Darwin 1809-1882, ritstj. Nora Barlow. New York: W.W. Norton, 1958, 120).</em></p>
+<p>Við getum líka spurt Darwin sjálfan hvaða lögmál efninu eru sett og ráða lífi og dauða tegundanna. Hann svarar því fúslega í niðurlagsorðum hinnar frægu bókar Um upprunann. Orð hans lýsa jafnframt ást hans á náttúrunni og óbilandi trú á hið einfalda í hinu flókna sem hefur einmitt alltaf verið eitt aðalsmerki allra vísinda:</p>
+<p><em>Það er forvitnilegt að gera sér í hugarlund árbakka með flóknum gróðri af mörgum tegundum þar sem fuglar syngja í runnum, margvísleg skordýr þjóta um loftið og maðkar skríða um raka jörðina – og hugleiða síðan að allar þessar hugvitsamlegu gerðu myndir lífsins, sem eru svo ólíkar en jafnframt háðar hver annarri með svo flóknum hætti, skuli allar hafa orðið til samkvæmt lögmálum sem eru að verki allt í kringum okkur.</em></p>
+<p><em>Í víðasta skilningi eru þessi lögmál: Vöxtur ásamt Æxlun; Erfðir sem leiðir næstum af æxlun; Breytileiki fyrir beinan og óbeinan tilverknað ytri lífsskilyrða og vegna þess hvað er notað og hvað ekki; Fjölgunarhlutfall sem er svo hátt að það leiðir til Lífsbaráttu og þess vegna til Úrvals náttúrunnar sem hefur í för með sér Sundurleitni í eðli og Útdauða þeirra lífgerða sem taka ekki framförum. Styrjöld náttúrunnar, hungursneyð og dauði, leiðir þannig beint af sér æðsta fyrirbærið sem við getum hugsað okkur: Æðri dýr verða til.</em></p>
+<p>Það er tign yfir þessari lífssýn þar sem lífið er undirorpið ýmsum öflum en lífsandinn hefur í öndverðu bærst í örfáum myndum eða aðeins einni. Og, meðan jörðin hefur haldið áfram hringsóli sínu samkvæmt hinu óbreytanlega lögmáli þyngdarinnar, hefur svo einfalt og óbrotið upphaf leitt af sér ótal myndir, bæði frábærlega fagrar og undraverðar – og þessi þróun heldur enn áfram. (Darwin, Origin, 1964, 288-289).</p>
+</div>
+<div id="heimildir" class="section level1 unnumbered">
+<h1 class="unnumbered">Heimildir</h1>
+<div id="refs" class="references csl-bib-body hanging-indent" line-spacing="2">
+<div id="ref-thorsteinnvilhjalmssonHvernigSyndiDarwin2002" class="csl-entry">
+Þorsteinn Vilhjálmsson. (2002). <em>Hvernig sýndi Darwin fram á þróunarkenninguna?</em> <span>Vísindavefurinn</span>. <a href="http://www.visindavefur.is/svar.php?id=2364">http://www.visindavefur.is/svar.php?id=2364</a>
+</div>
+<div id="ref-Throunarkenningin2019" class="csl-entry">
+<em>Þróunarkenningin</em>. (2019, 20. janúar). <span>Wikipedia, frjálsa alfræðiritið</span>. <a href="https://is.wikipedia.org/w/index.php?title=%C3%9Er%C3%B3unarkenningin&amp;oldid=1621617">https://is.wikipedia.org/w/index.php?title=%C3%9Er%C3%B3unarkenningin&amp;oldid=1621617</a>
+</div>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>hátterni merkir hegðun<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p>On the Origin of Species by Means of Natural Selection or The Preservation of Favoured Races in The Struggle for Life<a href="#fnref2" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

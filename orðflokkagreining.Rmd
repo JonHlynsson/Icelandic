@@ -1,0 +1,520 @@
+---
+title: "Orðflokkagreining"
+output: 
+  html_document:
+    theme: flatly
+    css: default.css
+    toc: yes
+    # toc_float: yes
+bibliography: heimildir.bib
+citation-style: APA7isl.csl
+---
+
+## Inngagnur að orðflukkagreiningu
+
+Þessi texti er aðlögun á vefbók eftir @dagnybolladottirOrdflokkagreiningWikibaekurSafn2017.
+
+### Orðflokkagreining
+
+Orðflokkur er flokkur orða sem hefur sömu einkenni. Þá er átt við að orðin í hverjum flokki hafi sameiginleg einkenni í samhengi þeirrar merkingu sem þau hafa (þ.e. merkingarleg einkenni), hvernig þau beygjast (þ.e. beygingarleg einkenni), og með hvaða öðrum orðum þau geta staðið (þ.e. setningarleg einkenni).
+
+Orðaforða íslenskunar má gróflega skipta í þrjá flokka: Fallorð, sagnorð og smáorð. Fallorð eru þau orð sem fallbeygjast, sagnorð eru þau orð sem tíðbeygjast og smáorð eru orð sem hvorki tíðbeygjast né fallbeygjast.
+
+Orðflokkar íslenskunnar eru 10 talsins og skiptast eftir ofangreindum formseinkennum:
+Undir þau orð sem fallbeygjast falla:
+
+-	Nafnorð
+-	Lýsingarorð
+-	Fornöfn
+-	Greinir 
+-	Töluorð
+
+Undir þau orð sem tíðbeygjast falla:
+
+-	Sagnorð
+
+Þau orð sem fallbeygjast ekki falla í flokkana:
+
+-	Atviksorð 
+-	Forsetningar
+-	Samtengingar
+-	Nafnháttarmerki
+-	Upphrópun
+
+
+## Nafnorð
+
+Nafnorð eru fallorð, þ.e. orð sem taka fallbeygingu, og beygjast því í öllum föllum. Í íslensku eru fjögur föll; nefnifall (hér er…), þolfall (um…), þágufall (frá…), og eignarfall (til…). Oft er talað um nefnifall sem aðalfall og hin föllin aukaföll.
+
+Dæmi um fallbeygingu:
+
+-	Nf. (hér er) hestur
+-	Þf. (um) hest
+-	Þgf. (frá) hesti
+-	Ef. (til) hests 
+
+Flest fallorð finnast bæði í eintölu og fleirtölu. Þá er talað um tölubeygingu. Til dæmis: 
+
+-	Einn hestur
+-	Margir hestar
+
+Hins vegar eru einnig orð sem finnast aðeins í annarri hvorri tölunni, þ.e. annað hvort einungis í eintölu eða einungis í fleirtölu. Til dæmis finnst orðið sykur aðeins í eintölu; smá sykur, mikill sykur; smá áhugi, mikill áhugi. Að sama skapi finnst orðið buxur aðeins í fleirtölu; einar buxur, margar buxur.
+
+Langflest nafnorð geta bætt við sig greini. Þegar nafnorð stendur með greini vísar það jafnan til einhvers sérstaks afbrigðis af því nafnorði sem um ræðir hverju sinni. Til dæmis:
+
+-	Setingin „nú er dagur“ vísar ekki til neins sérstaks eða ákveðins dags heldur gefur aðeins til kynna að um sé að ræða dag en ekki nótt.
+-	Setningin „nú er dagurinn“ vísar til einhvers sérstaks dag sem hefur eitthvað ákveðið gildi.
+-	Orðið maður getur vísað til hvaða manns sem er en orðið maðurinn vísar til einhvers ákveðins manns.
+
+Greinir er því oft viðskeyttur aftan við nafnorð.
+
+**Þumalfingursregla**: Greinir karlkynsorða er jafnan -inn, greinir kvenkynsorða er jafnan -n, og greinir hvorugkynsorða er jafnan -ið. 
+
+-	Ath. Þumalfingursreglur eru EKKI algildar heldur aðeins reglur sem hafðar eru sem grundvallarviðmið. 
+  - Dæmi: Ef karlkynsorð eða hvorugkynsorð endar á bókstafnum i er EKKI bætt öðru i-i við og í þeim tilvikum tekur viðskeytti greinirinn aðeins formin -nn meðal karlkynsorða og -ð meðal hvorugkynsorða.
+
+Dæmi um viðskeyttan greini:
+
+Karlkyns nafnorð með greini er hægt að bera kennsl á með því að bæta við orðinu minn fyrir aftan:
+
+-	Dagurinn (minn)
+-	Maðurinn (minn)
+-	Penninn (minn)
+  - Í orðinu penni, þá endar orðið á bókstafnum i og er þegar viðskeyttum greini er bætt við orðið „penninn“ bætist aðeins -nn við, þar sem i-ið er nú þegar fyrir hendi í orðinu.
+
+Kvenkyns nafnorð með greini er hægt að bera kennsl á með því að bæta orðinu mín fyrir aftan:
+
+-	Konan (mín)
+-	Tölvan (mín)
+-	Nóttin (mín)
+  - Orðið nótt tekur greininn -in í stað þess að bæta einungis við sig -n.
+    - Orðið endar á samhljóða en ekki sérhljóða sem skýrir þetta misræmi.
+-	Heyrnartólin  (mín)
+  - Orðið heyrnartól enda á samhljóða en ekki sérhljóða og bætist því i við -n greininn.
+
+
+Hvorugkyns nafnorð með greini er hægt að bera kennsl á með því að bæta orðinu mitt fyrir aftan:
+
+-	Barnið (mitt)
+-	Úrið (mitt)
+-	Verkefnið (mitt)
+  - Orðið verkefni endar á samhljóðanum i og er er því aðeins greininum -ð bætt við, þar sem i-ið er þegar fyrir hendi.
+-	 Pennaveskið (mitt)
+  - Orðið verkefni endar á samhljóðanum i og er er því aðeins greininum -ð bætt við, þar sem i-ið er þegar fyrir hendi.
+
+## Greinir
+
+Ath. Greinir er oftast notaður sem viðskeyting aftan við nafnorð en þó finnast sérstök orð, fyrir hvert kyn, sem að teljast til orðflokksins greinir. Þau eru: hinn, hin og hið. Þá skiptir samhengi setningarinnar höfuðmáli en þegar greinirinn stendur laus er hann jafnan á undan lýsingarorði. 
+
+Dæmi:
+
+-	Hinn bjarti dagur
+-	Hin góða kona
+-	Hið græna land
+
+
+## Nafnorð frh. 
+
+Hvert og eitt nafnorð hefur ákveðið kyn, þ.e. málfræðilegt kyn. Í íslensku eru þrjú kyn: karlkyn (Kk.), kvenkyn (Kvk.) og hvorugkyn (Hk.). 
+
+Til að bera kennsl á karlkynsorð er hægt að setja orðið hann fyrir framan orðið (með viðskeyttum greini):
+
+-	Hann maðurinn minn
+-	Hann dagurinn minn
+-	Hann síminn minn
+
+Til að bera kennsl á kvenkynsorð er hægt að setja orðið hún fyrir framan orðið (með viðskeyttum greini):
+
+-	Hún konan mín
+-	Hún tölvan mín
+-	Hún nóttin mín
+
+Til þess að bera kennsl á hvorugkynsorð er hægt að setja orðið það fyrir framan (með viðskeyttum greini):
+
+-	Það barnið mitt
+-	Það ljósið mitt
+-	Það umhverfið mitt
+
+Nafnorð eru svokölluð inntaksorð. Með því er átt við að nafnorð gegna einhvers konar merkingarhlutverki í setningu og ljá henni inntak. 
+
+-	Orðið dagur vísar oft þess að um sé að ræða tímabil þar sem sól er á lofti og/eða fólk er í vinnu eða skóla. Merkingarhlutverk orðsins dagur er því að gefa til kynna einhverja spönn tímabils þar sem fólk er jafnan á fótum.
+-	Orðið barn vísar til einstaklings sem ekki hefur náð fullorðinsaldri, jafnan skilgreint sem einstaklingur yngri en átján ára. Merkingarhlutverk orðsins barn gefur því aldur einstaklings til kynna. 
+
+Einkenni nafnorða er fyrir vikið hægt að taka sem svo að þau hafi þrenn einkenni; setningarleg einkenni, merkingarleg einkenni og beygingarleg einkenni. 
+
+-	Setningarleg einkenni vísa til dæmigerðrar stöðu þeirra innan setningar. Oftast taka nafnorð þó í setningarfræðilegu samhengi stöðu frumlags eða andlags.
+  - Frumlag er gerandinn í setningu og er ávallt í nefnifalli
+
+
+Hægt er að finna frumlag í setningu með því að spyrja sig „hver gerði“ það sem sögnin í setningunni segir.
+
+
+-	Dæmi: 
+  - Húsfreyjan eldaði matinn. (hver eldaði matinn?)
+  - Allir eru duglegir. (hverjir eru duglegir?)
+  - Andlag er þolandinn í setningu og er ávallt í aukafalli; þolfalli, þágufalli, eignarfalli.
+
+Hægt er að finna andlag í setningu með því að spyrja sig hvaða fallorð í setninguni stendur fyrir „hvað gerðist“ en getur þó verið ögn snúnara en að bera kennsl á frumlagið.
+
+-	Dæmi:
+  - Hundurinn eldaði matinn. (Hvað eldaði hundurinn?)
+  - Ég las bókina. (hvað var lesið?)
+
+Dæmigerð setning hefur uppröðunina **Frumlag-sögn-andlag**
+
+  - Hundurinn (frumlag) eldaði (sögn) matinn (andlag).
+
+
+-	Merkingarleg einkenni vísa til þess að nafnorð eru heiti einhvers, þ.e. hafa merkingu sem gefur nafn fyrirbæris til kynna.
+
+
+Dæmi:
+  - Hundur er heiti á dýri sem hefur fjóra fætur og geltir.
+  - Bók er heiti á ritsmíð sem er a.m.k. nokkrar arkir að stærð, bundin og límd í kjöl eða gefin út á rafrænu formi.
+  - Tölva er heiti á búnaði sem getur framkvæmt flókna útreikninga, þar á meðal fjölmargar reikningsaðgerðir og rökaðgerðir, án mannlegra afskipta.
+
+
+-	Beygingarleg einkenni vísa til þess að nafnorð beygjast í kyni, tölu, föllum og bæta við sig viðskeyttum greini:
+
+-	Kyn: maðurinn, konan, barnið
+-	Tala: einn dagur, margir dagar
+-	Föll: maður, mann, manni, manns
+
+
+## Sagnorð
+Sagnorð eru oftast þau orð í setningu sem tákna einhverja athöfn. Það er að segja, eitthvað sem er gert. Til dæmis að fara, að geta, að hlaupa, að kenna, að skrifa o.s.frv. Sagorð hafa fyrir vikið það merkingarlega einkenni að lýsa einhvers konar verknaði eða ástandi, þ.e. eitthvað sem gerðist eða er að gerast.
+
+Sagnorð má þekkja með því á því að geta sett orðið „að“ fyrir framan það í nafnhætti. Nafnháttur er fallháttur sagnar.
+
+Sagnorð eru orð sem tíðbeygjast og er tíðbeyging eitt skýrasta einkenni þeirra. Þegar orð tíðbeygist er ýmist hægt að nota það í nútíð eða þátíð.
+
+Dæmi (sögnin að fara):
+
+-	Ég fer (nútíð) á eftir
+-	Ég fór (þátíð) áðan
+
+Sagnorð persónubeygjast og er þá átt við um að hægt sé að nota þau í 1. persónu, 2. persónu, eða 3. persónu. Í íslensku eru því þrjár persónur.
+
+-	1. persóna: ég/við
+  - Er um mann sjálfan
+-	2. persóna: þú/þið
+  - Er um einhvern annan sem talað er við beint
+-	3. persóna: hann, hún, það/þeir, þær, þau
+  - Er um einhvern annan sem talað er við óbein
+
+Sögnin „að fara“ í persónum:
+
+-	1. persóna: ég fer
+-	2. persóna: þú ferð
+-	3. persóna: hann fer
+
+
+Enn fremur tölubeygjast sagnorð, þ.e. sagnorð eru ólík eftir því hvort um sé að ræða eintölu eða fleirtölu.
+
+
+Eintala:
+
+-	Ég skrifa
+-	Þú skrifar
+-	Hann skrifar
+
+Fleirtala:
+
+-	Við skrifum
+-	Þið skrifið
+-	Þeir skrifa 
+
+Sagnorð hafa sex hætti í íslensku, 3 persónuhætti og 3 fallhætti.
+
+Persónuþættir sagna eru:
+
+-	Framsöguháttur
+  - Ég fer/ég fór
+-	Viðtengingarháttur 
+  - Ég fari/ég færi
+-	Boðháttur (er eins og skipun)
+  - Farðu/farið 
+
+
+Fallhættir sagna eru:
+-	Nafnháttur
+  - Að fara
+-	Lýsingarháttur þátíðar
+  - Hef farið/var farið
+-	Lýsingarháttur nútíðar
+  - Farandi 
+
+
+Að auki hafa sagnorð ýmist veika eða sterka beygingu.
+
+
+Sagnir sem hafa endinguna -ði, -di, -t í þátíð eintölu 1. persónu eru veikar.
+
+-	Ég keyrði
+-	Ég sótti
+-	Ég kramdi
+
+
+Flest sagnorð í íslensku hafa veika beygingu.
+
+Sagnir sem eru endingarlausar í þátíð 1. persónu eintölu eru sterkar og hafa aðeins eitt atkvæði.
+
+-	Ég svaf
+-	Ég leit
+-	Ég sat
+
+Sagnorð skipa jafnan annað sætið í setningu, sé miðað við FSA regluna um eðlilega orðaröð (frumlag-sögn-andlag)
+
+-	Maðurinn keyrði bílinn
+-	Hundurinn eldaði matinn
+
+
+
+## Lýsingarorð
+
+Lýsingarorð eru fallorð en beygjast einnig í kyni og tölu (eintölu og fleirtölu) auk þess að stigbreytast. Lýsingarorð lýsa einhverju ástandi eða segja til um eiginleika einhvers. 
+Stigbreyting vísar til einhvers konar aukningar með tilliti til merkingar. Það er að segja, eitthvað er meira eða minna eða með öðrum orðum er stigmagnandi aukning í þeirri merkingu sem orðið stendur fyrir. Stigbreyting er því það fyrirbæri sem lýsir því þegar lýsingarorð bæta við sig viðskeytum til að gefa til kynna mismunandi stig þess orðs sem það tilgreinir og í íslensku finnast þrjú stig: frumstig, miðstig, og efsta stig.
+
+Dæmi um stigbreytingu:
+
+-	Frumstig: Stór
+-	Miðstig: Stærri
+-	Efsta stig: Stærstur 
+
+Stigbreyting getur að auki verið af tvennum toga; regluleg og óregluleg. 
+Með reglulegri stigbreytingu er átt við að lýsingarorð sé myndað af sama stofni í öllum þremur stigum.
+
+-	Frumstig: Flott
+-	Miðstig: Flottara 
+-	Efsta stig: Flottast
+
+Með óreglulegri stigbeygingu er átt við að miðstig og efsta stig sé myndað af öðrum stofni en frumstigið.
+
+Dæmi:
+
+-	Frumstig: Góður
+-	Miðstig: Betri
+-	Efsta stig: Bestur
+
+Eða:
+
+-	Frumstig: Mikið 
+-	Miðstig: Meira
+-	Efsta stig: Mest
+
+Lýsingarorð hafa ýmist veika eða sterka beygingu. Ef að lýsingarorð endar á sérhljóða í öllum föllum eintölu og fleirtölu í er talað um að það sé veikbeygt en ef að það endar á samhljóða er það sterkbeygt. 
+
+Lýsingarorð standa vitaskuld ekki ein í setningu og jafnan þegar lýsingarorð stendur með nafnorði með ákveðnum greini hefur það veika beygingu. 
+
+Dæmi:
+
+-	Stóra taskan
+
+Hins vegar þegar lýsingarorð stendur með nafnorði án ákveðins greinis hefur það yfirleitt sterka beygingu.
+
+Dæmi:
+
+-	Stór taska
+
+## Fornöfn
+
+Fornöfn eru fallorð sem beygjast í kyni, eintölu/fleirtölu og eftir falli (Nf., Þf., Þgf. Ef.).
+Fornöfn geta komið í stað nafna, nafnorða eða nafnliða. 
+Ekki eru öll fornöfn sama eðlis heldur skipast þau í undirflokka eftir einkennum sínum:
+
+Persónufornöfn (pfn.) 
+
+-	Ég
+-	Þú
+-	hann/hún/það
+
+Ábendingarfornöfn (áfn.)
+
+-	sá/sú/það
+-	þessi/þessi/þetta
+-	hinn/hin/hitt
+
+Eignarfornöfn (efn.)
+
+-	minn/mín/mitt
+-	þinn/þín/þitt 
+-	vor/vort/vort
+
+Afturbeygð fornöfn (afn.)
+
+-	sig/sinn
+-	sín/sitt
+
+Spurnarfornöfn (spfn.)
+
+-	hver/hver/hvert
+-	hvor/hvor/hvort
+-	hvaða
+
+Óákveðin fornöfn (ófn.)
+
+-	annar
+-	fáeinir
+-	enginn
+-	neinn
+-	ýmsir
+-	báðir
+-	sérhver
+-	hvorugur
+-	sumur
+-	hver
+-	einn
+-	hvor
+-	nokkur
+-	einhver
+
+
+## Atviksorð
+
+Atviksorð eru orð sem beygjast ekki. Þeirra hlutverk er að segja nánar til um (eða útskýra á einhvern hátt betur) sagnorð og lýsingarorð. Atviksorð er oft svipuð lýsingarorðum EN hafa ólíka stöðu í setningum.
+
+Atviksorð segja til um hvernig eitthvað er gert (þ.e., háttaratviksorð), hvar eitthvað gerist (þ.e., staðaratviksorð), hvenær eitthvað gerðist (þ.e., tíðaratviksorð), spyrja um eitthvað (þ.e., spurnaratviksorð) eða geta verið notuð til áherslu (þ.e., áhersluatviksorð). 
+Spurnaratviksorð byrja alltaf á bókstöfunum hv-, og finnast bæði í beinum og óbeinum spurnarsetningum.
+
+Dæmi um flokka atviksorða:
+
+Háttaratviksorð:
+
+-	vel, illa, vandlega, hægt, svona.
+
+Staðaratviksorð:
+
+-	heima, hérna (kyrrstaða).
+-	hingað, þangað (stefna).
+
+Tíðaratviksorð:
+
+-	nú, núna, síðar, oft.
+
+Áhersluatviksorð:
+
+-	mjög, ógeðslega, rosalega.
+
+Spurnaratviksorð:
+
+-	hvaðan, hvar, hvert, hvenær, hvaða, hvernig, hví, hversu.
+
+## Töluorð
+
+Töluorð eru fallorð sem tákna tölu og skiptast í frumtölur og raðtölur. Frumtölur eru óákveðnar tölur sem vísa ekki til neinnar sérstakrar tölu heldur aðeins tölunnar sjálfrar á meðan raðtölur gefa röðun talnanna til kynna.
+
+-	Frumtölur:
+  - Einn
+  - Tveir
+  - Þrír
+-	Raðtölur
+  - Fyrsti
+  - Annar 
+  - Þriðji
+
+
+## Forsetningar
+
+Forsetningar eru óbeygjanlegar og taka fyrir vikið engum formbreytingum. Forsetningar einkennast hins vegar af því að stýra falli þeirra fallorða sem þær standa með og eru því nefndar stýriorð.
+
+Dæmi:
+
+-	Hann kemur í dag 
+-	Hún er hjá systur sinni
+-	Hann gengur upp stigann
+
+Orðið „í“ er forsetning og getur stýrt tveimur föllum, þol- og þágufalli en þá er merkingarmunur setningarinnar sem ræður för. 
+
+-	Stúlkan fer í bæinn (þolfall)
+-	Stúlkan er í bænum (þágufall)
+
+Forsetningar hafa engin sérstök merkingarleg einkenni og beygjast EKKI, en stýra fallbeygingu. 
+
+
+## Samtengingar 
+
+Orð sem tengja saman setningarliði, t.d. „og“ 
+
+Dæmi:
+
+-	Jón er smiður og Gunna er rafvirki
+-	Gunna er dökkhærð en Sigga er ljóshærð
+
+Setningarnar geta því staðið einar á báti og þjóna samteningar þeim tilgangi að tengja setningaliði saman.
+
+Hægt er að skipta samtengingum í aðaltengingar og aukatengingar. 
+
+Aðaltengingar tengja saman aðalsetningar sem geta staðið einar á báti. 
+
+-	Dæmi: Kalli er maður og Þorgerður er kona.
+
+Aukatengingar tengja aukasetningar, þ.e. viðbótarupplýsingar, við aðalsetningu. Aukasetningar geta ekki staðið án aðalsetningar.
+
+-	Dæmi: Hrefna er tæknimaður en kann ekki á tölvur
+  - Hér gæti „en kann ekki á tölvur“ ekki staðið sér á báti.
+
+Dæmi um aukatengingar:
+
+-	Skýringartenging: að
+-	Tilvísunartenging: sem
+-	Skilyrðistenging: nema, ef
+-	Spurnartenging: hvort
+-	Tíðartenging: meðan, þegar
+
+## Nafnháttarmerki
+
+Nafnháttarmerki er orðið *að*. Orðið að stendur einungis með sögn í nafnhætti.
+
+-	Dæmi: 
+  - hún ákvað að læra
+  - hann sagði mér að loka búðinni
+
+
+## Upphrópum
+
+Upphrópun (skammstafað sem uh.) er óbeygjanlegt smáorð sem hrópað eða kallað er upp og lýsir tilfinningum, t.d. undrun, gleði, viðbrögðum, ótta, afstöðu og sorg. Upphrópun getur jafngilt heilli setningu; t.d. Ha? Upphrópun getur stundum orðið að nafnorði, t.d. Sagðirðu ha?. Bæta þær þá við sig greini eins og önnur nafnorð; Þú ert nískur á jáin.
+
+
+
+
+
+# Krossapróf:
+
+1.	Hvaða orðflokki tilheyrir orðið „gesti“ í eftirfarandi setningu?:
+Mér þykir gaman að fá gesti.
+a.	Sagnorð
+b.	Samtenging
+c.	Nafnorð
+d.	Nafnháttarmerki
+
+2.	Hvert er eitt aðaleinkenni forsetninga?
+a.	Þær beygjast í föllum, kynjum og tölu
+b.	Þær stýra falli
+c.	Þær tíðbeygjast
+d.	Þær lýsa alltaf verknaði
+
+3.	Hvaða orðflokki tilheyrir orðið „að“ í eftirfarandi setningu?:
+Gunna fer að sofa.
+a.	Nafnháttarmerki
+b.	Samtenging 
+c.	Límorð
+d.	Stýriorð
+
+4.	Hvaða orðflokki tilheyrir orðið „mjög“ í eftirfarandi setningu?:
+Hrefna er mjög dugleg að lesa.
+a.	Flokki nafnorða
+b.	Flokki sagnorða
+c.	Flokki fornafna
+d.	Flokki atviksorða
+
+5.	Hvaða orð geta bætt við sig greini?
+a.	Sagnorð
+b.	Lýsingarorð
+c.	Forsetningar
+d.	Nafnorð
+
+Rétt svör eru **c**, **b**, **a**, **d** og **d**.
+
+# Heimild
+
+
