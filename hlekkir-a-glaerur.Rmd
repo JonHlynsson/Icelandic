@@ -6,24 +6,31 @@ output:
     css: default.css
     toc: yes
     toc_float: yes
+    toc-depth: 6
     self_contained: true
+bibliography: heimildir.bib
+citation-style: APA7isl.csl
 ---
 
 
 ![](images/Hlynsson/Banner.jpg)
 
+Glærurnar á þessari síðu styðjast við opin aðgang Menntamálastofnunar á ýmiskonar námsefni [@Menntamalastofnun2016].
+
+# 4-9 bekkur - glærupakkar
+
 
 ## Laxdæla glærupakkar
 
 
-#### Glærupakki 1 - forþekking
+### Glærupakki 1 - forþekking
 
 ```{r, echo=F}
 xaringanExtra::embed_xaringan("laxdæla-glærur-1.html")
 ```
 
 
-#### Glærupakki 2 - kafli 1-11
+### Glærupakki 2 - kafli 1-11
 
 ```{r, echo=F}
 xaringanExtra::embed_xaringan("laxdæla-glærur-2.html")
@@ -44,7 +51,7 @@ xaringanExtra::embed_xaringan("class1-4-lesson-1.html")
 
 <br><br><br><br><br><br><br><br>
 
-### Heimildir 
+# Heimildir 
 <div id="refs"></div>
 
 <hr>
