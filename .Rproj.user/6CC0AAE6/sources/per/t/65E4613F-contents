@@ -78,10 +78,8 @@ knitr::include_graphics("images/Listin að lesa og skrifa/Á róló/forsíða.pn
 ---
 
 
-
-
 ```{r}
-knitr::include_app("bækur/Listin að lesa og skrifa 3a - Á róló.pdf", height = 600)
+knitr::include_app("https://drive.google.com/file/d/15zqCorJm0VSboN2Q9gha6wr3piNtl1Oz/preview", height = 600)
 ```
 
 

@@ -4,6 +4,9 @@ output:
   html_document:
     theme: flatly
     css: default.css
+    toc: yes
+    toc_float: yes
+    self_contained: true
 ---
 
 
