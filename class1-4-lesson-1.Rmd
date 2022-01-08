@@ -1,0 +1,86 @@
+---
+title: "Móðurmálskannsla"
+subtitle: ""  
+author: 
+  - "Jón Ingi Hlynsson"
+date: '`r Sys.Date()`'
+institute: "Omniglot AB"
+output:
+  xaringan::moon_reader:
+    css: xaringan-themer.css
+    self_contained: true
+    seal: false
+    nature:
+      slideNumberFormat: "%current%"
+      highlightStyle: github
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: true
+---
+
+
+```{r setup, include=FALSE, warning=F}
+options(htmltools.dir.version = FALSE)
+library(kableExtra)
+knitr::opts_chunk$set(
+  # fig.width=9, fig.height=6, fig.retina=3, dpi = 150,
+  # out.width = "150%",
+  cache = FALSE,
+  echo = FALSE,
+  message = FALSE, 
+  warning = FALSE,
+  hiline = TRUE
+)
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_duo_accent(
+  primary_color = "#1381B0",
+  secondary_color = "#FF961C",
+  inverse_header_color = "#FFFFFF",
+  inverse_background_color = "#4c516d"
+)
+```
+
+class: center, middle
+background-image: url(images/Omniglot-logo.png)
+background-size: 125px
+background-position: 5% 92%
+
+
+# Bókin *Á róló*
+
+### Móðurmálskennsla
+
+Jón Ingi Hlynsson
+
+
+
+#### Omniglot AB 
+
+#### Glærum síðast breytt: `r Sys.Date()`
+
+---
+
+
+## Í dag ætlum við að skoða bókina *Á róló*  
+
+
+```{r, out.width="30%"}
+knitr::include_graphics("images/Listin að lesa og skrifa/Á róló/forsíða.png")
+```
+
+
+### Við ætlum líka að skoða *nýja **verkefnabók***
+
+
+---
+
+
+
+
+```{r}
+knitr::include_app("bækur/Listin að lesa og skrifa 3a - Á róló.pdf", height = 600)
+```
+

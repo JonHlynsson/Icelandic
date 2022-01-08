@@ -18,7 +18,8 @@ output:
       countIncrementalSlides: true
 ---
 
-```{r setup, include=FALSE}
+
+```{r setup, include=FALSE, warning=F}
 options(htmltools.dir.version = FALSE)
 library(kableExtra)
 knitr::opts_chunk$set(
@@ -30,8 +31,6 @@ knitr::opts_chunk$set(
   warning = FALSE,
   hiline = TRUE
 )
-#fig.width=20, fig.height=15, fig.retina=13
-# https://scontent-arn2-2.xx.fbcdn.net/v/t1.6435-9/49625893_10158449283896980_6346470992008708096_n.png?_nc_cat=108&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=viC67fSTHZEAX_YQVZk&_nc_ht=scontent-arn2-2.xx&oh=00_AT_tC-v9RCri9Ga_1-6khqI8owaASjBwNO-m4lwIWJgLyw&oe=61EE1A0E
 ```
 
 ```{r xaringan-themer, include=FALSE, warning=FALSE}
@@ -48,6 +47,7 @@ class: center, middle
 background-image: url(images/Omniglot-logo.png)
 background-size: 125px
 background-position: 5% 92%
+
 
 # Titill
 

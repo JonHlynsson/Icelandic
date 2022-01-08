@@ -1,0 +1,85 @@
+---
+title: "Glærur 2021"
+output: 
+  html_document:
+    theme: flatly
+    css: default.css
+    toc: yes
+    toc_float: yes
+    self_contained: true
+bibliography: heimildir.bib
+citation-style: APA7isl.csl
+---
+
+Hér má finna glærukynningar frá árinu 2021. Í framtíðinni koma glærurnar til með að vera með öðru sniði (sjá t.d. [**Laxdælu glærur**](laxdæla-glærur-1.html)).
+
+Þær glærur sem finna má á þessari síðu eru flestallar í `gif` sniði og heldur ómeðfærilegar. PowerPoint gefur ekki færi á því að vista glærur í `html` sniði og fyrir vikið ákvað ég að notast við fyrrgreint `gif` snið. 
+
+Hafir þú áhuga á að nálgast glærurnar í PowerPoint sniði getur þú haft samband við mig (sjá [hér](about.html)).
+
+
+## Glærur fyrir nemendur í 4-9 bekk
+
+### Upphaf annarinnar
+
+:::::{.center}
+![](OldSlides/Móðurmálskennsla tími 1.gif)
+:::::
+
+### Farið yfir áætlun vetrarins og ljóð kynnt í fyrsta skipti fyrir nemendum
+
+:::::{.center}
+![](OldSlides/Móðurmálskennsla tími 2.gif)
+:::::
+
+### Hvað eru íslendingar að gera í loftslagsmálum?
+
+<iframe src="https://drive.google.com/file/d/11KbZxkQDWtp6M5cXYPUhc3QEj-GM_IeA/preview" width="640" height="480" allow="autoplay"></iframe>
+
+
+### Orðflokkagreining
+
+:::::{.center}
+![](OldSlides/Orðflokkagreining.gif)
+:::::
+
+[**Smelltu hér**](orðflokkagreining.html) til að skoða glósur um orðflokkagreiningu.
+
+### Uppruni tegundanna
+
+
+<iframe src="https://drive.google.com/file/d/11GI5MJSVW3cCeG6lt_HzrRKprcNTPfgh/preview" width="640" height="480" allow="autoplay"></iframe>
+
+
+[**Smelltu hér**](TextiUmDarwin.html) til þess að skoða textan sem var lesinn í tíma.
+
+
+### Hvað eru ljóð og hvernig skrifum við þau?
+
+:::::{.center}
+![](OldSlides/Móðurmálskennsla tími 7 - ljóð.gif)
+:::::
+
+### Hvernig skrifum við smásögur?
+
+:::::{.center}
+![](OldSlides/Móðurmálskennsla - smásögur.gif)
+:::::
+
+
+
+
+## Glærur fyrir nemendur í 1-3 bekk
+
+### Bókin *Í sól* 
+
+:::::{.center}
+![](OldSlides/åk1-1.gif)
+:::::
+
+
+### Bókin *Sólaás 7*
+
+:::::{.center}
+![](OldSlides/åk1-2.gif)
+:::::
