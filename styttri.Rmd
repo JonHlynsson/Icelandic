@@ -21,7 +21,7 @@ citation-style: APA7isl.csl
 
 ### Einfölduð útgáfa
 
-Þetta skjal er tilraun mín til þess að einfalda málfar í bókinni @Laxdaela2017. Skjal þetta er skapað með það að leiðarljósi að gera söguna enn aðgengilegri en hún þegar er. 
+Þetta skjal er tilraun mín til þess að einfalda málfar bókarinnar *Laxdæla Saga* [@Laxdaela2017]. Skjal þetta er skapað með það að leiðarljósi að gera söguna enn aðgengilegri en hún þegar er. 
 
 
 **Yfirlýsing**: Texti þessi er ætlaður nemendum í íslenskri móðurmálskennslu og **ekki** ætlaður til dreifingar. Enn fremur er þessum texta **ekki** ætlað að skyggja á útgáfu bókarinnar sem aðgengileg er á vefsvæði Menntamálastofnunar. Allur höfundarréttur liggur hjá útgefanda bókarinnar en ekki hjá mér.
