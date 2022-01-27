@@ -41,13 +41,18 @@ xaringanExtra::embed_xaringan("laxdæla-glærur-2.html")
 # 1-3 bekkur - glærupakkar:
 
 
-### Bókin á róló
+### Bókin Á róló
 
 ```{r, echo=FALSE}
 xaringanExtra::embed_xaringan("class1-4-lesson-1.html")
 ```
 
 
+### Bókin Í vali
+
+```{r, echo=FALSE}
+xaringanExtra::embed_xaringan("class1-4-lesson-2.html")
+```
 
 <br><br><br><br><br><br><br><br>
 
