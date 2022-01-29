@@ -16,6 +16,9 @@ navbar:
       - text: "Orðla: Orðaleikur á íslensku"
         href: "https://torfbaer.itch.io/ordla?secret=tAAEeMtlFSHv4FJo8eTn6cfyd2M"
         icon: fa-gamepad
+      - text: "Æfingar í stafsetningu"
+        href: "https://vefir.mms.is/stafsetning/index.htm"
+        icon: fa-edit
       - text: "----------"
       - text: "Laxdæla"
       - text: "Laxdæla rafbók"
@@ -49,6 +52,9 @@ navbar:
       - text: "Stafaleikir Bínu"
         href: "https://vefir.mms.is/bina/"
         icon: fa-behance
+      - text: "Lestur er leikur"
+        href: "https://vefir.mms.is/lestur_er_leikur/"
+        icon: fa-assistive-listening-systems
     - text: "Glærur 2022"
       href: hlekkir-a-glaerur.html
       icon: fa-film
