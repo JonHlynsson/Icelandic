@@ -37,6 +37,13 @@ xaringanExtra::embed_xaringan("laxdæla-glærur-2.html")
 ```
 
 
+### Glærupakki 3 - kafli 12-23
+
+```{r, echo=F}
+xaringanExtra::embed_xaringan("laxdæla-glærur-3.html")
+```
+
+
 
 # 1-3 bekkur - glærupakkar:
 
