@@ -1,27 +1,27 @@
 {
-    "id": "9D196B1E",
-    "path": "~/GitHub/Icelandic/laxdæla-glærur-2.Rmd",
-    "project_path": "laxdæla-glærur-2.Rmd",
+    "id": "7A5FEB01",
+    "path": "~/GitHub/Icelandic/styttri.Rmd",
+    "project_path": "styttri.Rmd",
     "type": "r_markdown",
-    "hash": "2830358007",
+    "hash": "3816892884",
     "contents": "",
     "dirty": false,
-    "created": 1643610648066.0,
+    "created": 1641042278548.0,
     "source_on_save": false,
     "relative_order": 8,
     "properties": {
+        "tempName": "Untitled1",
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "426,0",
-        "scrollLine": "419",
-        "last_setup_crc32": ""
+        "cursorPosition": "829,28",
+        "scrollLine": "815"
     },
     "folds": "",
-    "lastKnownWriteTime": 1643611267,
+    "lastKnownWriteTime": 1644077778,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1643611267942,
+    "last_content_update": 1644077778529,
     "read_only": false,
     "read_only_alternatives": []
 }
