@@ -61,6 +61,12 @@ xaringanExtra::embed_xaringan("class1-4-lesson-1.html")
 xaringanExtra::embed_xaringan("class1-4-lesson-2.html")
 ```
 
+### Bókin Moli
+
+```{r, echo=FALSE}
+xaringanExtra::embed_xaringan("class1-4-lesson-3.html")
+```
+
 <br><br><br><br><br><br><br><br>
 
 # Heimildir 

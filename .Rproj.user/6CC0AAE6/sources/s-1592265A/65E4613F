@@ -1,9 +1,9 @@
 {
     "id": "65E4613F",
-    "path": "~/GitHub/Icelandic/class1-4-lesson-2.Rmd",
-    "project_path": "class1-4-lesson-2.Rmd",
+    "path": "~/GitHub/Icelandic/class1-4-lesson-3.Rmd",
+    "project_path": "class1-4-lesson-3.Rmd",
     "type": "r_markdown",
-    "hash": "0",
+    "hash": "2086302504",
     "contents": "",
     "dirty": false,
     "created": 1641654218842.0,
@@ -12,16 +12,16 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "107,76",
-        "scrollLine": "0",
-        "last_setup_crc32": ""
+        "cursorPosition": "77,52",
+        "scrollLine": "72",
+        "last_setup_crc32": "1592265Afc063448"
     },
     "folds": "",
-    "lastKnownWriteTime": 1643275344,
+    "lastKnownWriteTime": 1644330312,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1643275344459,
+    "last_content_update": 1644330312772,
     "read_only": false,
     "read_only_alternatives": []
 }
