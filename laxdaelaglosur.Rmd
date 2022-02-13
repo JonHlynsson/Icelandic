@@ -12,13 +12,27 @@ citation-style: APA7isl.csl
 
 ---
 
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YREZ4RHVM6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YREZ4RHVM6');
+</script>
+
 
 # Glósur úr Laxdælu
 
 
-Á þessari síðu má finna glósur úr kennarahandbók Laxdælu Sögu [@Laxdaela2017].
+Á þessari síðu má finna glósur úr kennarahandbók Laxdælu Sögu [@Laxdaela2017].  
+
+Ég hef leitast við að skipta glósunum upp í hluta sem samsvara yfirferð okkar á bókinni, þ.e. í þrjá hluta. 
 
 <hr>
+
+## Hluti 1: Kafli 1-11
 
 ### Unnur djúpúðga
 
@@ -90,6 +104,8 @@ Hér er sagt frá því hvernig Þorleikur bróðir Ólafs hverfur úr sögunni 
 
 <hr>
 
+## Hluti 2: Kafli 12-23
+
 ### Kjartan mætir Ólafi Noregskonungi
 
 Kjartan kaupir hlut í skipi og ákveður að sigla til Noregs. Bolli auðvitað með því þeir frændur gera allt saman. Mikilvægt að Kjartan spyr hvorki föður sinn né Guðrúnu um ráð en altalað er í sveitinni að þau Guðrún séu par. Guðrún tekur fréttunum skiljanlega illa og vill fara með. Kjartan vill ekki taka Guðrúnu með en segir henni að bíða sín í þrjú ár.
@@ -158,6 +174,8 @@ Nú líður að uppgjörinu. Kjartan kemur í veg fyrir að Bolli eignist land �
 Bolli vill enn halda friðinn en bræður Guðrúnar eru óðir. Guðrún eggjar bræður sína til að ráðast á Kjartan. Bolli neitar að fara með þeim en Guðrún eggjar hann til að fara með. *Kjartan er **grunlaus***.
 
 <hr>
+
+## Hluti 3: Kafli 24-32
 
 ### Bardagi Bolla og Kjartans
 
