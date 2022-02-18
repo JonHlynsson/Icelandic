@@ -53,7 +53,7 @@ xaringanExtra::embed_xaringan("laxdæla-glærur-2.html")
 xaringanExtra::embed_xaringan("laxdæla-glærur-3.html")
 ```
 
-### Glærupakki 3 - kafli 24-34
+### Glærupakki 4 - kafli 24-34
 
 ```{r, echo=F}
 xaringanExtra::embed_xaringan("laxdæla-glærur-4.html")
