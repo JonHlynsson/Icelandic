@@ -83,6 +83,12 @@ xaringanExtra::embed_xaringan("class1-4-lesson-2.html")
 xaringanExtra::embed_xaringan("class1-4-lesson-3.html")
 ```
 
+### Bókin Í síma
+
+```{r, echo=FALSE}
+xaringanExtra::embed_xaringan("class1-4-lesson-4.html")
+```
+
 <br><br><br><br><br><br><br><br>
 
 # Heimildir 

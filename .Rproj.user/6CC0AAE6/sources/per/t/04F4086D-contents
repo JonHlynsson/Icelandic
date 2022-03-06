@@ -49,7 +49,7 @@ background-size: 125px
 background-position: 5% 92%
 
 
-# Bókin *Moli*
+# Bókin *Í Síma*
 
 ### Móðurmálskennsla
 
@@ -64,18 +64,18 @@ Jón Ingi Hlynsson
 ---
 
 
-## Í dag ætlum við að skoða bókina *Moli*  
+## Í dag ætlum við að skoða bókina *Í síma*  
 
 --
-```{r, out.width="30%"}
-knitr::include_graphics("images/Listin að lesa og skrifa/Moli/forsíða.png")
+```{r, out.width="20%"}
+knitr::include_graphics("images/Listin að lesa og skrifa/Í síma/forsíða.png")
 ```
 
 --
 ### Við ætlum líka að skoða *nýja **verkefnabók***
 
 --
-Og við ætlum líka að skoða **íslenska stafrófið**.  
+Og við ætlum líka að skoða **íslenska stafrófið** aftur!  
 
 --
 Í lok tímans, *ef tími gefst*, ætlum við svo að skoða [stafaleik Bínu](https://vefir.mms.is/bina/)
@@ -135,8 +135,9 @@ x, y, ý, svo þ, æ, ö.
 
 
 ```{r}
-knitr::include_app("https://drive.google.com/file/d/1JRRWNSPAu_KrMQMZGvABeZGZci2y_iVu/preview", height = 600)
+knitr::include_app("https://drive.google.com/file/d/1PsGea-elOPqtVbJ8lBgfjIb3D185D3BZ/preview", height = 600)
 ```
+
 
 
 ---
