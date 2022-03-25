@@ -1,0 +1,191 @@
+---
+title: "Laxdæla"
+subtitle: ""  
+author: 
+  - "Jón Ingi Hlynsson"
+date: '`r Sys.Date()`'
+institute: "Omniglot AB"
+output:
+  xaringan::moon_reader:
+    css: xaringan-themer.css
+    self_contained: true
+    seal: false
+    nature:
+      slideNumberFormat: "%current%"
+      highlightStyle: github
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: true
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+library(kableExtra)
+knitr::opts_chunk$set(
+  cache = FALSE,
+  echo = TRUE,
+  message = FALSE, 
+  warning = FALSE,
+  hiline = TRUE
+)
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_duo_accent(
+  primary_color = "#1381B0",
+  secondary_color = "#FF961C",
+  inverse_header_color = "#FFFFFF",
+  inverse_background_color = "#4c516d", 
+  colors = c(red = "#ff0019", black = "#000000"), inverse_text_color = "#FFFFFF"
+)
+
+library(xaringanExtra)
+use_tile_view()
+```
+
+class: center, middle
+background-image: url(images/Omniglot-logo.png)
+background-size: 125px
+background-position: 5% 92%
+
+# Laxdæla - tími 5
+
+### Móðurmálskennsla
+
+### Öll bókin - verkefnatími
+
+Jón Ingi Hlynsson
+
+
+#### Omniglot AB 
+
+#### Glærum síðast breytt: `r Sys.Date()`
+
+
+???
+Í dag munum við vinna verkefni úr Laxdælu. 
+
+---
+
+
+# Upprifjun
+
+
+???
+Spurningar í byrjun?
+
+--
+.pull-left[
+## Ólafur pái  
+- Ambáttarsonur
+ - Foreldrar: Melkorka og Höskuldur
+- Fer til Írlands 18 ára
+- Gifist Þorgerði dóttur Egils Skalla-Grímssonar
+- Erfir föður sinn
+- Fóstrar Bolla Þorleiksson
+ - Verndar Bolla eftir víg Kjartans
+ 
+```{r, out.width="20%", echo=F}
+knitr::include_graphics("images/Laxdæla/frabok/k6-1.png")
+```
+
+]
+
+???
+Ólafur pá (pái) Höskuldsson er orðinn fullorðinn og ekki lengur efnilegur heldur stórglæsilegur, hugrakkur, vígfimur og konunglegur. Ólafur er 18 ára og siglir á fund afa síns, konungsins á Írlandi. Hefur með sér sönnunargögn um uppruna sinn frá móður sinni. Er svo glæsilegur og djarfur að honum býðst að verða konungur á Írlandi en hafnar því, vill frekar fara heim til mömmu sinnar. Aðalatriðið er þessi höfnun, lesendur vita að hann jafnast á við konunga. Kemst líka í vinskap við Noregskonung og fær góðar gjafir frá honum. Sest loks að á Íslandi og kvænist Þorgerði dóttur Egils Skalla-Grímssonar sem er mikill kvenkostur. Þau búa á Hjarðarholti í Laxárdal.
+
+Höskuldur Dala-Kollsson veikist og synir hans deila um tilvonandi arf. Ólafur pá er frillusonur, óskilgetin og á ekki sama erfðarétt en Höskuldur vill að hann fái arf til jafns við hálfbræður sína. Einkum er Þorleikur Höskuldsson á móti þessu. Ólafur er greinilega í miklu uppáhaldi hjá Höskuldi sem gefur honum merkilegar gjafir sem hann hafði sjálfur fengið hjá Hákoni Noregskonungi Aðalsteinsfóstra. Höskuldur deyr og Ólafur heldur erfi eftir hann, rosalega veislu sem þúsund manns mæta í. Deilum bræðranna lýkur með því að Ólafur býðst til að fóstra Bolla son Þorleiks. Það þótti mikill heiður á miðöldum ef barni manns var boðið fóstur. Sá sem bauðst til að fóstra barnið var með því að segja að hinn væri meiri maður. Bolli Þorleiksson og Kjartan Ólafsson eru jafnaldrar, þriggja ára, þegar þetta gerist og alast þeir upp saman eftir þetta á heimili Ólafs og Þorgerðar.
+
+--
+.pull-right[
+## Kjartan og Bolli  
+- Fóstbræður
+ - Kjartan alltaf álitinn allra manna mestur og bestur
+- Báðir hrifnir af Guðrúnu Ósvífursdóttur
+- Hitta Noregskonung og taka kristni
+- Deyja báðir í bardaga
+ - Bolli drepur Kjartan 
+ - Ólafsynir (bræður Kjartans) drepa Bolla
+
+```{r, out.width="40%", echo=F, fig.align='center'}
+knitr::include_graphics("images/Laxdæla/kjartanogbolli.png")
+```
+]
+
+---
+
+
+# Guðrún Ósvífursdóttir 
+.pull-left[
+- Berdreymin
+ - Fjórir draumar um fjóra tilvonandi eiginmenn
+  - Merkja allir það sama: eiginmenn hennar munu allir deyja 
+- Var hrifin af Kjartani en giftist honum ekki
+- Giftist Bolla og sennilega elskaði hann allra manna mest
+ - Fyrirskipaði víg Kjartans
+  - "Misjöfn eru morgunverkin"...
+- Lét hefna Bolla
+ - Beið í 12 ár
+- Fyrsta nunna Íslands?
+]
+.pull-right[
+```{r, out.width="75%", echo=F, fig.align='right'}
+knitr::include_graphics("images/Laxdæla/gudrunO.jfif")
+```
+]
+
+???
+Fyrsti draumur Guðrúnar: Hana dreymdi að hún væri við læk með krókfald á höfði. Henni fannst faldurinn fara sér illa og kastaði honum í lækinn.
+Túlkun Gests: Hann sagði að Guðrún myndi lítið elska fyrsta eiginmann sinn og skilja við hann.
+Annar draumur Guðrúnar: Hana dreymdi að hún væri stödd hjá vatni með dýrmætan silfurhring á hendi. Hringurinn rann af hendinni og í vatnið og þótti henni það mikill skaði.
+Túlkun Gests: Hann sagði að annar eiginmaður hennar yrði ágætur en spáði því að hann myndi drukkna.
+Þriðji draumur Guðrúnar: Hana dreymdi að hún hefði gullhring á hendi, hún studdi sig við stein þegar hún datt og hringurinn brotnaði og blæddi úr brotunum.
+Túlkun Gests: Hann sagði að þriðji eiginmaður Guðrúnar myndi hafa nýja trú. Hann spáði því að þessi eiginmaður yrði drepinn.
+Fjórði draumur Guðrúnar: Hana dreymdi að hún hefði gullhjálm á höfði, skreyttan gimsteinum. Hjálmurinn var þungur og steyptist ofan í sjó.
+Túlkun Gests: Hann sagði að fjórði eiginmaður hennar yrði mesti höfðinginn en spáði því að hann myndi drukkna.
+
+---
+
+
+# Tímaverkefni 1
+
+Við vitum að Ólafi þótti sárt að missa Kjartan son sinn.  
+**Sett þú þig í spor Ólafs og skrifa þú minningargrein um Kjartan út frá sjónarhorni Ólafs páa**.  
+- Nota þú þekkingu þína á sögunni og persónunum til þess að skrifa minningargreinina
+- Berðu saman líf þeirra í minnigargreininni út frá sjónarhorni Ólafs 
+ - Þeir fóru til dæmis báðir og hittu kónga 
+
+--
+
+[Hér](https://geymd.arnastofnun.is/ismus/data/52e839fc-02d1-4353-8d2a-db0aa7939693/filename.pdf) má finna dæmi um minningargrein
+
+???
+Elsku hjartans Viktoría mín. Í dag eru minningar með þér það verðmætasta sem ég á. Útilegurnar, utanlandsferðirnar, fótboltamótin, kósíkvöldin, festivölin, Hólmaselskvöldin, bæjarferðirnar, þorrablótin, sundferðirnar, gistinæturnar, böllin, spilakvöldin, kokteilarnir, samtölin, hlátursköstin, ég gæti haldið áfram endalaust. Mig langar að rifja upp nokkrar sem mér finnst lýsa þér vel og gefa mér örlitla gleði í hjartað í þessari ólýsanlegu sorg.
+Fyrsta minningin sem mér tókst að brosa í gegnum tárin að rifja upp var þegar þú flaugst á hausinn í drullunni á Parklife í Manchester. Við vorum búnar að dressa okkur upp allar í stíl, í neonlitum með steina og glimmer – „Viktoría's style“. Drullan skvettist yfir þig alla, meira að segja andlitið og hárið. Ég heyri smitandi hlátur þinn að rifja þetta upp. Þú tókst þessu eins og öllu öðru, með bros á vör og skellihlæjandi.
+Þegar ég horfi til baka stendur Englandsferðin að heimsækja þitt annað heimili upp úr. Við fórum á Spice Girlstónleika og eitt stærsta festival Englands. Við vorum búnar að tala óteljandi oft um að fara og létum loksins verða af því. Að hafa fengið að kynnast stórfjölskyldu þinni, vinum og vandamönnum úti og sjá þig svona ótrúlega glaða með þeim sem áttu stóran part í að móta þig er ómetanlegt. Við vorum brosandi, hlæjandi og syngjandi alla ferðina. „Friendship never ends.“
+Þú varst með svo mikinn drifkraft og hvattir mann áfram í öllu. Enda varstu fyrirliði í fótboltanum og tókst að draga mig á æfingu, þið komnar í 4. flokk og ég gat ekkert. Þú sagðir að það skipti engu máli, ég myndi bara læra. Þetta snerist um að hafa gaman og vera oftar saman. Þú hafðir svo rétt fyrir þér. Það sem stendur mest upp úr í fótboltanum er þegar við fórum á Unglingalandsmótið með heimagerða boli með mynd af Powerpuff Girls því það voru einu kvenkyns ofurhetjurnar sem okkur datt í hug.
+Þú varst alltaf svo þorin og hvatvís. Að rifja upp bátsferðina í Tyrklandi lýsir karakter þínum vel. Við stoppuðum til að hoppa í sjóinn af klettum. Sumir fóru ekki upp á klettana, aðrir stukku frá lægsta punkti en þú dróst mig með þér á hæsta punktinn sem við fengum leyfi fyrir. Algjör nagli og lifðir lífinu til hins ýtrasta. Við hvöttum hvor aðra að láta hugmyndir verða að veruleika. Ég heyri rödd þína segja: „Já! Ég er til!“ því þessa setningu heyrði ég svo ótrúlega oft frá þér.
+Stundum var það pirrandi. Eins og árið sem við fengum bílpróf og við vildum keyra út fyrir Reykjavík. Við fórum í Hvalfjörðinn með strákunum og ætluðum í náttúrupottinn þar og hafa það huggulegt. Eða það hélt ég. Strákarnir vildu hlaupa út í sjó en ég vissi ekki alveg með það, allt of kalt. En auðvitað heyrist í þér: „Já! Ég er til!“
+Ég lofa, elsku Viktoría mín, að heiðra minningu þína með því að tileinka mér hugarfar þitt og tala um minningar okkar. Ég er ólýsanlega þakklát fyrir að hafa kynnst þér og það mun ekki líða sá dagur sem ég hugsa ekki til þín. Trúin og vonin að við munum hittast aftur heldur mér gangandi.
+Þín Sigrún Dís Hauksdóttir
+
+
+
+---
+class: center middle
+
+
+# Fyrir næsta tíma
+
+## Klára tímaverkefnið og koma með í næsta tíma
+
+
+???
+Er eitthvað sérstakt sem ykkur langar til þess að taka fyrir í vetur?
+
+---
+class: center middle inverse
+
+
+# Takk fyrir tímann í dag

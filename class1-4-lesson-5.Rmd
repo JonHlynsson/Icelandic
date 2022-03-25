@@ -49,7 +49,7 @@ background-size: 125px
 background-position: 5% 92%
 
 
-# Bókin *Í Síma*
+# Bókin *Melóna*
 
 ### Móðurmálskennsla
 
@@ -64,11 +64,11 @@ Jón Ingi Hlynsson
 ---
 
 
-## Í dag ætlum við að skoða bókina *Í síma*  
+## Í dag ætlum við að skoða bókina *Melóna*  
 
 --
 ```{r, out.width="20%"}
-knitr::include_graphics("images/Listin að lesa og skrifa/Í síma/forsíða.png")
+knitr::include_graphics("images/Listin að lesa og skrifa/Melóna/forsíða.png")
 ```
 
 --
@@ -135,7 +135,7 @@ x, y, ý, svo þ, æ, ö.
 
 
 ```{r}
-knitr::include_app("https://drive.google.com/file/d/1PsGea-elOPqtVbJ8lBgfjIb3D185D3BZ/preview", height = 600)
+knitr::include_app("https://drive.google.com/file/d/1U4_HI8RBpkdsZpRfLthNVvV2zv6ipc07/preview", height = 600)
 ```
 
 
