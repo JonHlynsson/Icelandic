@@ -80,6 +80,12 @@ background-position: 92% 8%
 Eiga eftirfarandi lýsingar við um þig?
 
 --
+- „Stundum hefur þú of miklar áhyggjur af áliti annarra en þegar eitthvað skiptir þig miklu máli þá lætur þú mikið fyrir þér fara og hikar ekki við að segja skoðun þína.“
+
+--
+- „Þér finnst gaman að vera innan um fólk en þó nýtur þú þess líka að fá tíma í einrúmi og slaka á.“
+
+--
 - „Þú átt venjulega ekki erfitt með að ráðstafa frítíma þínum en munt nú standa frammi fyrir erfiðu vali. Reyndu að sjá alla myndina áður en þú gerir upp hug þinn.“
 
 --
@@ -89,13 +95,14 @@ Eiga eftirfarandi lýsingar við um þig?
 - „Lokaðu þig ekki af frá umheiminum þótt þú sért ekki upp á þitt besta. Settu mál þitt fram af skynsemi og sanngirni og þá munu aðrir veita því athygli og taka afstöðu.“
 
 --
+### Hluti dæmanna að ofan eru fengin úr ólíkum merkjum stjörnuspáa  
 
-### Dæmin að ofan eru fengin úr ólíkum merkjum stjörnuspáa
+???
+Ég bjó til efstu tvö dæmin
 
 --
-
 **Barum áhrif**: staðhæfingar sem virðast eiga vel um einstaklinga en eiga vel um alla - aðallega jákvæðar setningar.
-- t.d. stjörnuspár, talnaspeki og þess háttar gervivísindi.
+ - t.d. stjörnuspár, talnaspeki og þess háttar gervivísindi.
 
 ---
 background-image: url(images/Persónuleikinn/thepersona.png)
@@ -111,11 +118,12 @@ Persónuleiki er almennt talinn vera þeir eiginleikar sem búa í hverjum og ei
 
 --
 - Persónuleiki er safn **persónuleikaþátta** og *kerfa* í einstaklingi, sem er skipulagt, breytist lítið yfir tíma og hefur áhrif á samskipti eða aðlögun manneskju að umhverfi, hvort sem það er hugrænt, efnislegt eða félagslegt.
+<br><br>
 
 --
 .pull-left[
 - **Persónuleikaþáttur**: Orsök hegðunar eða lýsandi samantekt á eiginleikum (t.d. óþolinmóð, kvíðin og uppstökk).
- - **Persónuleikaþáttur sem *orsök***: Innlægar langanir okkar eru frá einum aðstæðum til annara og sem taldar vera orsakavaldar sem skýra megi hegðun út frá.
+ - **Persónuleikaþáttur sem *orsök***: Innlægar langanir okkar frá einum aðstæðum til annara sem eru taldar vera orsakavaldar hegðunar og þ.a.l. skýra hegðun.
  - **Persónuleikaþáttur sem *lýsing***: Lýsandi samantekt á eiginleikum og ekki gert ráð fyrir innlægum þáttum sem orsaka hegðun.
 ]
 
@@ -134,7 +142,7 @@ knitr::include_graphics("images/Persónuleikinn/styrking_refsing.jpg")
 
 ---
 
-# Yfirlit vísindalegra nálganna að persónuleikanum
+# Yfirlit vísindalegra nálganna að persónuleikanum frh.
 
 --
 .pull-left[
@@ -154,8 +162,19 @@ knitr::include_graphics("images/Persónuleikinn/orðasafn.png")
 - samvinnuþýði og 
 - samviskusemi.
 ]
----
 
+???
+Costa og McCrae komust að því að **lýð**fræðilegar breytur skýrðu aðeins um 10-15% af breytileika í dreifingu vellíðanar og leiddu út frá því að persónuleiki hlyti að skýra eitthvað af afgangs dreifingar vellíðanar. Costa og McCrae héldu því fram að hamingja væri samansafn tíðra upplifana á jákvæðum tilfinningum, sem er undir áhrifum úthverfu, og lítillar tíðni upplifana af neikvæðum tilfinningum, sem er undir áhrifum taugaveiklunar. Niðurstöður Costa og McCrae sýndu að persónuleiki skýrði þrefalt meira en lýðfræðilegar breytur og hafa niðurstöður þeirra komið fram í endurteknum rannsóknum, þó í formi fylgnirannsókna sem geta ekki skorið úr um orsakasamband. Svo þá er spurningin hvort vellíðan hafi áhrif á jákvæðar tilfinningar eða öfugt.  
+Bein áhrif persónuleika á vellíðan væri að mistaugaveiklaðir einstaklingar bregðast mismunandi við sömu aðstæðunum. Til dæmis ef tveir nemendur falla í áfanga í skóla, annar sem skorar hátt á taugaveiklun og hinn skorar lágt á taugaveiklun, mun sá nemandi sem skorar hátt á taugaveiklun neikvæðari tilfinningaviðbrögð en sá sem skorar lágt.  
+Óbein áhrif persónuleika á vellíðan væri sem dæmi að ef taugaveiklaður einstaklingur kvartar mikið og er síáhyggjufullur mun fólk á endanum hætta að vilja vera í kringum hann. Fólk fer að forðast þann er kvartar mikið sem verður til þess að þessi taugaveiklaði einangrast og verður einmanna. Þá gæti óhamingja hans stafað af því að hann hrekur fólk frá sér með endurteknu kvarti og kveini sínu og þannig skapað sér aðstæður þar sem hann er einmanna.  
+Tilraunir Larsen og félaga á tilfinningamyndun byrjaði á því að mæla skor fólks á taugaveiklun og úthverfu. Þar næst voru þátttakendur beðnir um að hlusta á atburðarás með gleðilegum eða óánægjulegum atburðum, eða skoða glaðlegar eða óánægjulegar myndir. Niðurstöðurnar sýndu að úthverfa spáði fyrir um hvort þátttakandinn fór í gott skap í tilraunaaðstæðunum og að taugaveiklun spáði fyrir um hvort einstaklingur færi í vont skap í tilraunaaðstæðunum. Það virðist því vera auðvelt að koma úthverfum í gott skap og auðvelt að koma taugaveikluðum í vont skap. Niðurstöður Larsen og félaga voru svo túlkaðar sem svo að persónuleiki einstaklings magnar viðbrögð við atburðum lífsins, úthverfa magnar góðar tilfinningar og taugaveiklun magnar slæmar tilfinningar. 
+Því má segja að niðurstöður Larsen og félaga hafi sýnt að persónuleiki hafi bein áhrif á tilfinningar, jafnvel í aðstæðum sem eru undir stjórn rannsakenda.
+
+
+---
+background-image: url(images/Persónuleikinn/NEO-PI-R.png)
+background-size: 400px
+background-position: 92% 92%
 
 # Fimm-þátta líkanið
 
@@ -330,22 +349,25 @@ knitr::include_graphics("images/Persónuleikinn/icelandhandball.jpg")
 
 # Tímaverkefni
 
-1. Útbúðu til stjörnuspá eða persónuleikalýsingu með Barnum áhrifin í huga.
+1. Útbúðu eina stjörnuspá *eða* persónuleikalýsingu með Barnum áhrifin í huga.
 2. Útlistaðu bæði kosti og galla sérhvers þersónuleikaþáttar innan fimm-þátta líkansinis; taugaveiklun, úthverfa, víðsýni, samvinnuþýði og samviskusemi.
  - Notaðu umfjöllun dagsins í dag þér til stuðnings.
-   - **Mundu** að enginn einn presónuleikaþáttur er betri eða verri en annar. Sérhver persónuleikaþáttur hefur til að mynda þróunarfræðilegt gildi.
+   - **Mundu** að enginn einn presónuleikaþáttur er betri eða verri en annar. Sérhver persónuleikaþáttur hefur þróunarfræðilegt gildi.
 
 
 ---
-class: center middle
 
-
-# Fyrir næsta tíma
-
+.center[
+.middle[# Fyrir næsta tíma]
+]
+  <br>
+  <br>
+  
 1. Klára tímaverkefnið
 2. Finna eina stjörnuspá (úr hvaða merki sem er) sem þú telur að geti átt við um alla
  - Til dæmis á mbl.is
 3. Skrifa lista yfir allar tilfinningar sem þér dettur í hug
+ - Hvort tveggja jákvæðar og neikvæðar tilfinningar
 
 ---
 class: center middle inverse
