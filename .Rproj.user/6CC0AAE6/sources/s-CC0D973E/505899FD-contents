@@ -1,0 +1,354 @@
+---
+title: "Laxdæla"
+subtitle: ""  
+author: 
+  - "Jón Ingi Hlynsson"
+date: '`r Sys.Date()`'
+institute: "Omniglot AB"
+output:
+  xaringan::moon_reader:
+    css: xaringan-themer.css
+    self_contained: true
+    seal: false
+    nature:
+      slideNumberFormat: "%current%"
+      highlightStyle: github
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: true
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+library(kableExtra)
+knitr::opts_chunk$set(
+  cache = FALSE,
+  echo = FALSE,
+  message = FALSE, 
+  warning = FALSE,
+  hiline = TRUE
+)
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_duo_accent(
+  primary_color = "#1381B0",
+  secondary_color = "#FF961C",
+  inverse_header_color = "#FFFFFF",
+  inverse_background_color = "#4c516d", 
+  colors = c(red = "#ff0019", black = "#000000"), inverse_text_color = "#FFFFFF"
+)
+
+library(xaringanExtra)
+use_tile_view()
+```
+
+class: center, middle
+background-image: url(images/Omniglot-logo.png)
+background-size: 125px
+background-position: 5% 92%
+
+# Persónuleikinn
+
+### Móðurmálskennsla
+
+
+Jón Ingi Hlynsson
+
+
+#### Omniglot AB 
+
+#### Glærum síðast breytt: `r Sys.Date()`
+
+
+---
+background-image: url(images/Persónuleikinn/stjörnumerki.jpg)
+background-size: 150px
+background-position: 92% 8%
+
+
+# Hvað er persónuleiki?
+
+???
+- Ekkert eitt rétt svar.
+- Margar leiðir til að skilgreina perósnuleikann.
+- Skrifa svör nemenda á töfluna?
+
+--
+
+Eiga eftirfarandi lýsingar við um þig?
+
+--
+- „Þú átt venjulega ekki erfitt með að ráðstafa frítíma þínum en munt nú standa frammi fyrir erfiðu vali. Reyndu að sjá alla myndina áður en þú gerir upp hug þinn.“
+
+--
+- „Þú munt sennilega eiga mikilvægar samræður við konu í fjölskyldunni þinni í dag. Sjálfstraust þitt er í miklum blóma því starf þitt skilar þeim árangri sem þú ætlaðir.“
+
+--
+- „Lokaðu þig ekki af frá umheiminum þótt þú sért ekki upp á þitt besta. Settu mál þitt fram af skynsemi og sanngirni og þá munu aðrir veita því athygli og taka afstöðu.“
+
+--
+
+### Dæmin að ofan eru fengin úr ólíkum merkjum stjörnuspáa
+
+--
+
+**Barum áhrif**: staðhæfingar sem virðast eiga vel um einstaklinga en eiga vel um alla - aðallega jákvæðar setningar.
+- t.d. stjörnuspár, talnaspeki og þess háttar gervivísindi.
+
+---
+background-image: url(images/Persónuleikinn/thepersona.png)
+background-size: 300px
+background-position: 90% 90%
+
+
+# Hvað er persónuleiki?
+
+???
+Persónuleiki er almennt talinn vera þeir eiginleikar sem búa í hverjum og einum; skapgerð, gildismat, hugsun, skynjun, tilfinningalíf og svo framvegis. Þessir eiginleikar aðgreina manneskjuna frá öðrum.
+
+
+--
+- Persónuleiki er safn **persónuleikaþátta** og *kerfa* í einstaklingi, sem er skipulagt, breytist lítið yfir tíma og hefur áhrif á samskipti eða aðlögun manneskju að umhverfi, hvort sem það er hugrænt, efnislegt eða félagslegt.
+
+--
+.pull-left[
+- **Persónuleikaþáttur**: Orsök hegðunar eða lýsandi samantekt á eiginleikum (t.d. óþolinmóð, kvíðin og uppstökk).
+ - **Persónuleikaþáttur sem *orsök***: Innlægar langanir okkar eru frá einum aðstæðum til annara og sem taldar vera orsakavaldar sem skýra megi hegðun út frá.
+ - **Persónuleikaþáttur sem *lýsing***: Lýsandi samantekt á eiginleikum og ekki gert ráð fyrir innlægum þáttum sem orsaka hegðun.
+]
+
+---
+
+# Yfirlit vísindalegra nálganna að persónuleikanum
+
+--
+Atferlisstefnan útskýrir alla hegðun fólks út frá ytra áreiti. Samkvæmt atferlissinnum mótast hegðun fólks með virkri skilyrðingu. 
+- B. F. Skinner var frumkvöðull róttækrar atferlisstefnu.
+
+--
+```{r, fig.align='right'}
+knitr::include_graphics("images/Persónuleikinn/styrking_refsing.jpg")
+```
+
+---
+
+# Yfirlit vísindalegra nálganna að persónuleikanum
+
+--
+.pull-left[
+**Orðasafns tilgátan** kveður á um að tungumálið er lykill að persónuleika og að tungumálið innihaldi hugtök sem nái yfir allan mannlegan breytileika, þ.e. öll þau hugtök sem við notum til að lýsa fólki.
+
+```{r, out.width="63%", fig.align='center'}
+knitr::include_graphics("images/Persónuleikinn/orðasafn.png")
+```
+]
+
+--
+.pull-right[
+**Tölfræðinálgun**: Þáttagreining varpaði ljósi á að þegar persónuleikaeinkenni eru metin með sjálfsmatskvarða sé með góðum rökum unnt að skipta persónuleikaeinkennum í fimm aðgreinda þætti:  
+- taugaveiklun, 
+- úthverfa, 
+- víðsýni, 
+- samvinnuþýði og 
+- samviskusemi.
+]
+---
+
+
+# Fimm-þátta líkanið
+
+- **Taugaveiklun**: Næmi fyrir neikvæðum tilfinningum: Kvíði, reiðiþrungin fjandsemi, þunglyndi, sjálfsvitund og varnarleysi.
+- **Úthverfa**: Hlýja, félagslyndi, sjálfsbirtingsháttur, virkni, spenna og jákvæðar tilfinningar.
+- **Víðsýni**: Ímyndunarafl, listræni, tilfinningar, athafnir, sköpunargáfur, hugmyndir og lífsskoðanir.
+- **Samvinnuþýði**: Traust, hreinskilni, hjálpsemi, undanlátssemi, hógværð og hugulsemi.
+- **Samviskusemi**: Samkeppni/hæfni, röð og regla, skyldurækni, afreksbarátta, sálfsagi og ætlun.
+
+???
+**Taugaveiklun** (neuroticism/emotional stability) vísar til þess að upplifa oft:
+Neikvæðar tilfinningar (ótta, reiði, kvíða, depurð)
+Eiga erfitt með sjálfstjórn
+Eiga erfitt með að takast á við álag
+Lágt sjálfsálit
+Undirþættir:
+- Kvíði (anxiety)
+ - Þeir sem skora hátt eru kvíðnir, hræddir, taugaspenntir. Tengist almennum kíðaröskunum
+- Reiðiþrungin fjandsemi (angry hostility)
+ - Þeir sem skora hátt verða auðveldlega reiðir, eru bitrir og svekkir
+- Þunglyndi
+ - Þeir sem skora hátt hafa tilhneigingu til að upplifa samviskubit, depurð, vonleysi og gefast auðveldlega upp
+- Sjálfsvitund (self-consciousness)
+ - Þeir sem skora hátt upplifa oft skömm og feimni, finnst óþægilegt í hópi og finna til vanmáttar
+- Hvatvísi
+ - Þeir sem skora hátt eiga erfitt með að halda aftur af sér, löngun í mat og drykk verður óstöðvandi. Ekki það sama og áhættusækni
+- Varnarleysi (vulnerability)
+ - Þeir sem skora hátt eru viðkvæmir fyrir álagi, upplifa gjarnar streitu, bregðast rangt við álagi, verða skelfingu lostnir
+
+**Úthverfa** vísar til:
+Félagslyndi, virkni og athafnasemi
+Bjartsýni, vingjarnleiki
+Líða vel í fjölmenni, sækjast eftir spennu, málgefni
+Vera viss í sinni sök
+Undirþættir:
+- Hlýja
+ - Þeir sem skora hátt eru vingjarnlegir, ástúðlegir, eiga auðvelt með að bindast öðrum tilfinningaböndum
+- Félagslyndi (gregariousness)
+ - Þeir sem skora hátt sækjast eftir félagsskap, því fleiri því betra
+- Sjálfbirgingsháttur (assertiveness)
+ - Þeir sem skora hátt hafa tilhneigingu til að vera ráðríkir (dominant), kröftugir og leiðandi í hóp
+- Virkni
+ - Þeir sem skora hátt eru orkumiklir, vinna hratt, liggur lífið á
+- Spenna,
+ - Þeir sem skora hátt sækjast eftir spennu og örvun í umhverfi. Eru gjarnar áhættusæknir (og lenda þar af leiðandi oftar í bílslysum en introvertar)
+- Jákvæðar tilfinningar
+ - Þeir sem skora hátt upplifa oft og títt jákvæðar tilfinningar (gleði,hamingja, ást) , hláturmildir og bjartsýnir
+
+**Víðsnýni** (openness to experience) vísar til
+Að hafa næmt fegurðarskyn
+Fræðilegan áhuga
+Fjörugt ímyndarafl
+Fordómaleysi gagnvart nýjungum
+Sækjast eftir tilbreytingu
+Undirþættir:
+- Ímyndunarafl
+ - Þeir sem skora hátt hafa auðugt ímyndunarafl, skapa gjarnan eigin hugarheim, frumlegir
+- Listrænir (aesthetics)
+ - Þeir sem skora hátt hafa mikið fegurðarskyn, ljóðrænir og mikinn áhuga á listum
+- Tilfinningar
+ - Þeir sem skora hátt eru næmir fyrir eigin tilfinningum og telja tilfinningalíf mikilvægt. Upplifa djúpar og breytilegar tilfinningar
+- Athafnir
+ - Þeir sem skora hátt eru tilbúnir til að prófa fjölbreyttar aðstæður, nýja staði, framandi mat. Vilja frekar tilbreytingu en tilbreytingarleysi eða rútínu
+- Hugmyndir
+ - Þeir sem skora hátt hafa fræðilegan áhuga, líklegir til að taka undir óhefðbundnar hugmyndir
+- Lífsskoðanir
+ - Tilbúnir til að endurskoða hugmyndir um trú, pólitík eða félagsleg gildi
+
+**Samvinnuþýði** (agreeableness) vísar til:
+Að bera umhyggju fyrir öðrum
+Eiga auðvelt með að setja sig í spor annarra
+Hjálpsemi og búast við hjálp frá öðrum
+Samstarfsfús
+Undirþættir:
+- Traust
+ - Þeir sem skora hátt trúa því að annað fólk sé heiðarlegt og meini vel
+- Hreinskiptni (straightforwardness)
+ - Þeir sem skora hátt eru einlægir og heiðarlegir í samskiptum: hrekklausir
+- Hjálpsemi (altruism)
+ - Þeir sem skora hátt bera umhyggju fyrir velferð annarra, eru örlátir og hjálpsamir
+- Undanlátssemi (compliance)
+ - Hafa tilhneigingu til að láta undan í deilum, halda aftur af reiði sinni, forgive and forget
+- Hógværð
+ - Hógværir, sjálfum sér nógir, þýðir ekki endilega lágt sjálfsmat
+- Hugulsemi (tendermindendess)
+ - Þeir sem skora hátt sýna samúð eða samkennd með öðrum. Eru næmir fyrir þörfum annarra, aðyllast jafnaðarmennsku
+
+**Samviskusemi** (conscientiousness) vísar til:
+Skyldurækni
+Vandvirkni og nákvæmni
+Stundvísi og áreiðanleika
+Viljastyrk og þess að vera skipulagður
+Undirþættir:
+- Samkeppni/hæfni (competence)
+ - Þeir sem skora hátt trúa því að þeir séu hæfir, skynsamir, forsjálir og komi hlutunum í verk
+- Röð og regla
+ - Skipulagðir, snyrtilegir og hafa röð og reglu á hlutum
+- Skyldurækni (dutifulness)
+ - Leggja mikla áherslu á siðferðileg gildi og breyta í samræmi við það
+- Afreksbarátta (achievement striving)
+ - Setja sér háleit markmið og leggja hart að sér. Vita hvað þeir vilja og breyta samkvæmt því
+- Sjálfsagi 
+ - Líklegri til að ljúka verkefnum, láta ekkert trufla sig, hafa hvatningu og metnað til að koma hlutum í verk
+- Ætlun (deliberation)
+ - Hugsa áður en þeir framkvæma
+
+--
+
+**ATH**: Enginn ein blanda persónuleikaþátta er augljóslega betri en einhver önnur.  
+
+--
+Það hefur fengist mestur vísindafræðilegur stuðningur fyrir fimm-þátta líkaninu.  
+
+--
+Sérhver þáttur hefur þróunarfræðilegt gildi.
+
+---
+
+# Fimm-þátta líkanið  
+## Rök fyrir fimm þáttum  
+- Þáttagreiningar á lýsingarorðum um persónuleika í mismunandi tungumálum benda til fimm þátta.
+
+???
+Allport og Odbert fundu **17.953 orð í tungumálinu** og skiptu þeim svo í fernt; stöðugir þættir, tímabundið ástand, skap og athafnir, félagsleg áhrif og loks myndræn, líkamleg og efasöm atirði. Svo notaði Cattell það sem upphafspunkt og endaði með 35 hópa af persónuleikaþáttum. Fiske notaði 22 af þessum hópum og var sá fyrsti til að uppgötva útgáfu af fimm þátta líkaninu en hann fær ekki heiðurinn fyrir það. Næst komu Tupes og Chrisal með því að skipta 22 hópunum í átta úrtök og komu svo fram með fimm þátta módelið sem Norman endurgerði svo, og það má sjá hérna að ofan. 
+
+--
+- Þáttagreiningar á spurningalistum er meta persónuleika er einna best lýst með fimm þáttum.
+
+--
+- Fimm þætti má finna hjá báðum kynjum, mismunandi aldri og kynþáttum.
+
+--
+- Hluti dreifingar fyrir alla fimm þættina má rekja til erfða.
+
+???
+Samviskusemi: næmi fyrir viðbjóði
+Taugaveiklun: virkni möndlu við neikvæðu áreiti
+Víðsýni og greind fylgjast að einhverju leyti 
+
+--
+- NEO-PI-R (Costa og McCrae 1989) er algengasta prófið. 
+ - Uppbygging NEO-PI-R er svona: það inniheldur 240 atriði er meta fimm grunnþætti persónuleika (taugaveiklun, úthverfu, víðsýni, samvinnuþýði og samviskusemi). Hver grunnþáttur inniheldur sex undirþætti með 8 atriðum fyrir sérhvern þátt. 
+
+???
+Til eru þrjár útgáfur: 1) útgáfa S (self report), 2) útgáfa R (Observer rating) og 3) NEO FFI (60atriða útgáfa). NEO-PI-R er ætlað fullorðunum, 18 ára og eldri
+
+---
+
+# Umræðuefni
+
+Hvaða eiginleika þarf að hafa til að standa sig svo frábærlega á Ólympíuleikunum?  
+Ræður gott líkamlegt ástand, þrotlaus þjálfun og tækni árangri hennar eða annarra sem taka þátt í erfiðri keppni?  
+Hversu miklu máli skiptir andlegt ástand og hvaða persónueiginleikar gera gæfumuninn til að ná því besta út úr sjálfum sér?
+
+.pull-left[
+```{r}
+knitr::include_graphics("images/Persónuleikinn/eliudkipchoge.jpg")
+```
+]
+
+.pull-right[
+```{r, fig.align='center', out.width="43%"}
+knitr::include_graphics("images/Persónuleikinn/icelandhandball.jpg")
+```
+]
+
+???
+2013 bar íslenska kvennalandsliðið í handbolta sigur af hólmi gegn liði Svía
+
+
+---
+
+# Tímaverkefni
+
+1. Útbúðu til stjörnuspá eða persónuleikalýsingu með Barnum áhrifin í huga.
+2. Útlistaðu bæði kosti og galla sérhvers þersónuleikaþáttar innan fimm-þátta líkansinis; taugaveiklun, úthverfa, víðsýni, samvinnuþýði og samviskusemi.
+ - Notaðu umfjöllun dagsins í dag þér til stuðnings.
+   - **Mundu** að enginn einn presónuleikaþáttur er betri eða verri en annar. Sérhver persónuleikaþáttur hefur til að mynda þróunarfræðilegt gildi.
+
+
+---
+class: center middle
+
+
+# Fyrir næsta tíma
+
+1. Klára tímaverkefnið
+2. Finna eina stjörnuspá (úr hvaða merki sem er) sem þú telur að geti átt við um alla
+ - Til dæmis á mbl.is
+3. Skrifa lista yfir allar tilfinningar sem þér dettur í hug
+
+---
+class: center middle inverse
+
+
+# Takk fyrir tímann í dag

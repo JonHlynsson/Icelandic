@@ -65,6 +65,12 @@ xaringanExtra::embed_xaringan("laxdæla-glærur-4.html")
 xaringanExtra::embed_xaringan("laxdæla-glærur-5.html")
 ```
 
+## Persónuleikinn
+
+```{r, echo=F}
+xaringanExtra::embed_xaringan("persónuleikaglærur.html")
+```
+
 
 <hr>
 
