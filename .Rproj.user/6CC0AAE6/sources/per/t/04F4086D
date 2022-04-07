@@ -3,7 +3,7 @@
     "path": "~/GitHub/Icelandic/class1-4-lesson-6.Rmd",
     "project_path": "class1-4-lesson-6.Rmd",
     "type": "r_markdown",
-    "hash": "1854958925",
+    "hash": "569602092",
     "contents": "",
     "dirty": false,
     "created": 1646584755448.0,
@@ -12,16 +12,16 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "80,11",
-        "scrollLine": "72",
+        "cursorPosition": "171,28",
+        "scrollLine": "167",
         "last_setup_crc32": ""
     },
     "folds": "",
-    "lastKnownWriteTime": 1649359546,
+    "lastKnownWriteTime": 1649360571,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1649359546392,
+    "last_content_update": 1649360571540,
     "read_only": false,
     "read_only_alternatives": []
 }

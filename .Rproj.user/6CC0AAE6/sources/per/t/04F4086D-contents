@@ -81,7 +81,7 @@ Og **íslenska stafrófið**!
 Og skoða **litaþraut**!  
 
 --
-Í lok tímans, *ef tími gefst*, ætlum við svo að skoða [stafaleik Bínu](https://vefir.mms.is/bina/)
+Í lok tímans, *ef tími gefst*, ætlum við svo að skoða [**nýjan** leik](https://vefir.mms.is/lestur_er_leikur/)
 
 ---
 
@@ -169,8 +169,8 @@ class: center
 
 # Stafaleikir Bínu
 
-```{r, echo=F, out.width="50%"}
-knitr::include_graphics("images/stafaleikur-bína.png")
+```{r, echo=F, out.width="70%"}
+knitr::include_graphics("images/lesturerleikur.png")
 ```
 
-[Smelltu hér](https://vefir.mms.is/bina/) til að opna stafaleikinn!
+[Smelltu hér](https://vefir.mms.is/lestur_er_leikur/) til að opna leikinn!
