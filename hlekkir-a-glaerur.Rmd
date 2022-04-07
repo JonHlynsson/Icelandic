@@ -71,6 +71,11 @@ xaringanExtra::embed_xaringan("laxdæla-glærur-5.html")
 xaringanExtra::embed_xaringan("persónuleikaglærur.html")
 ```
 
+## Tilfinningar
+
+```{r, echo=F}
+xaringanExtra::embed_xaringan("tilfinningar.html")
+```
 
 <hr>
 
@@ -107,6 +112,13 @@ xaringanExtra::embed_xaringan("class1-4-lesson-4.html")
 ```{r, echo=FALSE}
 xaringanExtra::embed_xaringan("class1-4-lesson-5.html")
 ```
+
+### Bókin Í Hólaseli
+
+```{r, echo=FALSE}
+xaringanExtra::embed_xaringan("class1-4-lesson-6.html")
+```
+
 
 <br><br><br><br><br><br><br><br>
 
