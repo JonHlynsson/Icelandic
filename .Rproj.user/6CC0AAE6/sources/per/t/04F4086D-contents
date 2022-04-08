@@ -167,7 +167,7 @@ knitr::include_graphics("images/stroophrif.png")
 class: center
 
 
-# Stafaleikir Bínu
+# Lestur er leikur
 
 ```{r, echo=F, out.width="70%"}
 knitr::include_graphics("images/lesturerleikur.png")
