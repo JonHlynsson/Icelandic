@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "Glósur úr Laxdælu"
 output: 
   html_document:
     theme: flatly
@@ -23,7 +23,7 @@ citation-style: APA7isl.csl
 </script>
 
 
-# Glósur úr Laxdælu
+# Glósubókin
 
 
 Á þessari síðu má finna glósur úr kennarahandbók Laxdælu Sögu [@Laxdaela2017].  

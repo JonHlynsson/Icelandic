@@ -1,5 +1,5 @@
 ---
-title: "Móðurmálskannsla"
+title: "Móðurmálskennsla"
 subtitle: ""  
 author: 
   - "Jón Ingi Hlynsson"

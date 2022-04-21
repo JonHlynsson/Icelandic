@@ -1,5 +1,5 @@
 ---
-title: "Laxdæla"
+title: "Tilfinningar"
 subtitle: ""  
 author: 
   - "Jón Ingi Hlynsson"

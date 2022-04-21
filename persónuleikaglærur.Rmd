@@ -1,5 +1,5 @@
 ---
-title: "Laxdæla"
+title: "Persónuleikinn"
 subtitle: ""  
 author: 
   - "Jón Ingi Hlynsson"
