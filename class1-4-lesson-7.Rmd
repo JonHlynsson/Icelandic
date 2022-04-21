@@ -49,7 +49,7 @@ background-size: 125px
 background-position: 5% 92%
 
 
-# Bókin *Í Hólaseli*
+# Bókin *Vofan*
 
 ### Móðurmálskennsla
 
@@ -64,21 +64,22 @@ Jón Ingi Hlynsson
 ---
 
 
-## Í dag ætlum við að skoða bókina *Í Hólaseli*  
+## Í dag ætlum við að skoða bókina *Vofan*  
 
 --
 ```{r, out.width="20%"}
-knitr::include_graphics("images/Listin að lesa og skrifa/Í hólaseli/forsíða.png")
+knitr::include_graphics("images/Listin að lesa og skrifa/Vofan/forsíða.png")
 ```
 
 --
-### Við ætlum líka að skoða *nýja **verkefnabók***
+### Við ætlum líka að skoða *nýja **verkefnabók***  
 
 --
-Og **íslenska stafrófið**!  
+- **íslenska stafrófið**!  
 
 --
-Og skoða **litaþraut**!  
+- og **vikudagana**  
+
 
 --
 Í lok tímans, *ef tími gefst*, ætlum við svo að skoða [**nýjan** leik](https://vefir.mms.is/lestur_er_leikur/)
@@ -111,34 +112,26 @@ knitr::include_graphics("images/stafrófið.png")
 ]
 ---
 
-# Byrjum á að skoða íslenska stafrófið
+# Vikudagarnir
 
 .pull-left[
-Íslensk stafrófsvísa
+```{r, out.width="50%"}
+knitr::include_graphics("images/vikudagar.jpg")
+```
 
-A, á, b, d, ð, e, é,  
-f, g, h, i, í, j, k.  
-L, m, n, o, ó og p  
-eiga þar að standa hjá.  
-R, s, t, u, ú, v næst,  
-x, y, ý, svo þ, æ, ö.  
-Íslenskt stafróf er hér læst  
-í erindi þessi skrítin tvö.  
-
-
-(*Þórarinn Eldjárn*)
 ]
+
+--
 
 .pull-right[
-<iframe width="560" height="315" src="https://www.youtube.com/embed/lYiqc0cqrnM?start=10" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fPorKUQdVM4?start=27" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ]
-
 
 ---
 
 
 ```{r}
-knitr::include_app("https://drive.google.com/file/d/1XleIIOgw9n91mK8cni4Yiqca6taCuD-L/preview", height = 600)
+knitr::include_app("https://drive.google.com/file/d/1awzTyBehx-jc8S3XkbYC2PTN7uLcZeeW/preview", height = 600)
 ```
 
 
@@ -149,18 +142,6 @@ class: center, middle
 
 # Skoðum nú verkefnabókina!
 
----
-class: center, middle
-
-
-# Litaþraut
-
-Hvernig eru X-in á litin?  
-En orðin?
-
-```{r, out.width="50%"}
-knitr::include_graphics("images/stroophrif.png")
-```
 
 
 ---

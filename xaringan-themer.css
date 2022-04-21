@@ -49,7 +49,7 @@
   --link-color: #1381B0;
   --text-bold-color: #1381B0;
   --code-highlight-color: rgba(255,255,0,0.5);
-  --inverse-text-color: #000000;
+  --inverse-text-color: #FFFFFF;
   --inverse-background-color: #4c516d;
   --inverse-header-color: #FFFFFF;
   --inverse-link-color: #1381B0;
@@ -60,6 +60,8 @@
   --primary: #1381B0;
   --secondary: #FF961C;
   --white: #FFFFFF;
+  --black: #000000;
+  --red: #ff0019;
   --black: #000000;
 }
 
@@ -289,6 +291,18 @@ table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
 }
 .bg-white {
   background-color: var(--white);
+}
+.black {
+  color: var(--black);
+}
+.bg-black {
+  background-color: var(--black);
+}
+.red {
+  color: var(--red);
+}
+.bg-red {
+  background-color: var(--red);
 }
 .black {
   color: var(--black);

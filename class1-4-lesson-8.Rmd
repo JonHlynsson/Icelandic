@@ -1,0 +1,171 @@
+---
+title: "Móðurmálskannsla"
+subtitle: ""  
+author: 
+  - "Jón Ingi Hlynsson"
+date: '`r Sys.Date()`'
+institute: "Omniglot AB"
+output:
+  xaringan::moon_reader:
+    css: xaringan-themer.css
+    self_contained: true
+    seal: false
+    nature:
+      slideNumberFormat: "%current%"
+      highlightStyle: github
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: true
+---
+
+
+```{r setup, include=FALSE, warning=F}
+options(htmltools.dir.version = FALSE)
+library(kableExtra)
+knitr::opts_chunk$set(
+  # fig.width=9, fig.height=6, fig.retina=3, dpi = 150,
+  # out.width = "150%",
+  cache = FALSE,
+  echo = FALSE,
+  message = FALSE, 
+  warning = FALSE,
+  hiline = TRUE
+)
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_duo_accent(
+  primary_color = "#1381B0",
+  secondary_color = "#FF961C",
+  inverse_header_color = "#FFFFFF",
+  inverse_background_color = "#4c516d"
+)
+```
+
+class: center, middle
+background-image: url(images/Omniglot-logo.png)
+background-size: 125px
+background-position: 5% 92%
+
+
+# Bókin *þetta er tómt glærushow*
+
+### Móðurmálskennsla
+
+Jón Ingi Hlynsson
+
+
+
+#### Omniglot AB 
+
+#### Glærum síðast breytt: `r Sys.Date()`
+
+---
+
+
+## Í dag ætlum við að skoða bókina *Í Hólaseli*  
+
+--
+```{r, out.width="20%"}
+knitr::include_graphics("images/Listin að lesa og skrifa/Í hólaseli/forsíða.png")
+```
+
+--
+### Við ætlum líka að skoða *nýja **verkefnabók***  
+
+--
+- **íslenska stafrófið**!  
+
+--
+- **vikudagana**  
+
+--
+Og **litaþrautina**!  
+
+--
+Í lok tímans, *ef tími gefst*, ætlum við svo að skoða [**nýjan** leik](https://vefir.mms.is/lestur_er_leikur/)
+
+---
+
+# Byrjum á að skoða íslenska stafrófið
+
+.pull-left[
+Íslensk stafrófsvísa
+
+A, á, b, d, ð, e, é,  
+f, g, h, i, í, j, k.  
+L, m, n, o, ó og p  
+eiga þar að standa hjá.  
+R, s, t, u, ú, v næst,  
+x, y, ý, svo þ, æ, ö.  
+Íslenskt stafróf er hér læst  
+í erindi þessi skrítin tvö.  
+
+
+(*Þórarinn Eldjárn*)
+]
+
+.pull-right[
+```{r}
+knitr::include_graphics("images/stafrófið.png")
+```
+
+]
+---
+
+# Vikudagarnir
+
+.pull-left[
+```{r, out.width="50%"}
+knitr::include_graphics("images/vikudagar.jpg")
+```
+
+]
+
+--
+
+.pull-right[
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fPorKUQdVM4?start=27" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+]
+
+---
+
+
+```{r}
+knitr::include_app("https://drive.google.com/file/d/1XleIIOgw9n91mK8cni4Yiqca6taCuD-L/preview", height = 600)
+```
+
+
+
+---
+class: center, middle
+
+
+# Skoðum nú verkefnabókina!
+
+---
+class: center, middle
+
+
+# Litaþraut
+
+Hvernig eru X-in á litin?  
+En orðin?
+
+```{r, out.width="50%"}
+knitr::include_graphics("images/stroophrif.png")
+```
+
+
+---
+class: center
+
+
+# Lestur er leikur
+
+```{r, echo=F, out.width="70%"}
+knitr::include_graphics("images/lesturerleikur.png")
+```
+
+[Smelltu hér](https://vefir.mms.is/lestur_er_leikur/) til að opna leikinn!

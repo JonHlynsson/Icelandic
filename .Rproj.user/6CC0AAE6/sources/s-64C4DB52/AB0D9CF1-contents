@@ -77,6 +77,12 @@ xaringanExtra::embed_xaringan("persónuleikaglærur.html")
 xaringanExtra::embed_xaringan("tilfinningar.html")
 ```
 
+## Tíska
+
+```{r, echo=F}
+xaringanExtra::embed_xaringan("tiska.html")
+```
+
 <hr>
 
 # 1-3 bekkur - glærupakkar:
@@ -117,6 +123,12 @@ xaringanExtra::embed_xaringan("class1-4-lesson-5.html")
 
 ```{r, echo=FALSE}
 xaringanExtra::embed_xaringan("class1-4-lesson-6.html")
+```
+
+### Bókin Vofan
+
+```{r, echo=FALSE}
+xaringanExtra::embed_xaringan("class1-4-lesson-7.html")
 ```
 
 
