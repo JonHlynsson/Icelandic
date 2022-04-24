@@ -1,82 +1,70 @@
-<!DOCTYPE html>
-<html lang="" xml:lang="">
-  <head>
-    <title>Persónuleikinn</title>
-    <meta charset="utf-8" />
-    <meta name="author" content="Jón Ingi Hlynsson" />
-    <meta name="date" content="2022-04-24" />
-    <script src="site_libs/header-attrs/header-attrs.js"></script>
-    <link href="site_libs/tile-view/tile-view.css" rel="stylesheet" />
-    <script src="site_libs/tile-view/tile-view.js"></script>
-    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
-  </head>
-  <body>
-    <textarea id="source">
+---
+title: "Persónuleikinn og tilfinningar"
+subtitle: ""  
+author: 
+  - "Jón Ingi Hlynsson"
+date: '`r Sys.Date()`'
+institute: "Omniglot AB"
+output:
+  xaringan::moon_reader:
+    css: xaringan-themer.css
+    self_contained: true
+    seal: false
+    nature:
+      slideNumberFormat: "%current%"
+      highlightStyle: github
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: true
+---
 
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+library(kableExtra)
+knitr::opts_chunk$set(
+  cache = FALSE,
+  echo = FALSE,
+  message = FALSE, 
+  warning = FALSE,
+  hiline = TRUE
+)
+```
 
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_duo_accent(
+  primary_color = "#1381B0",
+  secondary_color = "#FF961C",
+  inverse_header_color = "#FFFFFF",
+  inverse_background_color = "#4c516d", 
+  colors = c(red = "#ff0019", black = "#000000"), inverse_text_color = "#FFFFFF"
+)
 
-
-
+library(xaringanExtra)
+use_tile_view()
+```
 
 class: center, middle
 background-image: url(images/Omniglot-logo.png)
 background-size: 125px
 background-position: 5% 92%
 
-# Persónuleikinn
+# Persónuleikinn og tilfinningar
 
 ### Móðurmálskennsla
 
 
 Jón Ingi Hlynsson
 
+```{r, out.width="30%"}
+knitr::include_graphics("images/Persónuleikinn/Alexithymia.png")
+```
+
 
 #### Omniglot AB 
 
-#### Glærum síðast breytt: 2022-04-24
+#### Glærum síðast breytt: `r Sys.Date()`
 
-
----
-background-image: url(images/Persónuleikinn/stjörnumerki.jpg)
-background-size: 150px
-background-position: 92% 8%
-
-
-# Hvað er persónuleiki?
-
-???
-- Ekkert eitt rétt svar.
-- Margar leiðir til að skilgreina perósnuleikann.
-- Skrifa svör nemenda á töfluna?
-
---
-
-Eiga eftirfarandi lýsingar við um þig?
-
---
-- „Stundum hefur þú of miklar áhyggjur af áliti annarra en þegar eitthvað skiptir þig miklu máli þá lætur þú mikið fyrir þér fara og hikar ekki við að segja skoðun þína.“
-
---
-- „Þér finnst gaman að vera innan um fólk en þó nýtur þú þess líka að fá tíma í einrúmi og slaka á.“
-
---
-- „Þú átt venjulega ekki erfitt með að ráðstafa frítíma þínum en munt nú standa frammi fyrir erfiðu vali. Reyndu að sjá alla myndina áður en þú gerir upp hug þinn.“
-
---
-- „Þú munt sennilega eiga mikilvægar samræður við konu í fjölskyldunni þinni í dag. Sjálfstraust þitt er í miklum blóma því starf þitt skilar þeim árangri sem þú ætlaðir.“
-
---
-- „Lokaðu þig ekki af frá umheiminum þótt þú sért ekki upp á þitt besta. Settu mál þitt fram af skynsemi og sanngirni og þá munu aðrir veita því athygli og taka afstöðu.“
-
---
-### Hluti dæmanna að ofan eru fengin úr ólíkum merkjum stjörnuspáa  
-
-???
-Ég bjó til efstu tvö dæmin
-
---
-**Barum áhrif**: staðhæfingar sem virðast eiga vel um einstaklinga en eiga vel um alla - aðallega jákvæðar setningar.
- - t.d. stjörnuspár, talnaspeki og þess háttar gervivísindi.
 
 ---
 background-image: url(images/Persónuleikinn/thepersona.png)
@@ -87,12 +75,18 @@ background-position: 90% 90%
 # Hvað er persónuleiki?
 
 ???
+- Ekkert eitt rétt svar.
+- Margar leiðir til að skilgreina perósnuleikann.
+- Skrifa svör nemenda á töfluna?
+
+
+???
 Persónuleiki er almennt talinn vera þeir eiginleikar sem búa í hverjum og einum; skapgerð, gildismat, hugsun, skynjun, tilfinningalíf og svo framvegis. Þessir eiginleikar aðgreina manneskjuna frá öðrum.
 
 
 --
 - Persónuleiki er safn **persónuleikaþátta** og *kerfa* í einstaklingi, sem er skipulagt, breytist lítið yfir tíma og hefur áhrif á samskipti eða aðlögun manneskju að umhverfi, hvort sem það er hugrænt, efnislegt eða félagslegt.
-&lt;br&gt;&lt;br&gt;
+<br><br>
 
 --
 .pull-left[
@@ -101,37 +95,6 @@ Persónuleiki er almennt talinn vera þeir eiginleikar sem búa í hverjum og ei
  - **Persónuleikaþáttur sem *lýsing***: Lýsandi samantekt á eiginleikum og ekki gert ráð fyrir innlægum þáttum sem orsaka hegðun.
 ]
 
----
-
-# Yfirlit vísindalegra nálganna að persónuleikanum
-
---
-Atferlisstefnan útskýrir alla hegðun fólks út frá ytra áreiti. Samkvæmt atferlissinnum mótast hegðun fólks með virkri skilyrðingu. 
-- B. F. Skinner var frumkvöðull róttækrar atferlisstefnu.
-
---
-&lt;img src="images/Persónuleikinn/styrking_refsing.jpg" width="423" style="display: block; margin: auto 0 auto auto;" /&gt;
-
----
-
-# Yfirlit vísindalegra nálganna að persónuleikanum frh.
-
---
-.pull-left[
-**Orðasafns tilgátan** kveður á um að tungumálið er lykill að persónuleika og að tungumálið innihaldi hugtök sem nái yfir allan mannlegan breytileika, þ.e. öll þau hugtök sem við notum til að lýsa fólki.
-
-&lt;img src="images/Persónuleikinn/orðasafn.png" width="63%" style="display: block; margin: auto;" /&gt;
-]
-
---
-.pull-right[
-**Tölfræðinálgun**: Þáttagreining varpaði ljósi á að þegar persónuleikaeinkenni eru metin með sjálfsmatskvarða sé með góðum rökum unnt að skipta persónuleikaeinkennum í fimm aðgreinda þætti:  
-- taugaveiklun, 
-- úthverfa, 
-- víðsýni, 
-- samvinnuþýði og 
-- samviskusemi.
-]
 
 ???
 Costa og McCrae komust að því að **lýð**fræðilegar breytur skýrðu aðeins um 10-15% af breytileika í dreifingu vellíðanar og leiddu út frá því að persónuleiki hlyti að skýra eitthvað af afgangs dreifingar vellíðanar. Costa og McCrae héldu því fram að hamingja væri samansafn tíðra upplifana á jákvæðum tilfinningum, sem er undir áhrifum úthverfu, og lítillar tíðni upplifana af neikvæðum tilfinningum, sem er undir áhrifum taugaveiklunar. Niðurstöður Costa og McCrae sýndu að persónuleiki skýrði þrefalt meira en lýðfræðilegar breytur og hafa niðurstöður þeirra komið fram í endurteknum rannsóknum, þó í formi fylgnirannsókna sem geta ekki skorið úr um orsakasamband. Svo þá er spurningin hvort vellíðan hafi áhrif á jákvæðar tilfinningar eða öfugt.  
@@ -293,175 +256,215 @@ Til eru þrjár útgáfur: 1) útgáfa S (self report), 2) útgáfa R (Observer 
 
 ---
 
-# Umræðuefni
+background-image: url(images/Tilfinningar/tilfinningahjol.jpg)
+background-size: 300px
+background-position: 92% 8%
 
-Hvaða eiginleika þarf að hafa til að standa sig svo frábærlega á Ólympíuleikunum?  
-Ræður gott líkamlegt ástand, þrotlaus þjálfun og tækni árangri hennar eða annarra sem taka þátt í erfiðri keppni?  
-Hversu miklu máli skiptir andlegt ástand og hvaða persónueiginleikar gera gæfumuninn til að ná því besta út úr sjálfum sér?
 
-.pull-left[
-&lt;img src="images/Persónuleikinn/eliudkipchoge.jpg" width="4267" /&gt;
-]
-
-.pull-right[
-&lt;img src="images/Persónuleikinn/icelandhandball.jpg" width="43%" style="display: block; margin: auto;" /&gt;
-]
+# Hvað eru tilfinningar?
 
 ???
-2013 bar íslenska kvennalandsliðið í handbolta sigur af hólmi gegn liði Svía
+- eru allar tilfinningar góðar?
+ - en slæmar?
+
+Við höfum öll einhverja hugmynd um hvað tilfinnig er en það er erfitt að skilgreina nákvæmlega hvað tilfinning er.
+
+
+--
+- Ástand líðanar: 
+
+--
+ - einkennist af einhvers konar líffræðilegri örvun 
+
+--
+ - sem hefur áhrif á **hugmyndir okkar um** heiminn og **hegðun** okkar
+
+--
+ - ýmist á jákvæðan eða neikvæðan máta  
+ 
+--
+
+**Málið.is**: geðhrif, kennd
+
+???
+- geðhrif vísa til sveiflna í skapi  
+
+--
+
+Fyrir vikið má taka ofantalda punkta sem svo:  
+
+--
+
+*Tilfinningar eru **ástand** sem felur í sér **flókið mynstur** af **hugrænum**, **líffræðilegum** og **hegðunarlegum viðbrögðum** við atburðum.*  
+
+--
+
+Tilfinningar hafa aðlögunargildi:
+
+- Eykur líkur á að lifa af
+- Mikilvægt fyrir nálægð/sambönd
+- Mikilvæg fyrir félagsleg samskipti
+- Mikilvægur þáttur lífsánægju
+
+???
+Um er að ræða eitthvað sem við finnum fyrir og engin leið fyrir okkur að vera 100% viss um að við upplifum öll það sama. Samt sem áður bendir allt til þess. Það er þó ekki það sama og að segja að svo sé raunin. 
+
+---
+background-image: url(images/Tilfinningar/6-tilfinningar.png)
+background-size: 300px
+background-position: 92% 8%
+
+
+# Grunntilfinningar
+
+
+Hvaða tilfinningar sérð þú á myndinni?
+
+--
+- Reiði
+- Gleði/hamingja
+- Leiði/sorg/hryggð/depurð
+- Óbeit/andstyggð/viðbjóður
+- Ótti/hræðsla
+- Undrun
+
+--
+
+Tilfinningarnar á myndinni virðast vera sammannlegar, þvert yfir ólíka menningaheima.
+
+
+---
+background-image: url(images/Tilfinningar/lietome.jpeg)
+background-size: 600px
+background-position: 92% 8%
+
+
+# Grunntilfinningar
+
+
+Hvaða tilfinningar sérð þú á myndinni?
+
+
+- Reiði
+- Gleði/hamingja
+- Leiði/sorg/hryggð/depurð
+- Óbeit/andstyggð/viðbjóður
+- Ótti/hræðsla
+- Undrun
+
+
+
+Tilfinningarnar á myndinni virðast vera sammannlegar, þvert yfir ólíka menningaheima.
+
+
+
+**Fyrirlitning** er stundum höfð með sem grunntilfinning og þá verða þær sjö talsins  
+
+--
+
+**Hvað er hamingja?**
+
+--
+- Hamingja tengist ekki peningum, greind eða heilsufari
+- Hamingjusamt fólk er ánægðara með sambönd sín.
+- Að hafa tilgang fyrir lífi sínu tengist meiri hamingju eða vellíðan.
+- Persónuleiki virðist skipta máli o.s.frv.
+
+---
+
+# Skoðum YouTube klippu
+
+
+<iframe width="1202" height="450" src="https://www.youtube.com/embed/embYkODkzcs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 ---
 
-# Tímaverkefni
 
-1. Útbúðu eina stjörnuspá *eða* persónuleikalýsingu með Barnum áhrifin í huga.
-2. Útlistaðu bæði kosti og galla sérhvers þersónuleikaþáttar innan fimm-þátta líkansinis; taugaveiklun, úthverfa, víðsýni, samvinnuþýði og samviskusemi.
- - Notaðu umfjöllun dagsins í dag þér til stuðnings.
-   - **Mundu** að enginn einn presónuleikaþáttur er betri eða verri en annar. Sérhver persónuleikaþáttur hefur þróunarfræðilegt gildi.
+# Tvær meginkenningar um tilfinningar
+
+
+.pull-left[**Kenning James-Lange um tilfinningar**:  
+Bregðumst fyrst við líkamlega og upplifum svo tilfinninguna.  
+**Dæmi**: Erum hrædd af því við hlaupum.  
+- *„Við erum hrædd af því að hjartað slær hraðar, reið af því að við sláum frá okkur og döpur af því að við grátum“*  
+
+
+**Kenning Cannon-Bard um tilfinningar**:  
+Skynjum fyrst tilfinningar og síðan finnum við fyrir líkamlegum breytingum.  
+**Dæmi**: hlaupum út af því við erum hrædd.  
+- *Ekkert orsakasamband er á milli tilfinningalegrar upplifunar og lífeðlislegrar sjálfvirkrar örvunar, bæði eru óháð viðbrögð við aðstæðum.*
+]
+
+.pull-right[
+```{r}
+knitr::include_graphics("images/Tilfinningar/jl-cb.png")
+```
+
+]
+
+---
+background-image: url(images/Tilfinningar/tilfinningahjol2.jpg)
+background-size: 300px
+background-position: 92% 92%
+
+
+.center[
+.middle[# Samræðuspruningar]
+]
+
+
+Er það rétt að sérhver einstaklingur sé ábyrgur fyrir eigin hamingju?  
+
+--
+Geta erfiðleikar stuðlað að hamingju?  
+
+--
+Hvort skiptir meira máli til þess að vera hamingjusöm/samur - hugarástand eða ytri aðstæður.  
+
+--
+Getur verið að suma langi til þess að gera eitthvað sem stangast á við hamingju þeirra?  
+
+--
+Hver er munurinn á hamingju og gleði?  
+
+--
+Hvernig myndir þú skilgreina hamingju?
 
 
 ---
 
 .center[
-.middle[# Fyrir næsta tíma]
+.middle[# Heimaverkefni]
 ]
-  &lt;br&gt;
-  &lt;br&gt;
+
+Taktu til tvö blöð og skráðu niður svör við tveimur spurningum. Á annað blaðið skal skrá niður eins mörg svör og þér detta í hug á ákveðnum tíma við spurningunni: <br>**a) Hvað telur þú að sé líklegt til þess að gera fólk óhamingjusamt?**
+
+Á hitt blaðið skrá  niður eins mörg svör og þér dettur í hug á ákveðnum tíma við spurningunni: <br>**b) Hvað telur þú að sé líklegt til þess að gera fólk hamingjusamt?**  
+
+--
+
+Áætlaðu þrjátíu mínútum í verkefnið.
+
+Skráðu niður a.m.k. fimm svör við hvorri spurningu.
+
+
+---
+class: center middle
+
+# Fyrir næsta tíma
+
+  <br>
+  <br>
   
-1. Klára tímaverkefnið
-2. Finna eina stjörnuspá (úr hvaða merki sem er) sem þú telur að geti átt við um alla
- - Til dæmis á mbl.is
-3. Skrifa lista yfir allar tilfinningar sem þér dettur í hug
- - Hvort tveggja jákvæðar og neikvæðar tilfinningar
+Vinna heimaverkefnið sem útlistað var á glærunni á undan 
+
+  <br>
+  <br>
+  
 
 ---
 class: center middle inverse
 
 
 # Takk fyrir tímann í dag
-    </textarea>
-<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
-<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
-<script>var slideshow = remark.create({
-"slideNumberFormat": "%current%",
-"highlightStyle": "github",
-"highlightLines": true,
-"ratio": "16:9",
-"countIncrementalSlides": true
-});
-if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
-  window.dispatchEvent(new Event('resize'));
-});
-(function(d) {
-  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
-  if (!r) return;
-  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
-  d.head.appendChild(s);
-})(document);
-
-(function(d) {
-  var el = d.getElementsByClassName("remark-slides-area");
-  if (!el) return;
-  var slide, slides = slideshow.getSlides(), els = el[0].children;
-  for (var i = 1; i < slides.length; i++) {
-    slide = slides[i];
-    if (slide.properties.continued === "true" || slide.properties.count === "false") {
-      els[i - 1].className += ' has-continuation';
-    }
-  }
-  var s = d.createElement("style");
-  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
-  d.head.appendChild(s);
-})(document);
-// delete the temporary CSS (for displaying all slides initially) when the user
-// starts to view slides
-(function() {
-  var deleted = false;
-  slideshow.on('beforeShowSlide', function(slide) {
-    if (deleted) return;
-    var sheets = document.styleSheets, node;
-    for (var i = 0; i < sheets.length; i++) {
-      node = sheets[i].ownerNode;
-      if (node.dataset["target"] !== "print-only") continue;
-      node.parentNode.removeChild(node);
-    }
-    deleted = true;
-  });
-})();
-(function() {
-  "use strict"
-  // Replace <script> tags in slides area to make them executable
-  var scripts = document.querySelectorAll(
-    '.remark-slides-area .remark-slide-container script'
-  );
-  if (!scripts.length) return;
-  for (var i = 0; i < scripts.length; i++) {
-    var s = document.createElement('script');
-    var code = document.createTextNode(scripts[i].textContent);
-    s.appendChild(code);
-    var scriptAttrs = scripts[i].attributes;
-    for (var j = 0; j < scriptAttrs.length; j++) {
-      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
-    }
-    scripts[i].parentElement.replaceChild(s, scripts[i]);
-  }
-})();
-(function() {
-  var links = document.getElementsByTagName('a');
-  for (var i = 0; i < links.length; i++) {
-    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
-      links[i].target = '_blank';
-    }
-  }
-})();
-// adds .remark-code-has-line-highlighted class to <pre> parent elements
-// of code chunks containing highlighted lines with class .remark-code-line-highlighted
-(function(d) {
-  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
-  const preParents = [];
-  const findPreParent = function(line, p = 0) {
-    if (p > 1) return null; // traverse up no further than grandparent
-    const el = line.parentElement;
-    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
-  };
-
-  for (let line of hlines) {
-    let pre = findPreParent(line);
-    if (pre && !preParents.includes(pre)) preParents.push(pre);
-  }
-  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
-})(document);</script>
-
-<script>
-slideshow._releaseMath = function(el) {
-  var i, text, code, codes = el.getElementsByTagName('code');
-  for (i = 0; i < codes.length;) {
-    code = codes[i];
-    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
-      text = code.textContent;
-      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
-          /^\$\$(.|\s)+\$\$$/.test(text) ||
-          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
-        code.outerHTML = code.innerHTML;  // remove <code></code>
-        continue;
-      }
-    }
-    i++;
-  }
-};
-slideshow._releaseMath(document);
-</script>
-<!-- dynamically load mathjax for compatibility with self-contained -->
-<script>
-(function () {
-  var script = document.createElement('script');
-  script.type = 'text/javascript';
-  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
-  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
-    script.src  = script.src.replace(/^https?:/, '');
-  document.getElementsByTagName('head')[0].appendChild(script);
-})();
-</script>
-  </body>
-</html>
