@@ -3,7 +3,7 @@
     "path": "~/GitHub/Icelandic/personuleikiogtilfinningar.Rmd",
     "project_path": "personuleikiogtilfinningar.Rmd",
     "type": "r_markdown",
-    "hash": "150682760",
+    "hash": "3300949976",
     "contents": "",
     "dirty": false,
     "created": 1650798034824.0,
@@ -12,16 +12,16 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "58,22",
-        "scrollLine": "45",
+        "cursorPosition": "428,39",
+        "scrollLine": "414",
         "last_setup_crc32": ""
     },
     "folds": "",
-    "lastKnownWriteTime": 1650798749,
+    "lastKnownWriteTime": 1650864746,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1650798750005,
+    "last_content_update": 1650864746030,
     "read_only": false,
     "read_only_alternatives": []
 }
