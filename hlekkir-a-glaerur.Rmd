@@ -90,6 +90,11 @@ xaringanExtra::embed_xaringan("tiska.html")
 xaringanExtra::embed_xaringan("personuleikiogtilfinningar.html")
 ```
 
+## Inngangur að ritun
+
+```{r, echo=F}
+xaringanExtra::embed_xaringan("Ritun1.html")
+```
 
 <hr>
 
