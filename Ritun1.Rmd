@@ -67,6 +67,20 @@ knitr::include_graphics("images/Ritun/skrifaF.png")
 
 
 ---
+class: center, middle
+
+
+# Litaþraut í upphafi tímans
+
+Hvernig eru X-in á litin?  
+En orðin?
+
+```{r, out.width="50%"}
+knitr::include_graphics("images/stroophrif.png")
+```
+
+
+---
 
 
 # Að skrifa texta með heimildum
@@ -178,6 +192,8 @@ knitr::include_graphics("images/Ritun/ritun1.png")
 .pull-left[**Skila á verkefninu 23. maí 2022** með að senda póst á netfangið **jon.ingi.hlynsson@gmail.com**
 
 Ritgerðina skal skrifa í **Google Docs**.
+
+**800-1000 orð**.
 
 [Smelltu hér](https://vefir.mms.is/flettibaekur/namsefni/heimir/files/assets/common/downloads/publication.pdf) til að opna handbók um heimildaritun.
 ]

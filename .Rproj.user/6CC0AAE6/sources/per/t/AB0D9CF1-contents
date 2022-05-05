@@ -145,6 +145,14 @@ xaringanExtra::embed_xaringan("class1-4-lesson-7.html")
 ```
 
 
+### Bókin Dýrabær
+
+```{r, echo=FALSE}
+xaringanExtra::embed_xaringan("class1-4-lesson-8.html")
+```
+
+
+
 <br><br><br><br><br><br><br><br>
 
 # Heimildir 
