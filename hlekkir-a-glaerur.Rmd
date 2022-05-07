@@ -96,6 +96,13 @@ xaringanExtra::embed_xaringan("personuleikiogtilfinningar.html")
 xaringanExtra::embed_xaringan("Ritun1.html")
 ```
 
+## Þjálfun í ritun 
+
+```{r, echo=F}
+xaringanExtra::embed_xaringan("Ritun-ver2.html")
+```
+
+
 <hr>
 
 # 1-3 bekkur - glærupakkar:

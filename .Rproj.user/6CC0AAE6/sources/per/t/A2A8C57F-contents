@@ -49,16 +49,15 @@ background-image: url(images/Omniglot-logo.png)
 background-size: 125px
 background-position: 5% 92%
 
-# Þjálfun í ritun 
-
+# Ritun
 
 ### Móðurmálskennsla
 
 
 Jón Ingi Hlynsson
 
-```{r, out.width="25%"}
-knitr::include_graphics("images/Ritun/write.jpg")
+```{r, out.width="30%"}
+knitr::include_graphics("images/Ritun/skrifaF.png")
 ```
 
 
@@ -84,24 +83,69 @@ knitr::include_graphics("images/stroophrif.png")
 ---
 
 
-.center[
-.middle[# Tímaverkefni - Sögurúlletta]
+# Að skrifa texta með heimildum
+
+.pull-left[
+### Afhverju?
+
+**Samfélagið krefst þess** að þú getir aflað þér upplýsinga, verið gagnrýnin(n) á þær og komið þeim frá þér, m.a. í rituðu máli.  
+
+Þú **þjálfast í að vinna úr upplýsingum** – þegar þú skrifar texta sem byggist á heimildum þarftu að kynna þér málefni frá öllum hliðum, greina aðal- og aukaatriði og setja þau fram á skýran og skipulegan hátt.
+
+Þú **eflir gagnrýna hugsun** – ritgerðasmíð og önnur heimildaritun kallar á heimildavinnu og þú lærir og skilur betur að ekki er alltaf allt sem sýnist og að sumar heimildir eru öruggar á meðan aðrar eru óáreiðanlegar eða hreint og beint falskar.
+
 ]
 
-.center[
-.middle[
-```{r, out.width="33%"}
-knitr::include_graphics("images/Ritun/sögurúlletta.png")
+.pull-right[
+```{r, out.width="80%", fig.align='right'}
+knitr::include_graphics("images/Ritun/ritun1.png")
 ```
-]]
 
-???
-https://www.random.org/dice/
+]
+
+---
+
+
+# Að skrifa texta með heimildum
+
+.pull-left[
+### Afhverju?
+
+Þú verður **betri í að standa fyrir máli þínu í daglegu lífi** – heimildavinna felur í sér ákveðna rökleiðslu og samtal á milli ólíkra sjónarmiða. Ef þú þarft einhvern tímann að sannfæra einhvern (vinnuveitanda, vin, foreldri, þjónustufulltrúa) er mikilvægt að málflutningur þinn sé beinskeyttur og sannfærandi og byggður á traustum heimildum.
+
+]
+
+.pull-right[
+```{r, out.width="80%", fig.align='right'}
+knitr::include_graphics("images/Ritun/ritun1.png")
+```
+
+]
+
+---
+
+
+# Að skrifa texta með heimildum
+
+.pull-left[
+### Afhverju?
+
+
+Þú **eflist og eykur möguleika þína** – í upplýsingasamfélagi nútímans þar sem mikið magn af gögnum og heimildum er aðgengilegt öllum er mikilvægt fyrir hvern og einn að vera læs á gæði og áreiðanleika upplýsinga. Í framhaldsskóla og háskóla er gerð rík krafa um ritun, í mörgum starfsgreinum er það einnig gert og ef þú vilt starfa við ritun eða úrvinnslu texta (t.d. í sköpun, blaðamennsku eða fræðimennsku) er færni á þessu sviði alveg nauðsynleg.
+
+]
+
+.pull-right[
+```{r, out.width="80%", fig.align='right'}
+knitr::include_graphics("images/Ritun/ritun1.png")
+```
+
+]
 
 ---
 
 .center[
-.middle[# Ritgerð]
+.middle[# Heimaverkefni]
 ]
 --
 
@@ -142,7 +186,7 @@ https://www.random.org/dice/
 ---
 
 .center[
-.middle[# Ritgerð]
+.middle[# Heimaverkefni]
 ]
 
 .pull-left[**Skila á verkefninu 23. maí 2022** með að senda póst á netfangið **jon.ingi.hlynsson@gmail.com**
@@ -155,20 +199,16 @@ Ritgerðina skal skrifa í **Google Docs**.
 ]
 
 .pull-right[
-```{r, out.width="33%"}
-knitr::include_graphics("images/Ritun/skrifa1.png")
+```{r}
+knitr::include_graphics("images/Ritun/write.jpg")
 ```
 
 ]
-
-
 ---
 
-
 .center[
-.middle[# Heimaverkefni]
+.middle[# Tímaverkefni]
 ]
-
 
 ### **Leiðbeiningaritun**  
 
@@ -187,7 +227,9 @@ class: center middle
   <br>
   <br>
   
-Vinna heimaverkefnið sem útlistað var á glærunni hér á undan (**eða** í ritgerð eftir samkomulagi)
+Vinna í ritgerðinni (við skoðum Google Docs skjalið saman í næstu viku)
+
+Skoða bókina [Heimir: Handbók um heimildaritun](https://vefir.mms.is/flettibaekur/namsefni/heimir/files/assets/common/downloads/publication.pdf)
 
   <br>
   <br>
