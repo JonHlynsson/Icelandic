@@ -3,7 +3,7 @@
     "path": "~/GitHub/Icelandic/hlekkir-a-glaerur.Rmd",
     "project_path": "hlekkir-a-glaerur.Rmd",
     "type": "r_markdown",
-    "hash": "3579313379",
+    "hash": "2766003380",
     "contents": "",
     "dirty": false,
     "created": 1640794964719.0,
@@ -12,15 +12,15 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "101,41",
-        "scrollLine": "0"
+        "cursorPosition": "154,37",
+        "scrollLine": "135"
     },
     "folds": "",
-    "lastKnownWriteTime": 1651934626,
+    "lastKnownWriteTime": 1652077436,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1651934626473,
+    "last_content_update": 1652077436981,
     "read_only": false,
     "read_only_alternatives": []
 }

@@ -33,70 +33,70 @@ Glærurnar á þessari síðu styðjast við opin aðgang Menntamálastofnunar �
 ## Laxdæla glærupakkar
 
 
-### Glærupakki 1 - forþekking
+### [Glærupakki 1 - forþekking](laxdæla-glærur-1.html)
 
 ```{r, echo=F}
 xaringanExtra::embed_xaringan("laxdæla-glærur-1.html")
 ```
 
 
-### Glærupakki 2 - kafli 1-11
+### [Glærupakki 2 - kafli 1-11](laxdæla-glærur-2.html)
 
 ```{r, echo=F}
 xaringanExtra::embed_xaringan("laxdæla-glærur-2.html")
 ```
 
 
-### Glærupakki 3 - kafli 12-23
+### [Glærupakki 3 - kafli 12-23](laxdæla-glærur-3.html)
 
 ```{r, echo=F}
 xaringanExtra::embed_xaringan("laxdæla-glærur-3.html")
 ```
 
-### Glærupakki 4 - kafli 24-34
+### [Glærupakki 4 - kafli 24-34](laxdæla-glærur-4.html)
 
 ```{r, echo=F}
 xaringanExtra::embed_xaringan("laxdæla-glærur-4.html")
 ```
 
-### Glærupakki 5 - upprifjun og verkefnatími
+### [Glærupakki 5 - upprifjun og verkefnatími](laxdæla-glærur-5.html)
 
 ```{r, echo=F}
 xaringanExtra::embed_xaringan("laxdæla-glærur-5.html")
 ```
 
-## Persónuleikinn
+## [Persónuleikinn](persónuleikaglærur.html)
 
 ```{r, echo=F}
 xaringanExtra::embed_xaringan("persónuleikaglærur.html")
 ```
 
-## Tilfinningar
+## [Tilfinningar](tilfinningar.html)
 
 ```{r, echo=F}
 xaringanExtra::embed_xaringan("tilfinningar.html")
 ```
 
-## Tíska
+## [Tíska](tiska.html)
 
 ```{r, echo=F}
 xaringanExtra::embed_xaringan("tiska.html")
 ```
 
 
-## Persónuleikinn og tilfinningar
+## [Persónuleikinn og tilfinningar](personuleikiogtilfinningar.html)
 
 ```{r, echo=F}
 xaringanExtra::embed_xaringan("personuleikiogtilfinningar.html")
 ```
 
-## Inngangur að ritun
+## [Inngangur að ritun](Ritun1.html)
 
 ```{r, echo=F}
 xaringanExtra::embed_xaringan("Ritun1.html")
 ```
 
-## Þjálfun í ritun 
+## [Þjálfun í ritun](Ritun-ver2.html) 
 
 ```{r, echo=F}
 xaringanExtra::embed_xaringan("Ritun-ver2.html")
@@ -108,51 +108,51 @@ xaringanExtra::embed_xaringan("Ritun-ver2.html")
 # 1-3 bekkur - glærupakkar:
 
 
-### Bókin Á róló
+### Bókin [Á róló](class1-4-lesson-1.html)
 
 ```{r, echo=FALSE}
 xaringanExtra::embed_xaringan("class1-4-lesson-1.html")
 ```
 
 
-### Bókin Í vali
+### Bókin [Í vali](class1-4-lesson-2.html)
 
 ```{r, echo=FALSE}
 xaringanExtra::embed_xaringan("class1-4-lesson-2.html")
 ```
 
-### Bókin Moli
+### Bókin [Moli](class1-4-lesson-3.html)
 
 ```{r, echo=FALSE}
 xaringanExtra::embed_xaringan("class1-4-lesson-3.html")
 ```
 
-### Bókin Í síma
+### Bókin [Í síma](class1-4-lesson-4.html)
 
 ```{r, echo=FALSE}
 xaringanExtra::embed_xaringan("class1-4-lesson-4.html")
 ```
 
-### Bókin Melóna
+### Bókin [Melóna](class1-4-lesson-5.html)
 
 ```{r, echo=FALSE}
 xaringanExtra::embed_xaringan("class1-4-lesson-5.html")
 ```
 
-### Bókin Í Hólaseli
+### Bókin [Í Hólaseli](class1-4-lesson-6.html)
 
 ```{r, echo=FALSE}
 xaringanExtra::embed_xaringan("class1-4-lesson-6.html")
 ```
 
-### Bókin Vofan
+### Bókin [Vofan](class1-4-lesson-7.html)
 
 ```{r, echo=FALSE}
 xaringanExtra::embed_xaringan("class1-4-lesson-7.html")
 ```
 
 
-### Bókin Dýrabær
+### Bókin [Dýrabær](class1-4-lesson-8.html)
 
 ```{r, echo=FALSE}
 xaringanExtra::embed_xaringan("class1-4-lesson-8.html")
