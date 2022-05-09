@@ -193,7 +193,7 @@ knitr::include_graphics("images/Ritun/ritun1.png")
 
 Ritgerðina skal skrifa í **Google Docs**.
 
-**800-1000 orð**.
+**500-1000 orð**.
 
 [Smelltu hér](https://vefir.mms.is/flettibaekur/namsefni/heimir/files/assets/common/downloads/publication.pdf) til að opna handbók um heimildaritun.
 ]
