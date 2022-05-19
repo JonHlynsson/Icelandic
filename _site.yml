@@ -47,6 +47,15 @@ navbar:
       - text: "Heimir: Handbók um heimildaritun"
         href: "https://vefir.mms.is/flettibaekur/namsefni/heimir/files/assets/common/downloads/publication.pdf"
         icon: fa-pen
+      - text: "Áhrif núvitundaræfinga á kvíða og áhyggjur"
+        href: "https://docs.google.com/document/d/e/2PACX-1vTXEgZJEdtyLF6ClPWZ3BvXC_6WIPdRhaPdkZeeznCGbUyX1pQ4rzrnFqCdruABbQ/pub"
+        icon: fa-file-text
+      - text: "APA heimildaskráning"
+        href: "https://bokasafn.ru.is/apa/heim"
+        icon: fa-clipboard-list
+      - text: "Flýtilykill APA heimildaskráningar"
+        href: "https://www.ru.is/media/skjol---bokasafn/APA-flytilykill.pdf"
+        icon: fa-clipboard-list
       - text: "----------"
       - text: "1-3 bekkur"
       - text: "Litla Lesrún"

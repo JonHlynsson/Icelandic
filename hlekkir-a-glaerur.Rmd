@@ -159,6 +159,14 @@ xaringanExtra::embed_xaringan("class1-4-lesson-8.html")
 ```
 
 
+### Bókin [Alex og Rex](class1-4-lesson-9.html)
+
+```{r, echo=FALSE}
+xaringanExtra::embed_xaringan("class1-4-lesson-9.html")
+```
+
+
+
 
 <br><br><br><br><br><br><br><br>
 
