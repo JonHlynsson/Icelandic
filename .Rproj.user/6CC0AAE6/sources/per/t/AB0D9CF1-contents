@@ -102,6 +102,12 @@ xaringanExtra::embed_xaringan("Ritun1.html")
 xaringanExtra::embed_xaringan("Ritun-ver2.html")
 ```
 
+## [Ritun seinni hluti](Ritun2.html)
+
+```{r, echo=F}
+xaringanExtra::embed_xaringan("Ritun2.html")
+```
+
 
 <hr>
 
