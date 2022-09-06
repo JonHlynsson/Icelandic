@@ -1,0 +1,140 @@
+---
+title: "Ritun"
+subtitle: ""  
+author: 
+  - "Jón Ingi Hlynsson"
+date: '`r Sys.Date()`'
+institute: "Omniglot AB"
+output:
+  xaringan::moon_reader:
+    css: xaringan-themer.css
+    self_contained: true
+    seal: false
+    nature:
+      slideNumberFormat: "%current%"
+      highlightStyle: github
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: true
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+library(kableExtra)
+knitr::opts_chunk$set(
+  cache = FALSE,
+  echo = FALSE,
+  message = FALSE, 
+  warning = FALSE,
+  hiline = TRUE
+)
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_duo_accent(
+  primary_color = "#1381B0",
+  secondary_color = "#FF961C",
+  inverse_header_color = "#FFFFFF",
+  inverse_background_color = "#4c516d", 
+  colors = c(red = "#ff0019", black = "#000000"), inverse_text_color = "#FFFFFF"
+)
+
+library(xaringanExtra)
+use_tile_view()
+```
+
+class: center, middle
+background-image: url(images/Omniglot-logo.png)
+background-size: 125px
+background-position: 5% 92%
+
+# Fyrsti tími skólaársins!
+
+### Móðurmálskennsla
+
+
+Jón Ingi Hlynsson
+
+
+#### Omniglot AB 
+
+#### Glærum síðast breytt: `r Sys.Date()`
+
+
+---
+
+# Dagskrá dagsins í dag
+
+--
+
+Tölum um sumarið
+
+--
+
+
+Skrifum bréf
+
+--
+
+Hugsum og tölum um kjörbók
+
+
+---
+
+# Hvernig var sumarið?
+
+
+Munnleg frásögn um helstu uppákomur, skemmtileg atvik o.fl. þ.h.
+
+
+Undirbúningur í lagi (u.þ.b. 5-10 mín)
+
+---
+
+# Bréfarskrif
+
+
+Í Google Docs, skjali sem þú deilir með jon.ingi.hlynsson@gmail.com 
+
+**Viðfangsefni**: Skrifa bréf frá þér til þín í lok þessarar annar (þ.e. bréfið lesið fyrir jól)
+
+- Koma inn á:
+  - Hvað reiknar þú með að verði auðvelt í vetur
+  - Hvað reiknar þú með að verði snúið í vetur
+  - Hvaða áföngum hlakkar þú mest til að taka þátt í
+    - en minnst til
+  - Settu þér markmið fyrir íslenskuna í vetur
+
+---
+
+# Kjörbók
+
+Ertu með einhverja kjörbók í huga fyrir veturinn (sbr. upphaf síðasta veturs)
+
+
+--
+
+ef ekki láttu mig þá vita strax í næsta tíma
+
+
+---
+
+# Tækifæri til að hafa áhrif á kennsluna
+
+
+---
+
+# Fyrir næsta tíma
+
+Klára bréfið og senda póst á netfangið á glærunni fyrir ofan þess efnis
+
+Skoða kjörbókina (þ.e. að minnsta kosti finna hana til og koma með hana í næsta tíma)
+
+---
+class: center middle inverse
+
+
+# Takk fyrir tímann!
+
+## Gleðilegt sumar!

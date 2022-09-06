@@ -1,0 +1,46 @@
+---
+title: "Glærur"
+output:  
+  html_document:
+    theme: flatly
+    css: default.css
+    toc: yes
+    toc_float: yes
+    toc-depth: 6
+    self_contained: true
+bibliography: heimildir.bib
+citation-style: APA7isl.csl
+---
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YREZ4RHVM6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YREZ4RHVM6');
+</script>
+
+
+![](images/Hlynsson/Banner.jpg)
+
+Glærurnar á þessari síðu styðjast við opin aðgang Menntamálastofnunar á ýmiskonar námsefni [@Menntamalastofnun2016].
+
+# 4-9 bekkur - glærupakkar
+
+## [Fyrsti tíminn](first2022.html)
+
+```{r, echo=F}
+xaringanExtra::embed_xaringan("first2022.html")
+```
+
+
+
+<br><br><br><br><br><br><br><br>
+
+# Heimildir 
+<div id="refs"></div>
+
+<hr>
+`r r2symbols::symbol("copyright")` Jon Ingi Hlynsson - Síðasta breyting átti sér stað: `r Sys.Date()`
