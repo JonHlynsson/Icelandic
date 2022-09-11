@@ -1,7 +1,7 @@
 {
     "id": "A2A8C57F",
-    "path": "~/GitHub/Icelandic/first2022.Rmd",
-    "project_path": "first2022.Rmd",
+    "path": "~/GitHub/Icelandic/rok.Rmd",
+    "project_path": "rok.Rmd",
     "type": "r_markdown",
     "hash": "0",
     "contents": "",
@@ -12,16 +12,16 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "146,0",
-        "scrollLine": "135",
+        "cursorPosition": "17,35",
+        "scrollLine": "0",
         "last_setup_crc32": ""
     },
     "folds": "",
-    "lastKnownWriteTime": 1662466485,
+    "lastKnownWriteTime": 1662909297,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1662466485285,
+    "last_content_update": 1662909297785,
     "read_only": false,
     "read_only_alternatives": []
 }

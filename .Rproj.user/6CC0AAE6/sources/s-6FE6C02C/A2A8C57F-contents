@@ -1,0 +1,737 @@
+---
+title: "Röksemdarfærslur"
+subtitle: ""  
+author: 
+  - "Jón Ingi Hlynsson"
+date: '`r Sys.Date()`'
+institute: "Omniglot AB"
+output:
+  xaringan::moon_reader:
+    css: xaringan-themer.css
+    self_contained: true
+    seal: false
+    nature:
+      slideNumberFormat: "%current%"
+      highlightStyle: github
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+library(kableExtra)
+knitr::opts_chunk$set(
+  cache = FALSE,
+  echo = FALSE,
+  message = FALSE, 
+  warning = FALSE,
+  hiline = TRUE
+)
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_duo_accent(
+  primary_color = "#1381B0",
+  secondary_color = "#FF961C",
+  inverse_header_color = "#FFFFFF",
+  inverse_background_color = "#4c516d", 
+  colors = c(red = "#ff0019", black = "#000000"), inverse_text_color = "#FFFFFF"
+)
+
+library(xaringanExtra)
+use_tile_view()
+```
+
+class: center, middle
+background-image: url(images/Omniglot-logo.png)
+background-size: 125px
+background-position: 5% 92%
+
+# Að færa rök fyrir máli sínu
+
+### Móðurmálskennsla
+
+
+Jón Ingi Hlynsson
+
+
+#### Omniglot AB 
+
+#### Glærum síðast breytt: `r Sys.Date()`
+
+
+---
+
+# Heimanám
+
+--
+
+Förum yfir bréfið frá því í síðustu viku
+
+
+---
+
+
+# Í dag
+
+
+Við ætlum að skoða: 
+
+--
+
+- rök og röksemdafærslu 
+
+--
+- rökvillur
+
+--
+- muninn á röksemdafærslum, staðhæfingum og fortölum
+
+--
+- áhrif sendiboða
+
+
+---
+
+# Staðhæfingar og röksemdir 
+
+**Staðhæfing**:
+
+--
+Í merkingarfræði eru merkingar setninga eða segða oft flokkaðar í nokkrar gerðir og þá er STAÐHÆFING ein þeirra. Eitt einkenni **staðhæfinga (fullyrðinga)** er það að þær eru **annaðhvort sannar eða ósannar**. 
+
+--
+
+Fyrir vikið...
+
+--
+eru þær yrðingar sem **sýna fram á eitthvað** og/eða **sannfæra um eitthvað** kallaðar **röksemdir**.
+
+
+--
+
+**Rök eða ástæður** sem styðja staðhæfingu eða yrðingu köllum við *röksemdafærslu*.
+
+---
+
+# Hvernig eru rökfærslur settar fram?
+
+--
+Dæmi:
+
+Þú segir:  
+> Svona á að gera þetta!
+
+Þegar ég spyr:  
+> Hvernig veitst þú það?
+
+Þá er ég að óska eftir rökum fyrir staðhæfingunni
+
+
+--
+Þá væri rökvilla að segja:  
+> Vegna þess að það hefur alltaf verið gert svona.
+
+---
+
+# Hvernig eru rökfærslur settar fram? frh.
+
+Spyrja ekki bara: Er þetta satt?  
+
+- Heldur líka: AF HVERJU á ég að trúa þessu?
+- Hvernig veit ég að þetta er satt?
+  - Hver eru rökin fyrir þessu?
+  - Hvað eru góð rök?
+
+---
+
+# Rökfræði
+
+
+Þegar ég varpa fram staðhæfingu, þá gef ég mér ákveðnar forsendur og kemst að niður stöðu.
+
+Þegar niðurstaðan leiðir ekki af forsendum er rökfærslan *ógild*.
+
+
+> Þetta er tilfellið í bróðurhluta dægurmálaumræðna 
+
+
+---
+
+# Röfræði frh.
+
+## Afleiðsla
+
+
+Afleiðslurök gefa niðurstöðu sem leiðir óhjákvæmilega af forsendunum.
+
+***EF*** forsendur eru sannar *og* rökfærslan gild eða réttmæt þá *hlýtur* niðurstaðan að vera sönn.
+
+--
+
+Klassískt dæmi:
+
+> Allir menn eru dauðlegir  
+> Sókrates er maður  
+> Sókrates er dauðlegur  
+
+---
+
+# Afleiðsla 
+
+Fjórar ólíkar afleiðslur:
+
+**Gild afleiðsla**:
+
+- staðfesta forlið 
+- neita bakhlið
+
+**Ógild afleiðsla**:
+
+- staðfesta baklið
+- neita forlið
+
+???
+abduction
+
+
+---
+
+# Gild afleiðsla: Staðfestir forlið
+
+
+Formið:  
+
+Ef a, þá b,  
+a  
+
+Þá b  
+
+--
+
+Dæmi:
+
+**Ef** tiltekin lífvera er köttur **þá** er hún spendýr.  
+Snúður er köttur.  
+
+Snúður er spendýr.
+
+
+---
+
+# Gild afleiðsla: Neitar bakhlið
+
+
+Formið:  
+
+Ef a, þá b  
+Ekki b  
+
+Ekki a  
+
+--
+
+Dæmi:
+
+
+**Ef** tiltekin lífvera er köttur **þá** er hún spendýr.  
+Kristján krókódíll er **ekki** spendýr.  
+
+Kristján krókódíll er ekki köttur.
+
+
+---
+
+# Ógild afleiðsla: Staðfestir baklið
+
+Formið:  
+
+Ef a, þá b  
+b  
+
+Þá a  
+
+--
+
+Dæmi:
+
+**Ef** tiltekin lífvera er köttur **þá** er hún spendýr.  
+Snati er spendýr.  
+
+Snati er köttur.
+
+---
+
+# Ógild afleiðsla: Neitar forlið
+
+
+Formið:  
+
+Ef a, þá b  
+Ekki a  
+
+Þá ekki b
+
+--
+
+Dæmi:
+
+**Ef** tiltekin lífvera er köttur **þá** er hún spendýr.  
+Snati er ekki köttur.  
+
+Snati er ekki spendýr.
+
+---
+
+# Forsendur og niðurstaða
+
+Gild röksemdafærsla getur haft:  
+- ósannar forsendur og ósanna niðurstöðu
+- ósannar forsendur en sanna niðurstöðu
+- sannar forsendur og sanna niðurstöðu  
+
+Ef niðurstöðuna leiðir **ekki** af forsendunum er rökfærslan ógild.
+
+
+---
+
+# Hvað er eftirfarandi ræksemdarfærsla?
+
+
+Allir álfar búa í steinum.
+Yngvi er álfur.
+Yngvi býr í steini.  
+
+Þetta er dæmi um:  
+
+a. röksemd sem sýnir fram á fáránleika  
+b. ógilda afleiðslu  
+c. gilda afleiðslu  
+d. innbyggða röklega mótsögn  
+e. heimsku  
+
+--
+
+Rétt svar: C, afleiðslan er gild...
+
+--
+þó hún sé sennilega ósönn
+
+
+---
+
+# Aðleiðsla/tilleiðsla 
+
+
+Aðleiðsla styður líklega niðurstöðu sem leiðir þó ekki óhjákvæmilega af forsendunum.
+
+--
+
+Aðleiðsla sem rennir stoðum undir niðurstöðu er kölluð sterk eða öflug. Annars er hún kölluð veik.  
+
+
+--
+
+Dæmi:
+Menn með mikið sjálfstraust vinna í 90% tilvika.  
+Íslenska karlalandsliðið er með mikið sjálfstraust.  
+
+Það eru 90% líkur á því að Íslendingar vinni næsta leik í
+undankeppninni.
+
+
+???
+induction 
+
+---
+
+# Íleiðsla
+
+Þá er farið frá skýringarefninu (t.d. fyrirbærinu) og að líklegustu skýringunni
+
+--
+
+Formið:  
+
+Fyrirbæri p  
+Tilgáta h skýrir p  
+Engin önnur tilgáta skýrir p betur  
+
+h er líklega rétt
+
+--
+
+Dæmi:
+
+Það eru stígvélaför í moldinni  
+Gummi á svona stígvél  
+Engin önnur skýring er betri  
+
+Gummi átti leið hér um
+
+
+--
+
+Íleiðslur eru mikið notaðar í vísindum
+
+???
+Inference to the best explanation 
+
+---
+
+# Forsendurbrestir og rökvillur
+
+Um er að ræða forsendubrest ef að forsendur eru:  
+
+- Ótækar
+  - Forsendurnar eru hæpnar
+- Óviðeigandi
+  - Forsendurnar skipta engu máli fyrir sannleiksgildi niðurstöðunnar
+- Ónægar
+  - Það vantar upp á forsendurnar til að þær getir talist styðja niðurstöðuna
+
+---
+
+# Ótækar forsendur
+
+Klifun, **hringskýring** eða að gefa sér það sem á að rökstyðja:
+
+--
+Niðurstaðan er notuð sem ein af forsendunum
+
+--
+
+Dæmi:  
+*Af hverju sofna menn af svefnlyfi?*  
+*Það gerir svefnmátturinn*
+
+???
+Begging the question 
+
+--
+
+**Gerviklemma** eða afar(slæmir)kostir: 
+
+--
+Afarkostir settir fram þegar í raun og veru eru til fleiri valkostir
+
+???
+(false dilemma)
+
+--
+
+Dæmi:  
+*Annaðhvort skýra vísindi þetta til fulls eða þetta er kraftaverk*
+
+---
+
+# Óviðeigandi forsendur
+
+**Ógild merkingarjöfnun**: 
+
+--
+Orð notað í tvenns konar merkingu
+
+???
+(equivocation)
+
+--
+
+Dæmi:  
+*Aðeins menn eru skynsamir.*  
+*Engin kona er maður.*  
+*Engin kona er skynsöm.*
+
+--
+
+**Ógild samsetning**: 
+
+--
+Það sem á við um hluta á líka við um heildina
+
+???
+(composition)
+
+--
+
+Dæmi: *Atóm eru líflaus. Þess vegna er allt sem er gert úr atómum líflaust.*
+
+--
+
+**Óréttmæt aðgreining**: 
+
+--
+Það sem á við um heild er talið eiga við um hluta.
+
+???
+(division)
+
+--
+
+Dæmi: *Við erum á lífi. Við erum gerð úr atómum. Því hljóta atóm að vera lifandi.*
+
+---
+
+# Óviðeigandi forsendur frh.
+
+**Ad hominem**: 
+
+--
+Veist er að þeim sem heldur einhverju fram, ekki að staðhæfingunni
+
+--
+
+Dæmi: *„Ekki trúa neinu sem þingmenn halda fram, þeir eru allir jafn spilltir.”*
+
+--
+
+**Upprunarök**: 
+
+--
+Uppruni röksemdar er talinn rök með eða á móti röksemdinni sjálfri
+
+???
+(genetic fallacy)
+
+
+--
+
+Dæmi: *„Við skulum ekki trúa Siggu. Hún trúir á álfa.”*
+
+--
+
+**Yfirvaldsrök**: 
+
+--
+Rökstuðningur með því að vísa til þess að sérfræðingar hafi haldið einhverju fram
+
+???
+(appeal to authority)
+
+--
+
+Dæmi: *„Michael Jordan borðar þetta morgunkorn.”*
+
+--
+
+**Vinsældarök**: 
+
+--
+Rökstuðningur með vísun í það sem allir eða flestir gera
+
+???
+(appeal to the masses)
+
+--
+
+
+Dæmi: *„Það eru nú allir sammála um þetta.”*
+
+---
+
+# Óviðeigandi forsendur frh.
+
+**Hefðarrök**: 
+
+--
+Rökstutt með vísun í hefð
+
+???
+(appeal to tradition)
+
+--
+
+Dæmi: *„Svona höfum við alltaf gert.”*
+
+--
+
+**Vankunnátturök**: 
+
+--
+Það að geta ekki hafnað staðhæfingu er notað sem rök fyrir sannleiksgildi hennar
+
+???
+(appeal to ignorance)
+
+--
+
+Dæmi: *„Lagarfljótsormurinn hlýtur að vera til fyrst enginn hefur getað afsannað tilvist hans.”*
+
+--
+
+**Hræðslurök**: 
+
+--
+Að nota hræðslu sem áróðurstæki
+
+???
+(appeal to fear)
+
+--
+
+Dæmi: *„Ef þið takið ekki þátt í stríðinu gegn hryðjuverkum þá munið þið þurfa að berjast við hryðjuverkamenn í ykkar heimalandi.”*
+
+--
+
+**Grýlurök/strámannsrök**: 
+
+--
+Andstæðingi eru gerðar upp skoðanir
+
+???
+(straw man)
+
+Dæmi: *„Vinstri flokkarnir vilja bara byltingu á öllu og að internetið eigi að leysa öll vandamál. Þá er ekki hægt að kjósa.”*
+
+
+---
+
+# Ónægar forsendur
+
+--
+
+**Fljótfærnisleg alhæfing**: 
+
+--
+Að draga ályktun á grundvelli of fárra athugana eða á grundvalli úrtaks sem var ekki slembiúrtak
+
+???
+(hasty generalization)
+
+--
+
+Dæmi: *„Ég varð vitni að því að Bubbi miðill er loddari. Þeir eru það allir, þessi miðlar.”*
+
+--
+
+**Ógild samlíking**: 
+
+--
+Tveimur fyrirbærum líkt saman sem í raun eru ólík
+
+???
+(faulty analogy)
+
+--
+
+Dæmi: *„Fyrst jörðin er með vatn, andrúmsloft og lífverur, og Mars hefur vatn og andrúmsloft þá hljóta að vera lífverur á Mars.”*
+
+--
+
+**Post hoc, ergo propter hoc**: 
+
+--
+Ef b gerðist á eftir a þá orsakaði a b
+
+--
+
+Dæmi: *„Ég fór í meðferð og nú líður mér betur.”*
+
+--
+
+**Á hálum ís**: 
+
+--
+Þegar fullyrt er að tiltekin athöfn leiði sjálfkrafa til atferliskeðju. Getur verið réttmætt en oft ekki.
+
+???
+(slippery slope)
+
+--
+
+Dæmi: *„Ef þú kennir ekki biblíusögur þá endar það í siðspillingu.”*
+
+
+---
+
+# Tölulegar rökleysur
+
+
+Oft eru tölur notaðar sem yfirvald og/eða til að villa fyrir um:
+
+--
+
+**Villandi meðaltöl**: Staðtölur eru ekki alltaf lýsandi fyrir dreifingu
+
+Dæmi: *„Skattalækkanir verða 100 þúsund krónur, að meðaltali.”*
+
+--
+
+**Ónógar upplýsingar**  
+
+
+Dæmi: *„Kaffidrykkja tvöfaldar hættuna á krabbameini í blöðruhálskirtli.”*  
+
+
+Hér vantar upplýsingar um hversu mikil hættan er á slíku krabbameini
+
+--
+
+**Óljós samanburður**  
+Dæmi: *„Höfuðverkjalyfið Verkjabani er 50% betra”  *
+  
+  
+Betra en hvað?
+
+
+
+---
+
+# Spurningar?
+
+---
+
+# Verkefni
+
+
+Á glærunum má finna 20 rökvillur með dæmum.
+
+
+Veldu 5 rökvillur og búðu til nýtt dæmi
+
+
+
+---
+
+# Fyrir næsta tíma
+
+Kjörbók?
+
+
+Skrifa tvo 200 orða texta:
+
+- Annar þeirra færir rök gegn því að færa klukkuna á sumrin 
+- Hinn færir rök fyrir því að færar klukkuna á sumrin
+
+
+--
+
+Til dæmis:
+
+**Rök með**: Einn helsti kostur þess að færa klukkuna á sumrin er betri nýting á sólarljósi. Það er fólki mikilvægt að fá D vítamín og fyrir vikið skal leitast við að auka tækifæri þess til að vera úti í sólinni. Aukinheldur...
+
+
+**Rök á móti**: Einn helsti ókostur þess að færa klukkuna á sumrin er að henna þarf óneitanlega að færa til baka á veturna sem leiðir af sér minni svefn þann daginn, rugling og eykur líkurnar á því að fólk sé seint. Aukinheldur...
+
+
+---
+
+# Næsti tími
+
+Höldu áfram að velta fyrir okkur röksemdardærslum, skoðum áhrif sendiboða og fortölur  
+
+--
+
+Í eftirfarandi myndbandi er talað stuttlega um fortölur  
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/h0O2v6Ii5To?clip=UgkxRN_LsxNzlDu9te3L_YjPQWmNDtQgMniv&amp;clipt=EMCCARiduwQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+---
+class: center middle inverse
+
+
+# Takk fyrir tímann!
