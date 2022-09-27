@@ -44,12 +44,17 @@ xaringanExtra::embed_xaringan("rok.html")
 
 [^1]: Stuðst var við glærur úr áfanganum **Skýringar á hegðun** - Sigurður J. Grétarsson (2018) - við gerð þessa glæra. Efnið er aðgengilegt á netinu ef leitað er eftir heiti áfangans. Allur höfundaréttur í gróðaskyni liggur hjá Háskóla Íslands og Sigurði. Efnið er birt á þessari síðu með það að leiðarljósi að kynna rökfræði fyrir grunnskólanemum en *ekki* í ágóðaskyni. 
 
-## [Röksemdafærlsur](rok.html)[^1]
+## [Röksemdafærlsur](rok2.html)[^1]
 
 ```{r, echo=F}
 xaringanExtra::embed_xaringan("rok2.html")
 ```
 
+## [Þjálfun í ritun]("ritun20220927.html")
+
+```{r, echo=F}
+xaringanExtra::embed_xaringan("ritun20220927.html")
+```
 
 <br><br><br><br><br><br><br><br>
 
