@@ -92,7 +92,7 @@ Við töluðum um:
 - Lestur í kjörbók
 - Texti um kosti og galla þess að færa klukkuna til á sumrin
 - Finna up á nýjum dæmum fyrir 5 rökvillur
-- **Lús**lesa 1. kafla í bókinni neistar
+- **Lús**lesa 1. kafla í bókinni Neistar
 
 --
 
@@ -213,7 +213,7 @@ https://www.random.org/dice/
 # Bókin *Neistar*
 
 ```{r}
-knitr::include_app("https://drive.google.com/file/d/1Rndg_POAxbuuZrqKCpEpmkzKzQtYZgZg/preview", height = 450)
+knitr::include_app("https://drive.google.com/file/d/1Rndg_POAxbuuZrqKCpEpmkzKzQtYZgZg/preview", height = 200)
 ```
 
 Fannst þér gagnlegt að skoða þessa bók?
