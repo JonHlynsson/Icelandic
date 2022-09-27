@@ -50,7 +50,7 @@ xaringanExtra::embed_xaringan("rok.html")
 xaringanExtra::embed_xaringan("rok2.html")
 ```
 
-## [Þjálfun í ritun]("ritun20220927.html")
+## [Þjálfun í ritun](ritun20220927.html)
 
 ```{r, echo=F}
 xaringanExtra::embed_xaringan("ritun20220927.html")
