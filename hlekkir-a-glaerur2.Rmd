@@ -56,6 +56,15 @@ xaringanExtra::embed_xaringan("rok2.html")
 xaringanExtra::embed_xaringan("ritun20220927.html")
 ```
 
+## [Þjálfun í ritun - seinni tími](ritun20221011.html)[^2]
+
+[^2]: [**Smelltu hér**](https://drive.google.com/file/d/1qe-0h1XX5wwkCJDRyraNFtM_vzkXfnbG/view) til þess að skoða glærur á sænsku um fimm-þátta persónuleikalíkanið
+
+```{r, echo=F}
+xaringanExtra::embed_xaringan("ritun20221011.html")
+```
+
+
 <br><br><br><br><br><br><br><br>
 
 # Heimildir 
