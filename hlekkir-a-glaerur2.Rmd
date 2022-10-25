@@ -64,6 +64,12 @@ xaringanExtra::embed_xaringan("ritun20220927.html")
 xaringanExtra::embed_xaringan("ritun20221011.html")
 ```
 
+## [Ritgerðasmíði](ritgerd1.html)
+
+```{r, echo=F}
+xaringanExtra::embed_xaringan("ritgerd1.html.html")
+```
+
 
 <br><br><br><br><br><br><br><br>
 

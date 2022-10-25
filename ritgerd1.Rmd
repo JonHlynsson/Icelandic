@@ -1,0 +1,163 @@
+---
+title: "Ritun"
+subtitle: ""  
+author: 
+  - "Jón Ingi Hlynsson"
+date: '`r Sys.Date()`'
+institute: "Omniglot AB"
+output:
+  xaringan::moon_reader:
+    css: xaringan-themer.css
+    self_contained: true
+    seal: false
+    nature:
+      slideNumberFormat: "%current%"
+      highlightStyle: github
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: true
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+library(kableExtra)
+knitr::opts_chunk$set(
+  cache = FALSE,
+  echo = FALSE,
+  message = FALSE, 
+  warning = FALSE,
+  hiline = TRUE
+)
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_duo_accent(
+  primary_color = "#1381B0",
+  secondary_color = "#FF961C",
+  inverse_header_color = "#FFFFFF",
+  inverse_background_color = "#4c516d", 
+  colors = c(red = "#ff0019", black = "#000000"), inverse_text_color = "#FFFFFF"
+)
+
+library(xaringanExtra)
+use_tile_view()
+```
+
+class: center, middle
+background-image: url(images/Omniglot-logo.png)
+background-size: 125px
+background-position: 5% 92%
+
+# Ritgerðasmíði
+
+
+### Móðurmálskennsla
+
+
+Jón Ingi Hlynsson
+
+
+
+#### Omniglot AB 
+
+#### Glærum síðast breytt: `r Sys.Date()`
+
+
+---
+
+
+# Yfirferð heimaverkefna
+
+- Persónuleikatexi
+- Kjörbók
+
+---
+
+# Skerf í ritgerðasmíð
+
+1. Hugmynd að efni - hugstormun
+2. Efni afmarkað - lestur, heimlidaleit
+3. Beinagrind, kaflaskipting
+4. Uppkast
+5. Yfirlestur + athugasemdir
+6. Lokaskil
+
+
+- Hér skiptir máli að leitast við að svara einhverri spurningu. Þeim mun meiri áhuga sem þú hefur á því að svara spurningunni, þeim mun skemmtilegra er ferlið og þeim mun betri verður ritgerðin. 
+
+
+---
+
+
+# Textasmíði er skipulögð hugsun
+
+Fyrir vikið skiptir máli að hafa áhuga á að svara **ritgerðarspurningunni**.
+
+--
+
+Dæmi:
+
+- Efni: Persónuleiki
+  - Spurning: Hverjar eru lífræðilegar undirstöður persónuleikans?
+- Efni: Tilfinningar
+  - Spurning: Hvernig vitum við að tilfinningar séu sammannlegar, þvert á menningarheima?
+- Efni: Hönnun/tíska
+  - Spurning: Hver eru áhrif "skynditísku" á umhverfið og hvernig er unnt að sporna við þeim?
+- Efni: Tölvuleikir
+  - Spurning: Hvaða vitnisburður liggur að baki fullyrðingarinnar "tölvuleikjaspilun eykur ýgi meðal ungs fólks"?
+
+--
+  
+** ýgi = árásarhneigð
+
+---
+
+# Að meðtaka upplýsingar
+
+Að skrifa ritgerð kallar á lestur tengdan því efni sem  markmiðið er að skrifa um. Hins vegar er einnig hægt að hlusta á viðtöl, horfa á myndbönd eða tala við fólk sem er vel að sér um það efni sem um ræðir hverju sinni.
+
+Fyrir vikið er mikilvægt að við séum í stakk búin að meðtaka upplýsingar og taka saman aðalartiðin sem fram koma hverju sinni.
+
+Hlustum á stutt viðtal um andlitsblindu og gerum þar næst stutta samantekt um hvað andlitsblinda felur í sér.
+
+https://www.ruv.is/frett/2022/05/09/tvo-prosent-thjast-af-andlitsblindu
+
+
+---
+
+# Andlitsblinda
+
+***Andlitsblinda*** *(fræðiheiti: prosopagnosia, úr grísku prosopon = andlit, agnosia = að þekkja ekki) er það þegar einstaklingur þekkir ekki annað fólk á andlitinu. Þetta er meðfædd brenglun í því svæði heilans sem sér um að þekkja og túlka andlit og svip. Þetta ástand hefur engin áhrif á það að þekkja hluti né heldur á almenna greind. Einnig getur andlitsblinda verið afleiðing slyss eða heilablóðfalls.*
+
+*Tvö prósent þjást af andlitsblindu*.
+
+---
+
+# Næstu tímar
+
+Breytingar á íslensku:
+
+- Haustfrí í næstu viku
+- Vikur 45-48 óljósar; mín stundatafla að breytast
+  - Mögulega hægt að halda rafrænar kennslustundir/koma á fót verkefnavinnu í gegnum netið
+  - Vonandi hægt að taka upp þráðinn í byrjun desember
+    - Mun láta vita í síðasta lagi eftir viku hvað verður
+
+---
+
+# Þangað til gildir eftirfarandi heimavinna:
+
+- Lesa tvo kafla í kjörbók og skrifa útdrátt úr þeim (sbr. að skrifa samantekt á glæru hér á undan) 
+- Skrifa stóra ritgerð
+  - Sjá skref í ritgerðasmíði
+    - Hugmyndin er að skrifa um 1000 orða ritgerð sem skilað er inn vikulega (ath. ekki fullkláraðri hverju sinni) með lokaskilum í desember (n.tt. 13. desember)
+    - T.d. Fyrstu skil samanstanda af skil á hugmynd, önnur skil innihalda afmarkaða hugmynd með hlekkjum á heimildir, þriðju skil innihalda beinagrind og kaflaheiti, fjórðu skil innihalda fyrsta uppkast.
+      - Þannig færðu tækifæri til að æfa þig í að rita texta, fá athugasemdir um hvað megi betur fara og leiðbeiningar um hvar megi nálgast efni um það sem þú velur að skrifa um
+
+
+---
+class: center middle inverse
+
+
+# Takk fyrir tímann í dag
