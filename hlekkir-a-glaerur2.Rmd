@@ -76,6 +76,13 @@ xaringanExtra::embed_xaringan("ritgerd1.html")
 xaringanExtra::embed_xaringan("kennileiti.html")
 ```
 
+## [Íslensk kennileiti - lokatími](kennileitiFinal.html)
+
+```{r, echo=F}
+xaringanExtra::embed_xaringan("kennileitiFinal.html")
+```
+
+
 <br><br><br><br><br><br><br><br>
 
 # Heimildir 

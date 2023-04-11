@@ -1,0 +1,159 @@
+---
+title: "Íslensk kennileiti lokatími"
+subtitle: ""  
+author: 
+  - "Jón Ingi Hlynsson"
+date: '`r Sys.Date()`'
+institute: "Omniglot AB"
+output:
+  xaringan::moon_reader:
+    css: xaringan-themer.css
+    self_contained: true
+    seal: false
+    nature:
+      slideNumberFormat: "%current%"
+      highlightStyle: github
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+library(kableExtra)
+knitr::opts_chunk$set(
+  cache = FALSE,
+  echo = FALSE,
+  message = FALSE, 
+  warning = FALSE,
+  hiline = TRUE
+)
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_duo_accent(
+  primary_color = "#1381B0",
+  secondary_color = "#FF961C",
+  inverse_header_color = "#FFFFFF",
+  inverse_background_color = "#4c516d", 
+  colors = c(red = "#ff0019", black = "#000000"), inverse_text_color = "#FFFFFF"
+)
+
+library(xaringanExtra)
+use_tile_view()
+```
+
+class: center, middle
+background-image: url(images/Omniglot-logo.png)
+background-size: 125px
+background-position: 5% 92%
+
+# Íslensk kennileiti
+
+## Kynning
+
+### Móðurmálskennsla
+
+
+Jón Ingi Hlynsson
+
+
+#### Omniglot AB 
+
+#### Vorönn 2023
+
+---
+class: center middle inverse
+
+### Textasmíði er skipulögð hugsun
+
+
+Að vera fær í að skrifa eflir getu okkar til þess að hugsa
+
+
+---
+
+# Heimanám kjörbók
+
+
+- Lestur í kjörbók
+- Klára innganginn
+- Undirbúa kynningu
+
+
+
+---
+
+# Kjörbók
+
+```{r, out.width="20%", fig.align='right'}
+knitr::include_graphics("images/akam.JPG")
+```
+
+
+---
+
+# Kynning
+
+--
+
+Almenn umræða  
+Hvernig fannst þér sjálfri kynningin hafa gengið?  
+
+
+
+---
+
+# Umræða um komandi tíma
+
+--
+
+- Önnur kennileiti
+  - Höfuðborgarsvæðið:
+      - íbúafjöldi
+      - hvað er og hvað er ekki innifalið?
+    - Hallgrímskirkja
+    - Esjan
+    - Perlan?
+
+--
+
+- Tenging við aðra tíma 
+- Auglýsingar 
+- Orðflokkagreining
+  - Áhersla á fallbeygingu 
+  
+--
+
+Prófaumræða 
+
+
+---
+
+# Hvernig er best að læra undir próf?
+
+[Vísindavefurinn](https://www.visindavefur.is/svar.php?id=5056#)
+
+
+```{r, out.width="30%", fig.align='right'}
+knitr::include_graphics("images/visindavefur_logo_stort_200514.JPG")
+```
+
+
+---
+
+
+# Heimanám
+
+- **Lesa í kjörbók**!
+
+
+
+
+
+---
+class: center middle inverse
+
+
+# Takk fyrir tímann!

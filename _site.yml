@@ -19,6 +19,9 @@ navbar:
       - text: "Æfingar í stafsetningu"
         href: "https://vefir.mms.is/stafsetning/index.htm"
         icon: fa-edit
+      - text: "Skrambi - Villuleit"
+        href: "https://skrambi.arnastofnun.is/"
+        icon: fa-clipboard-list
       - text: "----------"
       - text: "Laxdæla"
       - text: "Laxdæla rafbók"
