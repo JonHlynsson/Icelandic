@@ -74,7 +74,7 @@ Að vera fær í að skrifa eflir getu okkar til þess að hugsa
 
 ---
 
-# Heimanám kjörbók
+# Heimanám
 
 
 - Lestur í kjörbók
@@ -88,7 +88,7 @@ Að vera fær í að skrifa eflir getu okkar til þess að hugsa
 # Kjörbók
 
 ```{r, out.width="20%", fig.align='right'}
-knitr::include_graphics("images/akam.JPG")
+knitr::include_graphics("images/akam.jpg")
 ```
 
 
@@ -137,7 +137,7 @@ Prófaumræða
 
 
 ```{r, out.width="30%", fig.align='right'}
-knitr::include_graphics("images/visindavefur_logo_stort_200514.JPG")
+knitr::include_graphics("images/visindavefur_logo_stort_200514.jpg")
 ```
 
 
