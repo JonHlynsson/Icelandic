@@ -83,6 +83,13 @@ xaringanExtra::embed_xaringan("kennileitiFinal.html")
 ```
 
 
+## [Höfuðborgarsvæðið](hofudborgin.html)
+
+```{r, echo=F}
+xaringanExtra::embed_xaringan("hofudborgin.html")
+```
+
+
 <br><br><br><br><br><br><br><br>
 
 # Heimildir 
