@@ -89,6 +89,12 @@ xaringanExtra::embed_xaringan("kennileitiFinal.html")
 xaringanExtra::embed_xaringan("hofudborgin.html")
 ```
 
+## [Höfuðborgarsvæðið: Merkar persónur í sögulegu samhengi](hofudborgin2.html)
+
+```{r, echo=F}
+xaringanExtra::embed_xaringan("hofudborgin2.html")
+```
+
 
 <br><br><br><br><br><br><br><br>
 

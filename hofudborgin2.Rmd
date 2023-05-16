@@ -1,0 +1,254 @@
+---
+title: "Höfuðborgarsvæðið"
+subtitle: ""  
+author: 
+  - "Jón Ingi Hlynsson"
+date: '`r Sys.Date()`'
+institute: "Omniglot AB"
+output:
+  xaringan::moon_reader:
+    css: xaringan-themer.css
+    self_contained: true
+    seal: false
+    nature:
+      slideNumberFormat: "%current%"
+      highlightStyle: github
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+library(kableExtra)
+knitr::opts_chunk$set(
+  cache = FALSE,
+  echo = FALSE,
+  message = FALSE, 
+  warning = FALSE,
+  hiline = TRUE
+)
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_duo_accent(
+  primary_color = "#1381B0",
+  secondary_color = "#FF961C",
+  inverse_header_color = "#FFFFFF",
+  inverse_background_color = "#4c516d", 
+  colors = c(red = "#ff0019", black = "#000000"), inverse_text_color = "#FFFFFF"
+)
+
+library(xaringanExtra)
+use_tile_view()
+```
+
+class: center, middle
+background-image: url(images/Omniglot-logo.png)
+background-size: 125px
+background-position: 5% 92%
+
+# Höfuðborgarsvæðið: Merkar persónur í sögulegu samhengi
+
+
+
+### Móðurmálskennsla
+
+
+Jón Ingi Hlynsson
+
+
+#### Omniglot AB 
+
+#### Vorönn 2023
+
+---
+class: center middle inverse
+
+### Textasmíði er skipulögð hugsun
+
+
+Að vera fær í að skrifa eflir getu okkar til þess að hugsa
+
+
+---
+background-image: url(images/akam.jpg)
+background-size: 125px
+background-position: 95% 8%
+
+# Heimanám
+
+
+- Hvað hefur átt sér stað í bókinni frá því að við ræddum hana síðast?
+- Hvað er að frétta af Akam?
+- En Aniku?  
+- Hrafnhildi?
+
+
+  
+- Hvernig fór með Gunther og félaga?
+
+---
+background-image: url(images/ingolfur_arnarson.jpg)
+background-size: 300px
+background-position: 5% 92%
+
+
+# Ingólfur Arnarson 
+
+
+Sagan segir að hann hafi kastað öndvegissúlum sínum fyrir borð áður en hann kom að landi og svarið að setjast að þar sem þær kæmu að landi, vegna þess að þar myndu goðin vilja að hann byggi. Hann sendi svo þræla sína Karla og Vífil til að leita þeirra, og fundu þeir þær við Arnarhvol í Reykjavík. Sú leit tók 3 ár. Ingólfur settist að í Reykjavík en landnám hans náði á milli Ölfusár og Hvalfjarðar og öll nes út. 
+
+--
+
+Hvað hét faðir Ingólfs?
+
+
+???
+Það er stundum misskilningur hjá fólki um að Ingólfur Arnarson eigi að hafa „fundið Ísland“ eða komið þangað fyrstur. Hið rétta er hins vegar að Ingólfur á að að hafa verið fyrsti **landnámsmaðurinn**, það er að segja fyrstur til að hefja hér skipulega og varanlega búsetu. Þennan fróðleik höfum við úr heimildum eins og Íslendingabók og Landnámu sem ritaðar voru nokkrum öldum eftir að þessir atburðir gerðust
+
+---
+background-image: url(images/ingolfur_arnarson.jpg)
+background-size: 300px
+background-position: 5% 92%
+
+
+# Ingólfur Arnarsson 
+
+.pull-left[
+**Arnarhóll**:  
+- Þetta örnefni kemur víða fyrir
+ - Til dæmis eru Arnarhólar nærri 20 talsins á Suðurlandi eingöngu]
+
+.pull-right[
+```{r, fig.align='right'}
+knitr::include_graphics("images/arnarholl.jpg")
+```
+]
+
+
+???
+Spurningin er hvort Arnarhváll er núverandi Arnarhóll eða hvort hann hefur verið nær sjónum, þar sem nú er Arnarhólsklettur sem svo er nefndur. Líklegt er að Arnarhóll sé kenndur við fuglinn þó að mannsnafnið hafi vissulega verið þekkt á landnámstíma, og faðir Ingólfs heitið Örn. Engar heimildir er að finna um að mannsnafnið hafi haft áhrif á staðarnafnið.
+
+
+---
+background-image: url(images/leifur.jpg)
+background-size: 300px
+background-position: 95% 92%
+
+
+# Leifur heppni Eiríksson
+
+Leifur heppni Eiríksson (um 980 — um 1020) var landkönnuður sem er sagður hafa komið til Norður-Ameríku fyrstur Evrópubúa.
+
+--
+
+Talið er að Leifur hafi fæðst um árið 980 á Íslandi, sonur Eiríks rauða Þorvaldssonar og Þjóðhildar konu hans.
+
+--
+
+Í Grænlendinga sögu segir frá því að Leifur keypti skip Bjarna Herjólfssonar sem hafði áður villst til Norður-Ameríku, en steig ekki á land.
+
+--
+
+Á heimleiðinni til Grænlands bjargaði Leifur 15 skipsbrotsmönnum af skeri og fékk upp úr því nafngiftina „hinn heppni“.
+
+
+---
+background-image: url(images/HallgrimurPetursson.jpg)
+background-size: 300px
+background-position: 95% 92%
+
+
+# Hallgrímur Pétursson
+
+Hallgrímur Pétursson er jafnan talinn fæddur í Gröf á Höfðaströnd árið 1614.
+
+--
+
+[Mynd okkar af Hallgrími](https://www.hallgrimurpetursson.is/)
+
+--
+
+Þekktustu **heilræðavísur** á íslensku eru eftir sr. Hallgrím Pétursson (1614–1674)
+
+> Ungum er það allra best  
+að óttast Guð sinn herra.  
+Þeim mun viskan veitast mest  
+og virðing aldrei þverra.
+
+
+--
+
+Hallgrímur er tvímælalaust frægast trúarskáld Íslendinga og líklega hefur  
+ekkert skáld orðið þjóðinni hjartfólgnara en hann.  
+
+--
+
+Frægasta verk hans eru **Passíusálmarnir**, ortir út af píslarsögu Krists.
+
+---
+
+# Passíusálmarnir
+
+
+.pull-left[Íslenska orðið passía er myndað af latneska orðinu passio sem þýðir þjáning (sbr. passion á ensku, dönsku og þýsku).]
+
+.pull-right[
+>Oft má af máli þekkja  
+manninn hver helst hann er.  
+Sig mun fyrst sjálfan blekkja  
+sá með lastmælgi fer.  
+Góður af geði hreinu  
+góðorður reynist víst.  
+Fullur af illu einu  
+illyrðin sparar síst.  
+- [11. sálmur, Um afneitun Péturs, Kvæði 15](https://www.hallgrimurpetursson.is/salmarnir/)  
+
+
+]
+
+
+
+
+???
+Meginhugsunin í hugleiðslu Hallgríms er að allt sem Jesús leið og þoldi var gert af kærleika til mannanna, í þeim tilgangi að vera þeim til björgunar, þannig að hver og einn sem trúir á hann er laus frá refsingu og dómi. Dæmi um þessa hugsun er erindið þar sem segir: „Yfirgefinn kvað son Guðs sig / þá særði hann kvölin megna / yfirgefur því aldrei mig / eilífur Guð hans vegna“. 
+
+
+---
+
+# Hvaða tilgangi þjónar skjaldarmerkið og fyrir hvað stendur hvert fyrirbæri á því?
+
+[Vísindavefurinn](https://www.visindavefur.is/svar.php?id=4516)
+
+
+---
+
+# Ljóð (ef tími gefst)
+
+
+Yrkjum stutt ljóð (með hliðsjón af bragarhætti Hallgríms)
+
+???
+Hver Passíusálmur er ortur undir sérstökum bragarhætti og í upphafi hvers sálms er tekið fram undir hvaða lagi hann eigi að syngja. Sálmarnir eru ortir undir lagboðum sem fólk þekkti. Í hverjum sálmi er endarím og stuðlasetning en stuðlasetning hefur tíðkast í íslenskum kveðskap allt fram á þessa öld. Að öðru leyti er ytra form sálmanna einfalt, skáldið notar ekki innrím eins og víða er algengt í öðrum kveðskap þess, hann notar ekki forna skáldamálið né annað flókið myndmál, allt er skýrt og auðskilið. Engu að síður má víða sjá að höfundurinn þekkir og notar klassísk stílbrögð og hefur meginreglur mælskufræðinnar að leiðarljósi, til dæmis í upphafsversinu sem er dæmigert invocatio, ákall til alls líkamans að taka þátt í hugleiðslunni.
+
+
+
+---
+
+# Heimanám
+
+- **Lesa í kjörbók**!
+- Yrkja fjögra línu ljóð
+  - Sjá [Passíusálma](https://www.hallgrimurpetursson.is/salmarnir/)
+
+
+
+
+
+---
+class: center middle inverse
+
+
+# Takk fyrir tímann!
